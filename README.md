@@ -1,22 +1,15 @@
- /$$$$$$$$/$$$$$$$   /$$$$$$   /$$$$$$                         /$$$$$$  /$$    /$$ <br />
-| $$_____/ $$__  $$ /$$__  $$ /$$__  $$          /$$          /$$__  $$| $$   | $$ <br />
-| $$     | $$  \ $$| $$  \__/| $$  \ $$         | $$         | $$  \__/| $$   | $$ <br />
-| $$$$$  | $$$$$$$/| $$ /$$$$| $$$$$$$$       /$$$$$$$$      | $$      |  $$ / $$/ <br />
-| $$__/  | $$____/ | $$|_  $$| $$__  $$      |__  $$__/      | $$       \  $$ $$/ <br />
-| $$     | $$      | $$  \ $$| $$  | $$         | $$         | $$    $$  \  $$$/  <br />
-| $$     | $$      |  $$$$$$/| $$  | $$         |__/         |  $$$$$$/   \  $/   <br />
-|__/     |__/       \______/ |__/  |__/                       \______/     \_/    <br />
+#FPGA + CV
 
-Part of the project to revamp the course ECE 3400: Intelligent Physical Systems at Cornell University during the Summer of 2018. 
+Part of the project to revamp the course ECE 3400: Intelligent Physical Systems at Cornell University during the Summer of 2018. <br />
 
-Goal:
-Using an inexpensive camera interfaced with an FPGA to detect basic colors and shapes.
-The device will be mounted on an arduino based robot, to which it will send signals signifying what color and shape it sees, if any.
+Goal:<br />
+Using an inexpensive camera interfaced with an FPGA to detect basic colors and shapes.<br />
+The device will be mounted on an arduino based robot, to which it will send signals signifying what color and shape it sees, if any.<br />
 
-Hardware Used:
-OV7670 Without FIFO
-DE0-Nano (non -SOC)
-Arduino UNO
+Hardware Used:<br />
+OV7670 Without FIFO<br />
+DE0-Nano (non -SOC)<br />
+Arduino UNO<br />
 
 
 
