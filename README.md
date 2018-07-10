@@ -1,4 +1,4 @@
-#### FPGA + CV
+## FPGA + CV
 
 Part of the project to revamp the course ECE 3400: Intelligent Physical Systems at Cornell University during the Summer of 2018. 
 
