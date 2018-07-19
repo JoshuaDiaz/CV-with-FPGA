@@ -1,5 +1,5 @@
 Fitter report for DE0_NANO
-Mon Jul 09 20:27:25 2018
+Thu Jul 19 18:25:29 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Jul 09 20:27:25 2018       ;
+; Fitter Status                      ; Successful - Thu Jul 19 18:25:29 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; DE0_NANO                                    ;
 ; Top-level Entity Name              ; DE0_NANO                                    ;
@@ -77,7 +77,7 @@ agreement for further details.
 ;     Total combinational functions  ; 1 / 22,320 ( < 1 % )                        ;
 ;     Dedicated logic registers      ; 1 / 22,320 ( < 1 % )                        ;
 ; Total registers                    ; 1                                           ;
-; Total pins                         ; 73 / 154 ( 47 % )                           ;
+; Total pins                         ; 75 / 154 ( 49 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
@@ -234,8 +234,6 @@ agreement for further details.
 ; Location     ;                ;              ; G_SENSOR_INT  ; PIN_M2        ; QSF Assignment ;
 ; Location     ;                ;              ; I2C_SCLK      ; PIN_F2        ; QSF Assignment ;
 ; Location     ;                ;              ; I2C_SDAT      ; PIN_F1        ; QSF Assignment ;
-; Location     ;                ;              ; KEY[0]        ; PIN_J15       ; QSF Assignment ;
-; Location     ;                ;              ; KEY[1]        ; PIN_E1        ; QSF Assignment ;
 ; Location     ;                ;              ; LED[0]        ; PIN_A15       ; QSF Assignment ;
 ; Location     ;                ;              ; LED[1]        ; PIN_A13       ; QSF Assignment ;
 ; Location     ;                ;              ; LED[2]        ; PIN_B13       ; QSF Assignment ;
@@ -315,8 +313,6 @@ agreement for further details.
 ; I/O Standard ; DE0_NANO       ;              ; G_SENSOR_INT  ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; DE0_NANO       ;              ; I2C_SCLK      ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; DE0_NANO       ;              ; I2C_SDAT      ; 3.3-V LVTTL   ; QSF Assignment ;
-; I/O Standard ; DE0_NANO       ;              ; KEY[0]        ; 3.3-V LVTTL   ; QSF Assignment ;
-; I/O Standard ; DE0_NANO       ;              ; KEY[1]        ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; DE0_NANO       ;              ; LED[0]        ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; DE0_NANO       ;              ; LED[1]        ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; DE0_NANO       ;              ; LED[2]        ; 3.3-V LVTTL   ; QSF Assignment ;
@@ -338,8 +334,8 @@ agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 149 ) ; 0.00 % ( 0 / 149 )         ; 0.00 % ( 0 / 149 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 149 ) ; 0.00 % ( 0 / 149 )         ; 0.00 % ( 0 / 149 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 153 ) ; 0.00 % ( 0 / 153 )         ; 0.00 % ( 0 / 153 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 153 ) ; 0.00 % ( 0 / 153 )         ; 0.00 % ( 0 / 153 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -362,7 +358,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 149 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 153 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -370,7 +366,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.pin.
+The pin-out file can be found in C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.pin.
 
 
 +--------------------------------------------------------------------+
@@ -399,8 +395,8 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 ;                                             ;                      ;
 ; Total LABs:  partially or completely used   ; 1 / 1,395 ( < 1 % )  ;
 ; Virtual pins                                ; 0                    ;
-; I/O pins                                    ; 73 / 154 ( 47 % )    ;
-;     -- Clock pins                           ; 3 / 7 ( 43 % )       ;
+; I/O pins                                    ; 75 / 154 ( 49 % )    ;
+;     -- Clock pins                           ; 4 / 7 ( 57 % )       ;
 ;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )        ;
 ;                                             ;                      ;
 ; M9Ks                                        ; 0 / 66 ( 0 % )       ;
@@ -419,7 +415,7 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 ; Peak interconnect usage (total/H/V)         ; 0.1% / 0.1% / 0.1%   ;
 ; Maximum fan-out                             ; 2                    ;
 ; Highest non-global fan-out                  ; 2                    ;
-; Total fan-out                               ; 78                   ;
+; Total fan-out                               ; 80                   ;
 ; Average fan-out                             ; 0.53                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -455,7 +451,7 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 ; Total LABs:  partially or completely used   ; 1 / 1395 ( < 1 % )  ; 0 / 1395 ( 0 % )               ;
 ;                                             ;                     ;                                ;
 ; Virtual pins                                ; 0                   ; 0                              ;
-; I/O pins                                    ; 73                  ; 0                              ;
+; I/O pins                                    ; 75                  ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )     ; 0 / 132 ( 0 % )                ;
 ; Total memory bits                           ; 0                   ; 0                              ;
 ; Total RAM block bits                        ; 0                   ; 0                              ;
@@ -467,7 +463,7 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 78                  ; 0                              ;
+;     -- Total Connections                    ; 80                  ; 0                              ;
 ;     -- Registered Connections               ; 2                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
@@ -475,7 +471,7 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 ;     -- hard_block:auto_generated_inst       ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Partition Interface                         ;                     ;                                ;
-;     -- Input Ports                          ; 39                  ; 0                              ;
+;     -- Input Ports                          ; 41                  ; 0                              ;
 ;     -- Output Ports                         ; 34                  ; 0                              ;
 ;     -- Bidir Ports                          ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
@@ -504,7 +500,7 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 ; GPIO_0_IN[0] ; A8    ; 8        ; 25           ; 34           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; GPIO_0_IN[1] ; B8    ; 8        ; 25           ; 34           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; GPIO_1_D[0]  ; F13   ; 6        ; 53           ; 21           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; GPIO_1_D[10] ; P11   ; 4        ; 38           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; GPIO_1_D[10] ; P11   ; 4        ; 38           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; GPIO_1_D[11] ; R10   ; 4        ; 34           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; GPIO_1_D[12] ; N12   ; 4        ; 47           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; GPIO_1_D[13] ; P9    ; 4        ; 38           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
@@ -535,10 +531,12 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 ; GPIO_1_D[5]  ; T12   ; 4        ; 36           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; GPIO_1_D[6]  ; R12   ; 4        ; 36           ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; GPIO_1_D[7]  ; T11   ; 4        ; 36           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; GPIO_1_D[8]  ; T10   ; 4        ; 34           ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; GPIO_1_D[8]  ; T10   ; 4        ; 34           ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; GPIO_1_D[9]  ; R11   ; 4        ; 34           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; GPIO_1_IN[0] ; T9    ; 4        ; 27           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; GPIO_1_IN[1] ; R9    ; 4        ; 27           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; KEY[0]       ; J15   ; 5        ; 53           ; 14           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; KEY[1]       ; E1    ; 1        ; 0            ; 16           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -593,6 +591,7 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 ; H5       ; nCONFIG                                  ; -                 ; -                ; Dedicated Programming Pin ;
 ; J3       ; nCE                                      ; -                 ; -                ; Dedicated Programming Pin ;
 ; J16      ; DIFFIO_R9n, DEV_OE                       ; Use as regular IO ; GPIO_1_D[30]     ; Dual Purpose Pin          ;
+; J15      ; DIFFIO_R9p, DEV_CLRn                     ; Use as regular IO ; KEY[0]           ; Dual Purpose Pin          ;
 ; H14      ; CONF_DONE                                ; -                 ; -                ; Dedicated Programming Pin ;
 ; H13      ; MSEL0                                    ; -                 ; -                ; Dedicated Programming Pin ;
 ; H12      ; MSEL1                                    ; -                 ; -                ; Dedicated Programming Pin ;
@@ -626,11 +625,11 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 +----------+-------------------+---------------+--------------+
 ; I/O Bank ; Usage             ; VCCIO Voltage ; VREF Voltage ;
 +----------+-------------------+---------------+--------------+
-; 1        ; 0 / 14 ( 0 % )    ; 2.5V          ; --           ;
+; 1        ; 1 / 14 ( 7 % )    ; 3.3V          ; --           ;
 ; 2        ; 0 / 16 ( 0 % )    ; 2.5V          ; --           ;
 ; 3        ; 1 / 25 ( 4 % )    ; 3.3V          ; --           ;
 ; 4        ; 20 / 20 ( 100 % ) ; 3.3V          ; --           ;
-; 5        ; 15 / 18 ( 83 % )  ; 3.3V          ; --           ;
+; 5        ; 16 / 18 ( 89 % )  ; 3.3V          ; --           ;
 ; 6        ; 1 / 13 ( 8 % )    ; 3.3V          ; --           ;
 ; 7        ; 12 / 24 ( 50 % )  ; 3.3V          ; --           ;
 ; 8        ; 24 / 24 ( 100 % ) ; 3.3V          ; --           ;
@@ -706,9 +705,9 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 ; D14      ; 176        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D15      ; 170        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; D16      ; 169        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; E1       ; 26         ; 1        ; GND+                            ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; E1       ; 26         ; 1        ; KEY[1]                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; E2       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E3       ;            ; 1        ; VCCIO1                          ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
+; E3       ;            ; 1        ; VCCIO1                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E4       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E5       ;            ;          ; GNDA3                           ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E6       ; 231        ; 8        ; GPIO_0_D[17]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -740,7 +739,7 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 ; F16      ; 162        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G1       ; 16         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G2       ; 15         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; G3       ;            ; 1        ; VCCIO1                          ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
+; G3       ;            ; 1        ; VCCIO1                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; G4       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G5       ; 12         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G6       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -785,7 +784,7 @@ The pin-out file can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NA
 ; J12      ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; J13      ; 146        ; 5        ; GPIO_1_D[32]                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; J14      ; 144        ; 5        ; GPIO_1_D[33]                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; J15      ; 143        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J15      ; 143        ; 5        ; KEY[0]                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; J16      ; 142        ; 5        ; GPIO_1_D[30]                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; K1       ; 37         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K2       ; 36         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -950,7 +949,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
-; |DE0_NANO                  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 73   ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |DE0_NANO           ; DE0_NANO    ; work         ;
+; |DE0_NANO                  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 75   ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |DE0_NANO           ; DE0_NANO    ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1004,8 +1003,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO_1_D[5]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO_1_D[6]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO_1_D[7]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[8]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO_1_D[9]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; GPIO_1_D[10] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO_1_D[11] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO_1_D[12] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO_1_D[13] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
@@ -1031,7 +1030,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO_1_D[33] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO_1_IN[0] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO_1_IN[1] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; GPIO_1_D[8]  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; KEY[0]       ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; KEY[1]       ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[10] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; CLOCK_50     ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -1051,8 +1052,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO_1_D[5]               ;                   ;         ;
 ; GPIO_1_D[6]               ;                   ;         ;
 ; GPIO_1_D[7]               ;                   ;         ;
+; GPIO_1_D[8]               ;                   ;         ;
 ; GPIO_1_D[9]               ;                   ;         ;
-; GPIO_1_D[10]              ;                   ;         ;
 ; GPIO_1_D[11]              ;                   ;         ;
 ; GPIO_1_D[12]              ;                   ;         ;
 ; GPIO_1_D[13]              ;                   ;         ;
@@ -1078,7 +1079,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO_1_D[33]              ;                   ;         ;
 ; GPIO_1_IN[0]              ;                   ;         ;
 ; GPIO_1_IN[1]              ;                   ;         ;
-; GPIO_1_D[8]               ;                   ;         ;
+; KEY[0]                    ;                   ;         ;
+; KEY[1]                    ;                   ;         ;
+; GPIO_1_D[10]              ;                   ;         ;
 ;      - GPIO_0_D[1]~output ; 0                 ; 6       ;
 ; CLOCK_50                  ;                   ;         ;
 +---------------------------+-------------------+---------+
@@ -1099,7 +1102,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Routing Resource Type ; Usage                ;
 +-----------------------+----------------------+
 ; Block interconnects   ; 3 / 71,559 ( < 1 % ) ;
-; C16 interconnects     ; 4 / 2,597 ( < 1 % )  ;
+; C16 interconnects     ; 5 / 2,597 ( < 1 % )  ;
 ; C4 interconnects      ; 5 / 46,848 ( < 1 % ) ;
 ; Direct links          ; 0 / 71,559 ( 0 % )   ;
 ; Global clocks         ; 0 / 20 ( 0 % )       ;
@@ -1229,9 +1232,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 73        ; 0            ; 73        ; 0            ; 0            ; 73        ; 73        ; 0            ; 73        ; 73        ; 0            ; 0            ; 0            ; 0            ; 39           ; 0            ; 0            ; 39           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 73        ; 0            ; 0            ;
+; Total Pass         ; 75        ; 0            ; 75        ; 0            ; 0            ; 75        ; 75        ; 0            ; 75        ; 75        ; 0            ; 0            ; 0            ; 0            ; 41           ; 0            ; 0            ; 41           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 75        ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 73           ; 0         ; 73           ; 73           ; 0         ; 0         ; 73           ; 0         ; 0         ; 73           ; 73           ; 73           ; 73           ; 34           ; 73           ; 73           ; 34           ; 73           ; 73           ; 73           ; 73           ; 73           ; 73           ; 73           ; 73           ; 73           ; 0         ; 73           ; 73           ;
+; Total Inapplicable ; 0         ; 75           ; 0         ; 75           ; 75           ; 0         ; 0         ; 75           ; 0         ; 0         ; 75           ; 75           ; 75           ; 75           ; 34           ; 75           ; 75           ; 34           ; 75           ; 75           ; 75           ; 75           ; 75           ; 75           ; 75           ; 75           ; 75           ; 0         ; 75           ; 75           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; GPIO_0_D[0]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO_0_D[1]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1277,8 +1280,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO_1_D[5]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO_1_D[6]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO_1_D[7]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[8]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO_1_D[9]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; GPIO_1_D[10]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO_1_D[11]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO_1_D[12]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO_1_D[13]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1304,7 +1307,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO_1_D[33]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO_1_IN[0]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO_1_IN[1]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; GPIO_1_D[8]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; KEY[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[10]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
@@ -1443,8 +1448,6 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "G_SENSOR_INT" is assigned to location or region, but does not exist in design
     Warning (15706): Node "I2C_SCLK" is assigned to location or region, but does not exist in design
     Warning (15706): Node "I2C_SDAT" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "KEY[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "KEY[1]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LED[0]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LED[1]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LED[2]" is assigned to location or region, but does not exist in design
@@ -1478,50 +1481,52 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Warning (169177): 39 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin GPIO_0_IN[0] uses I/O standard 3.3-V LVTTL at A8 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 23
-    Info (169178): Pin GPIO_0_IN[1] uses I/O standard 3.3-V LVTTL at B8 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 23
-    Info (169178): Pin GPIO_1_D[0] uses I/O standard 3.3-V LVTTL at F13 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[1] uses I/O standard 3.3-V LVTTL at T15 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[2] uses I/O standard 3.3-V LVTTL at T14 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[3] uses I/O standard 3.3-V LVTTL at T13 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[4] uses I/O standard 3.3-V LVTTL at R13 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[5] uses I/O standard 3.3-V LVTTL at T12 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[6] uses I/O standard 3.3-V LVTTL at R12 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[7] uses I/O standard 3.3-V LVTTL at T11 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[9] uses I/O standard 3.3-V LVTTL at R11 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[10] uses I/O standard 3.3-V LVTTL at P11 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[11] uses I/O standard 3.3-V LVTTL at R10 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[12] uses I/O standard 3.3-V LVTTL at N12 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[13] uses I/O standard 3.3-V LVTTL at P9 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[14] uses I/O standard 3.3-V LVTTL at N9 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[15] uses I/O standard 3.3-V LVTTL at N11 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[16] uses I/O standard 3.3-V LVTTL at L16 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[17] uses I/O standard 3.3-V LVTTL at K16 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[18] uses I/O standard 3.3-V LVTTL at R16 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[19] uses I/O standard 3.3-V LVTTL at L15 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[20] uses I/O standard 3.3-V LVTTL at P15 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[21] uses I/O standard 3.3-V LVTTL at P16 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[22] uses I/O standard 3.3-V LVTTL at R14 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[23] uses I/O standard 3.3-V LVTTL at N16 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[24] uses I/O standard 3.3-V LVTTL at N15 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[25] uses I/O standard 3.3-V LVTTL at P14 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[26] uses I/O standard 3.3-V LVTTL at L14 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[27] uses I/O standard 3.3-V LVTTL at N14 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[28] uses I/O standard 3.3-V LVTTL at M10 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[29] uses I/O standard 3.3-V LVTTL at L13 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[30] uses I/O standard 3.3-V LVTTL at J16 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[31] uses I/O standard 3.3-V LVTTL at K15 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[32] uses I/O standard 3.3-V LVTTL at J13 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_D[33] uses I/O standard 3.3-V LVTTL at J14 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin GPIO_1_IN[0] uses I/O standard 3.3-V LVTTL at T9 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 26
-    Info (169178): Pin GPIO_1_IN[1] uses I/O standard 3.3-V LVTTL at R9 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 26
-    Info (169178): Pin GPIO_1_D[8] uses I/O standard 3.3-V LVTTL at T10 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at R8 File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 19
-Info (144001): Generated suppressed messages file C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 88 warnings
-    Info: Peak virtual memory: 1389 megabytes
-    Info: Processing ended: Mon Jul 09 20:27:25 2018
+Warning (169177): 41 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
+    Info (169178): Pin GPIO_0_IN[0] uses I/O standard 3.3-V LVTTL at A8 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 25
+    Info (169178): Pin GPIO_0_IN[1] uses I/O standard 3.3-V LVTTL at B8 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 25
+    Info (169178): Pin GPIO_1_D[0] uses I/O standard 3.3-V LVTTL at F13 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[1] uses I/O standard 3.3-V LVTTL at T15 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[2] uses I/O standard 3.3-V LVTTL at T14 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[3] uses I/O standard 3.3-V LVTTL at T13 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[4] uses I/O standard 3.3-V LVTTL at R13 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[5] uses I/O standard 3.3-V LVTTL at T12 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[6] uses I/O standard 3.3-V LVTTL at R12 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[7] uses I/O standard 3.3-V LVTTL at T11 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[8] uses I/O standard 3.3-V LVTTL at T10 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[9] uses I/O standard 3.3-V LVTTL at R11 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[11] uses I/O standard 3.3-V LVTTL at R10 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[12] uses I/O standard 3.3-V LVTTL at N12 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[13] uses I/O standard 3.3-V LVTTL at P9 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[14] uses I/O standard 3.3-V LVTTL at N9 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[15] uses I/O standard 3.3-V LVTTL at N11 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[16] uses I/O standard 3.3-V LVTTL at L16 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[17] uses I/O standard 3.3-V LVTTL at K16 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[18] uses I/O standard 3.3-V LVTTL at R16 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[19] uses I/O standard 3.3-V LVTTL at L15 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[20] uses I/O standard 3.3-V LVTTL at P15 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[21] uses I/O standard 3.3-V LVTTL at P16 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[22] uses I/O standard 3.3-V LVTTL at R14 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[23] uses I/O standard 3.3-V LVTTL at N16 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[24] uses I/O standard 3.3-V LVTTL at N15 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[25] uses I/O standard 3.3-V LVTTL at P14 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[26] uses I/O standard 3.3-V LVTTL at L14 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[27] uses I/O standard 3.3-V LVTTL at N14 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[28] uses I/O standard 3.3-V LVTTL at M10 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[29] uses I/O standard 3.3-V LVTTL at L13 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[30] uses I/O standard 3.3-V LVTTL at J16 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[31] uses I/O standard 3.3-V LVTTL at K15 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[32] uses I/O standard 3.3-V LVTTL at J13 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_D[33] uses I/O standard 3.3-V LVTTL at J14 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin GPIO_1_IN[0] uses I/O standard 3.3-V LVTTL at T9 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 28
+    Info (169178): Pin GPIO_1_IN[1] uses I/O standard 3.3-V LVTTL at R9 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 28
+    Info (169178): Pin KEY[0] uses I/O standard 3.3-V LVTTL at J15 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 29
+    Info (169178): Pin KEY[1] uses I/O standard 3.3-V LVTTL at E1 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 29
+    Info (169178): Pin GPIO_1_D[10] uses I/O standard 3.3-V LVTTL at P11 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at R8 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 21
+Info (144001): Generated suppressed messages file C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 86 warnings
+    Info: Peak virtual memory: 1394 megabytes
+    Info: Processing ended: Thu Jul 19 18:25:29 2018
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:05
 
@@ -1529,6 +1534,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 88 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.fit.smsg.
+The suppressed messages can be found in C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.fit.smsg.
 
 

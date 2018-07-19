@@ -389,4 +389,5 @@ set_global_assignment -name VERILOG_FILE VGA_DRIVER.v
 set_global_assignment -name VERILOG_FILE DE0_NANO.v
 set_global_assignment -name SDC_FILE DE0_NANO.SDC
 set_global_assignment -name QIP_FILE DE_NANO_SOPC.qip
+set_global_assignment -name VERILOG_FILE Dual_Port_RAM_M9K.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE0_NANO
-Mon Jul 09 20:27:20 2018
+Thu Jul 19 18:25:24 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -13,10 +13,16 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. State Machine - |DE0_NANO|WRITE_STATE
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |DE0_NANO
+ 12. Port Connectivity Checks: "VGA_DRIVER:comb_4"
+ 13. Port Connectivity Checks: "Dual_Port_RAM_M9K:mem"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+ 17. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -43,7 +49,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 09 20:27:20 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jul 19 18:25:24 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; DE0_NANO                                    ;
 ; Top-level Entity Name              ; DE0_NANO                                    ;
@@ -52,7 +58,7 @@ agreement for further details.
 ;     Total combinational functions  ; 1                                           ;
 ;     Dedicated logic registers      ; 1                                           ;
 ; Total registers                    ; 1                                           ;
-; Total pins                         ; 73                                          ;
+; Total pins                         ; 75                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -163,13 +169,15 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; DE0_NANO.v                       ; yes             ; User Verilog HDL File  ; C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
+; VGA_DRIVER.v                     ; yes             ; User Verilog HDL File  ; C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/VGA_DRIVER.v        ;         ;
+; DE0_NANO.v                       ; yes             ; User Verilog HDL File  ; C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v          ;         ;
+; Dual_Port_RAM_M9K.v              ; yes             ; User Verilog HDL File  ; C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/Dual_Port_RAM_M9K.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -193,13 +201,13 @@ agreement for further details.
 ;     -- Dedicated logic registers            ; 1        ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 73       ;
+; I/O pins                                    ; 75       ;
 ;                                             ;          ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ;                                             ;          ;
 ; Maximum fan-out node                        ; CLOCK_25 ;
 ; Maximum fan-out                             ; 2        ;
-; Total fan-out                               ; 78       ;
+; Total fan-out                               ; 80       ;
 ; Average fan-out                             ; 0.53     ;
 +---------------------------------------------+----------+
 
@@ -209,9 +217,33 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |DE0_NANO                  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 73   ; 0            ; |DE0_NANO           ; DE0_NANO    ; work         ;
+; |DE0_NANO                  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 75   ; 0            ; |DE0_NANO           ; DE0_NANO    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------+
+; State Machine - |DE0_NANO|WRITE_STATE                                   ;
++------------------+-----------------+------------------+-----------------+
+; Name             ; WRITE_STATE.W_1 ; WRITE_STATE.W_EN ; WRITE_STATE.W_2 ;
++------------------+-----------------+------------------+-----------------+
+; WRITE_STATE.W_1  ; 0               ; 0                ; 0               ;
+; WRITE_STATE.W_2  ; 1               ; 0                ; 1               ;
+; WRITE_STATE.W_EN ; 1               ; 1                ; 0               ;
++------------------+-----------------+------------------+-----------------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; WRITE_STATE.W_2                       ; Lost fanout        ;
+; WRITE_STATE.W_EN                      ; Lost fanout        ;
+; WRITE_STATE.W_1                       ; Lost fanout        ;
+; Total Number of Removed Registers = 3 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -229,12 +261,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |DE0_NANO ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; W_1            ; 00    ; Unsigned Binary                                 ;
+; W_2            ; 01    ; Unsigned Binary                                 ;
+; W_EN           ; 10    ; Unsigned Binary                                 ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_DRIVER:comb_4"                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; PIXEL_X         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; PIXEL_Y         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; PIXEL_COLOR_OUT ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; H_SYNC_NEG      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; V_SYNC_NEG      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "Dual_Port_RAM_M9K:mem" ;
++---------------+-------+----------+----------------+
+; Port          ; Type  ; Severity ; Details        ;
++---------------+-------+----------+----------------+
+; input_data[5] ; Input ; Info     ; Stuck at GND   ;
++---------------+-------+----------+----------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 73                          ;
+; boundary_port         ; 75                          ;
 ; cycloneiii_ff         ; 1                           ;
 ;     plain             ; 1                           ;
 ; cycloneiii_lcell_comb ; 2                           ;
@@ -262,105 +328,126 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Jul 09 20:27:11 2018
+    Info: Processing started: Thu Jul 19 18:25:15 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_NANO -c DE0_NANO
 Warning (125092): Tcl Script File DE_NANO_SOPC.qip not found
     Info (125063): set_global_assignment -name QIP_FILE DE_NANO_SOPC.qip
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga_driver.v
-    Info (12023): Found entity 1: VGA_DRIVER File: C:/Users/labuser/Downloads/Lab3_template/VGA_DRIVER.v Line: 14
-Warning (10238): Verilog Module Declaration warning at DE0_NANO.v(7): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "DE0_NANO" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 7
+    Info (12023): Found entity 1: VGA_DRIVER File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/VGA_DRIVER.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file de0_nano.v
-    Info (12023): Found entity 1: DE0_NANO File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at DE0_NANO.v(36): created implicit net for "HYSNC" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 36
+    Info (12023): Found entity 1: DE0_NANO File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dual_port_ram_m9k.v
+    Info (12023): Found entity 1: Dual_Port_RAM_M9K File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/Dual_Port_RAM_M9K.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at DE0_NANO.v(74): created implicit net for "HYSNC" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 74
+Critical Warning (10846): Verilog HDL Instantiation warning at DE0_NANO.v(52): instance has no name File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 52
 Info (12127): Elaborating entity "DE0_NANO" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at DE0_NANO.v(36): object "HYSNC" assigned a value but never read File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 36
-Warning (10036): Verilog HDL or VHDL warning at DE0_NANO.v(30): object "pixel_data_input" assigned a value but never read File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 30
-Warning (10858): Verilog HDL warning at DE0_NANO.v(31): object HSYNC used but never assigned File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 31
-Warning (10034): Output port "GPIO_0_D[33..2]" at DE0_NANO.v(22) has no driver File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
+Warning (10036): Verilog HDL or VHDL warning at DE0_NANO.v(74): object "HYSNC" assigned a value but never read File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 74
+Warning (10858): Verilog HDL warning at DE0_NANO.v(71): object HSYNC used but never assigned File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 71
+Warning (10036): Verilog HDL or VHDL warning at DE0_NANO.v(71): object "VSYNC" assigned a value but never read File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 71
+Warning (10230): Verilog HDL assignment warning at DE0_NANO.v(105): truncated value with size 32 to match size of target (15) File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 105
+Warning (10230): Verilog HDL assignment warning at DE0_NANO.v(113): truncated value with size 32 to match size of target (15) File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 113
+Warning (10030): Net "pixel_data_RGB332[5]" at DE0_NANO.v(54) has no driver or initial value, using a default initial value '0' File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 54
+Warning (10030): Net "HSYNC" at DE0_NANO.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 71
+Warning (10034): Output port "GPIO_0_D[33..2]" at DE0_NANO.v(24) has no driver File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+Info (12128): Elaborating entity "Dual_Port_RAM_M9K" for hierarchy "Dual_Port_RAM_M9K:mem" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 40
+Warning (10036): Verilog HDL or VHDL warning at Dual_Port_RAM_M9K.v(31): object "r_addr_reg" assigned a value but never read File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/Dual_Port_RAM_M9K.v Line: 31
+Info (12128): Elaborating entity "VGA_DRIVER" for hierarchy "VGA_DRIVER:comb_4" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 52
+Warning (10230): Verilog HDL assignment warning at VGA_DRIVER.v(71): truncated value with size 32 to match size of target (10) File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/VGA_DRIVER.v Line: 71
+Warning (10230): Verilog HDL assignment warning at VGA_DRIVER.v(75): truncated value with size 32 to match size of target (10) File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/VGA_DRIVER.v Line: 75
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "GPIO_0_D[2]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[3]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[4]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[5]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[6]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[7]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[8]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[9]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[10]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[11]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[12]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[13]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[14]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[15]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[16]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[17]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[18]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[19]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[20]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[21]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[22]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[23]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[24]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[25]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[26]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[27]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[28]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[29]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[30]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[31]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[32]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
-    Warning (13410): Pin "GPIO_0_D[33]" is stuck at GND File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 22
+    Warning (13410): Pin "GPIO_0_D[2]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[3]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[4]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[5]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[6]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[7]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[8]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[9]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[10]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[11]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[12]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[13]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[14]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[15]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[16]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[17]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[18]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[19]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[20]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[21]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[22]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[23]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[24]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[25]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[26]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[27]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[28]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[29]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[30]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[31]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[32]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
+    Warning (13410): Pin "GPIO_0_D[33]" is stuck at GND File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 24
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 37 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "GPIO_0_IN[0]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 23
-    Warning (15610): No output dependent on input pin "GPIO_0_IN[1]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 23
-    Warning (15610): No output dependent on input pin "GPIO_1_D[0]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[1]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[2]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[3]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[4]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[5]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[6]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[7]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[9]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[10]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[11]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[12]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[13]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[14]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[15]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[16]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[17]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[18]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[19]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[20]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[21]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[22]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[23]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[24]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[25]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[26]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[27]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[28]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[29]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[30]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[31]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[32]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_D[33]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 25
-    Warning (15610): No output dependent on input pin "GPIO_1_IN[0]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 26
-    Warning (15610): No output dependent on input pin "GPIO_1_IN[1]" File: C:/Users/labuser/Downloads/Lab3_template/DE0_NANO.v Line: 26
-Info (21057): Implemented 74 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 39 input pins
+Warning (21074): Design contains 39 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "GPIO_0_IN[0]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 25
+    Warning (15610): No output dependent on input pin "GPIO_0_IN[1]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 25
+    Warning (15610): No output dependent on input pin "GPIO_1_D[0]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[1]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[2]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[3]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[4]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[5]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[6]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[7]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[8]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[9]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[11]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[12]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[13]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[14]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[15]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[16]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[17]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[18]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[19]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[20]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[21]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[22]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[23]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[24]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[25]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[26]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[27]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[28]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[29]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[30]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[31]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[32]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_D[33]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 27
+    Warning (15610): No output dependent on input pin "GPIO_1_IN[0]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 28
+    Warning (15610): No output dependent on input pin "GPIO_1_IN[1]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 28
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 29
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 29
+Info (21057): Implemented 76 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 41 input pins
     Info (21059): Implemented 34 output pins
     Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 79 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 88 warnings
     Info: Peak virtual memory: 653 megabytes
-    Info: Processing ended: Mon Jul 09 20:27:20 2018
+    Info: Processing ended: Thu Jul 19 18:25:24 2018
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:22
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.map.smsg.
 
 

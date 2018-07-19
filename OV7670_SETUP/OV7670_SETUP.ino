@@ -1,6 +1,8 @@
 #include <Wire.h>
+
 #define OV7670_I2C_ADDRESS 0x21
 #define CLKRC 0x11
+#define COM3 0x0C
 #define COM7 0x12
 #define COM14 0x3E
 #define COM15 0x40
@@ -14,16 +16,18 @@ String OV7670_write_register(int reg_address, byte data);
 
 ///////// Main Program //////////////
 void setup() {
- Wire.begin();
- Serial.begin(9600);
- OV7670_write_register(COM7, 0x80); // reset registers
- delay(500);
- OV7670_write_register(COM7, 0x14);
- OV7670_write_register(COM15, 0xD0);
- read_key_registers();
+  Wire.begin();
+  Serial.begin(9600);
+  OV7670_write_register(COM7, 0x80); // reset registers
+  delay(500);
+  OV7670_write_register(COM3, 0x08); // Enable scaling
+  OV7670_write_register(COM7, 0x0C); // Use QCIF format, RGB Output
+  OV7670_write_register(COM15, 0xF0); // Use RGB 565  
+  read_key_registers();
 }
 
 void loop(){
+  read_register_value(COM7);
  }
 
 

@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Mon Jul 09 20:27:20 2018
+Analysis & Synthesis Status : Successful - Thu Jul 19 18:25:24 2018
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : DE0_NANO
 Top-level Entity Name : DE0_NANO
@@ -7,7 +7,7 @@ Total logic elements : 1
     Total combinational functions : 1
     Dedicated logic registers : 1
 Total registers : 1
-Total pins : 73
+Total pins : 75
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
