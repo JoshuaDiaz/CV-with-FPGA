@@ -6,6 +6,7 @@
 #define COM7 0x12
 #define COM14 0x3E
 #define COM15 0x40
+#define COM17 0x42
 
 ///////// Function Prototypes //////////////
 byte read_register_value(int register_address);
@@ -23,6 +24,7 @@ void setup() {
   OV7670_write_register(COM3, 0x08); // Enable scaling
   OV7670_write_register(COM7, 0x0C); // Use QCIF format, RGB Output
   OV7670_write_register(COM15, 0xF0); // Use RGB 565  
+  OV7670_write_register(COM17, 0x0C); // Enable Color Bar Test  
   read_key_registers();
 }
 
@@ -47,6 +49,9 @@ void read_key_registers(){
   Serial.println(data, HEX);
   data = read_register_value(COM15);
   Serial.print("COM15: ");
+  Serial.println(data, HEX);
+  data = read_register_value(COM17);
+  Serial.print("COM17: ");
   Serial.println(data, HEX);
 }
 
