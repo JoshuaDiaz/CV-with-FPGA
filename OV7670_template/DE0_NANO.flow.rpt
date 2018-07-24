@@ -1,5 +1,5 @@
 Flow report for DE0_NANO
-Fri Jul 20 20:17:59 2018
+Tue Jul 24 19:02:33 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Jul 20 20:17:59 2018       ;
+; Flow Status                        ; Successful - Tue Jul 24 19:02:33 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; DE0_NANO                                    ;
 ; Top-level Entity Name              ; DE0_NANO                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 153 / 22,320 ( < 1 % )                      ;
-;     Total combinational functions  ; 153 / 22,320 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 39 / 22,320 ( < 1 % )                       ;
-; Total registers                    ; 39                                          ;
+; Total logic elements               ; 134 / 22,320 ( < 1 % )                      ;
+;     Total combinational functions  ; 124 / 22,320 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 47 / 22,320 ( < 1 % )                       ;
+; Total registers                    ; 47                                          ;
 ; Total pins                         ; 75 / 154 ( 49 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 168,960 / 608,256 ( 28 % )                  ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/20/2018 20:17:37 ;
+; Start date & time ; 07/24/2018 19:02:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE0_NANO            ;
 +-------------------+---------------------+
@@ -76,11 +76,13 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 268891670407057.153213225709356        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 268891670407057.153247333008728        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; myfirstpll_bb.v                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; myfirstpll.ppf                         ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
@@ -94,12 +96,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 664 MB              ; 00:00:24                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 1396 MB             ; 00:00:06                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 564 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 669 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 529 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:18     ; --                      ; --                  ; 00:00:34                           ;
+; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 674 MB              ; 00:00:24                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 1406 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 560 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 668 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 528 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:19     ; --                      ; --                  ; 00:00:34                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
