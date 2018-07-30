@@ -1,3 +1,6 @@
+`define SCREEN_WIDTH 176
+`define SCREEN_HEIGHT 120
+
 module Dual_Port_RAM_M9K(
 	input_data,
 	w_addr,
@@ -27,7 +30,7 @@ input 		    [7:0]		input_data;
 output reg 		 [7:0]		output_data;
 
 //////////// memory array //////////
-(* ramstyle = "M9K" *) reg	[7:0]	 mem [21119:0];
+(* ramstyle = "M9K" *) reg	[7:0]	 mem [(`SCREEN_WIDTH * `SCREEN_HEIGHT)-1:0];
 reg				 [14:0]		r_addr_reg;
 
 

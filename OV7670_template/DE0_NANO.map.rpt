@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE0_NANO
-Tue Jul 24 19:02:20 2018
+Mon Jul 30 13:25:32 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -57,13 +57,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jul 24 19:02:20 2018       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul 30 13:25:32 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; DE0_NANO                                    ;
 ; Top-level Entity Name              ; DE0_NANO                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 133                                         ;
-;     Total combinational functions  ; 124                                         ;
+; Total logic elements               ; 156                                         ;
+;     Total combinational functions  ; 147                                         ;
 ;     Dedicated logic registers      ; 47                                          ;
 ; Total registers                    ; 47                                          ;
 ; Total pins                         ; 75                                          ;
@@ -234,17 +234,17 @@ agreement for further details.
 +---------------------------------------------+---------------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                         ;
 +---------------------------------------------+---------------------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 133                                                                                                           ;
+; Estimated Total logic elements              ; 156                                                                                                           ;
 ;                                             ;                                                                                                               ;
-; Total combinational functions               ; 124                                                                                                           ;
+; Total combinational functions               ; 147                                                                                                           ;
 ; Logic element usage by number of LUT inputs ;                                                                                                               ;
-;     -- 4 input functions                    ; 41                                                                                                            ;
-;     -- 3 input functions                    ; 23                                                                                                            ;
-;     -- <=2 input functions                  ; 60                                                                                                            ;
+;     -- 4 input functions                    ; 48                                                                                                            ;
+;     -- 3 input functions                    ; 33                                                                                                            ;
+;     -- <=2 input functions                  ; 66                                                                                                            ;
 ;                                             ;                                                                                                               ;
 ; Logic elements by mode                      ;                                                                                                               ;
-;     -- normal mode                          ; 74                                                                                                            ;
-;     -- arithmetic mode                      ; 50                                                                                                            ;
+;     -- normal mode                          ; 85                                                                                                            ;
+;     -- arithmetic mode                      ; 62                                                                                                            ;
 ;                                             ;                                                                                                               ;
 ; Total registers                             ; 47                                                                                                            ;
 ;     -- Dedicated logic registers            ; 47                                                                                                            ;
@@ -260,8 +260,8 @@ agreement for further details.
 ;                                             ;                                                                                                               ;
 ; Maximum fan-out node                        ; myfirstpll_bb:myfirstpll_bb_inst|altpll:altpll_component|myfirstpll_bb_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 48                                                                                                            ;
-; Total fan-out                               ; 1304                                                                                                          ;
-; Average fan-out                             ; 3.77                                                                                                          ;
+; Total fan-out                               ; 1374                                                                                                          ;
+; Average fan-out                             ; 3.72                                                                                                          ;
 +---------------------------------------------+---------------------------------------------------------------------------------------------------------------+
 
 
@@ -270,21 +270,21 @@ agreement for further details.
 +------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                              ; Entity Name          ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |DE0_NANO                                      ; 124 (39)            ; 47 (25)                   ; 168960      ; 0            ; 0       ; 0         ; 75   ; 0            ; |DE0_NANO                                                                                                                        ; DE0_NANO             ; work         ;
+; |DE0_NANO                                      ; 147 (44)            ; 47 (25)                   ; 168960      ; 0            ; 0       ; 0         ; 75   ; 0            ; |DE0_NANO                                                                                                                        ; DE0_NANO             ; work         ;
 ;    |Dual_Port_RAM_M9K:mem|                     ; 6 (0)               ; 2 (0)                     ; 168960      ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|Dual_Port_RAM_M9K:mem                                                                                                  ; Dual_Port_RAM_M9K    ; work         ;
 ;       |altsyncram:mem_rtl_0|                   ; 6 (0)               ; 2 (0)                     ; 168960      ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|Dual_Port_RAM_M9K:mem|altsyncram:mem_rtl_0                                                                             ; altsyncram           ; work         ;
 ;          |altsyncram_r4f1:auto_generated|      ; 6 (0)               ; 2 (2)                     ; 168960      ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|Dual_Port_RAM_M9K:mem|altsyncram:mem_rtl_0|altsyncram_r4f1:auto_generated                                              ; altsyncram_r4f1      ; work         ;
 ;             |decode_e8a:rden_decode_b|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|Dual_Port_RAM_M9K:mem|altsyncram:mem_rtl_0|altsyncram_r4f1:auto_generated|decode_e8a:rden_decode_b                     ; decode_e8a           ; work         ;
 ;             |decode_lsa:decode2|               ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|Dual_Port_RAM_M9K:mem|altsyncram:mem_rtl_0|altsyncram_r4f1:auto_generated|decode_lsa:decode2                           ; decode_lsa           ; work         ;
-;    |VGA_DRIVER:driver|                         ; 54 (54)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|VGA_DRIVER:driver                                                                                                      ; VGA_DRIVER           ; work         ;
-;    |lpm_mult:Mult0|                            ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0                                                                                                         ; lpm_mult             ; work         ;
-;       |multcore:mult_core|                     ; 25 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core                                                                                      ; multcore             ; work         ;
-;          |mpar_add:padder|                     ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                      ; mpar_add             ; work         ;
-;             |lpm_add_sub:adder[0]|             ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; lpm_add_sub          ; work         ;
-;                |add_sub_lgh:auto_generated|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_lgh:auto_generated                      ; add_sub_lgh          ; work         ;
-;             |mpar_add:sub_par_add|             ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; mpar_add             ; work         ;
-;                |lpm_add_sub:adder[0]|          ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; lpm_add_sub          ; work         ;
-;                   |add_sub_pgh:auto_generated| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_pgh:auto_generated ; add_sub_pgh          ; work         ;
+;    |VGA_DRIVER:driver|                         ; 52 (52)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|VGA_DRIVER:driver                                                                                                      ; VGA_DRIVER           ; work         ;
+;    |lpm_mult:Mult0|                            ; 45 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0                                                                                                         ; lpm_mult             ; work         ;
+;       |multcore:mult_core|                     ; 45 (27)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core                                                                                      ; multcore             ; work         ;
+;          |mpar_add:padder|                     ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                      ; mpar_add             ; work         ;
+;             |lpm_add_sub:adder[0]|             ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; lpm_add_sub          ; work         ;
+;                |add_sub_lgh:auto_generated|    ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_lgh:auto_generated                      ; add_sub_lgh          ; work         ;
+;             |mpar_add:sub_par_add|             ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; mpar_add             ; work         ;
+;                |lpm_add_sub:adder[0]|          ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; lpm_add_sub          ; work         ;
+;                   |add_sub_pgh:auto_generated| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_pgh:auto_generated ; add_sub_pgh          ; work         ;
 ;    |myfirstpll_bb:myfirstpll_bb_inst|          ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|myfirstpll_bb:myfirstpll_bb_inst                                                                                       ; myfirstpll_bb        ; work         ;
 ;       |altpll:altpll_component|                ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|myfirstpll_bb:myfirstpll_bb_inst|altpll:altpll_component                                                               ; altpll               ; work         ;
 ;          |myfirstpll_bb_altpll:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_NANO|myfirstpll_bb:myfirstpll_bb_inst|altpll:altpll_component|myfirstpll_bb_altpll:auto_generated                           ; myfirstpll_bb_altpll ; work         ;
@@ -917,21 +917,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
 ;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 125                         ;
-;     arith             ; 50                          ;
+; cycloneiii_lcell_comb ; 148                         ;
+;     arith             ; 62                          ;
 ;         2 data inputs ; 38                          ;
-;         3 data inputs ; 12                          ;
-;     normal            ; 75                          ;
+;         3 data inputs ; 24                          ;
+;     normal            ; 86                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 6                           ;
-;         2 data inputs ; 16                          ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 41                          ;
+;         2 data inputs ; 22                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 48                          ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 24                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.60                        ;
-; Average LUT depth     ; 3.21                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.57                        ;
 +-----------------------+-----------------------------+
 
 
@@ -940,7 +940,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -950,7 +950,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Jul 24 19:02:10 2018
+    Info: Processing started: Mon Jul 30 13:25:21 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_NANO -c DE0_NANO
 Warning (125092): Tcl Script File DE_NANO_SOPC.qip not found
     Info (125063): set_global_assignment -name QIP_FILE DE_NANO_SOPC.qip
@@ -961,15 +961,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file vga_dri
 Info (12021): Found 1 design units, including 1 entities, in source file de0_nano.v
     Info (12023): Found entity 1: DE0_NANO File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file dual_port_ram_m9k.v
-    Info (12023): Found entity 1: Dual_Port_RAM_M9K File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/Dual_Port_RAM_M9K.v Line: 1
+    Info (12023): Found entity 1: Dual_Port_RAM_M9K File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/Dual_Port_RAM_M9K.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file image_processor.v
     Info (12023): Found entity 1: IMAGE_PROCESSOR File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/IMAGE_PROCESSOR.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file myfirstpll.v
     Info (12023): Found entity 1: myfirstpll File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/myfirstpll.v Line: 40
 Info (12127): Elaborating entity "DE0_NANO" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at DE0_NANO.v(59): object "VSYNC" assigned a value but never read File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 59
-Warning (10230): Verilog HDL assignment warning at DE0_NANO.v(128): truncated value with size 32 to match size of target (15) File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 128
-Warning (10230): Verilog HDL assignment warning at DE0_NANO.v(137): truncated value with size 32 to match size of target (15) File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 137
+Warning (10230): Verilog HDL assignment warning at DE0_NANO.v(112): truncated value with size 32 to match size of target (15) File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 112
+Warning (10230): Verilog HDL assignment warning at DE0_NANO.v(129): truncated value with size 32 to match size of target (15) File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 129
 Warning (10034): Output port "GPIO_0_D[33..24]" at DE0_NANO.v(30) has no driver File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 30
 Warning (10034): Output port "GPIO_0_D[22]" at DE0_NANO.v(30) has no driver File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 30
 Warning (10034): Output port "GPIO_0_D[20]" at DE0_NANO.v(30) has no driver File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 30
@@ -1049,7 +1049,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/myfi
     Info (12023): Found entity 1: myfirstpll_bb_altpll File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/db/myfirstpll_bb_altpll.v Line: 30
 Info (12128): Elaborating entity "myfirstpll_bb_altpll" for hierarchy "myfirstpll_bb:myfirstpll_bb_inst|altpll:altpll_component|myfirstpll_bb_altpll:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
 Info (12128): Elaborating entity "Dual_Port_RAM_M9K" for hierarchy "Dual_Port_RAM_M9K:mem" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 91
-Warning (10036): Verilog HDL or VHDL warning at Dual_Port_RAM_M9K.v(31): object "r_addr_reg" assigned a value but never read File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/Dual_Port_RAM_M9K.v Line: 31
+Warning (10036): Verilog HDL or VHDL warning at Dual_Port_RAM_M9K.v(34): object "r_addr_reg" assigned a value but never read File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/Dual_Port_RAM_M9K.v Line: 34
 Info (12128): Elaborating entity "VGA_DRIVER" for hierarchy "VGA_DRIVER:driver" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 103
 Warning (10230): Verilog HDL assignment warning at VGA_DRIVER.v(71): truncated value with size 32 to match size of target (10) File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/VGA_DRIVER.v Line: 71
 Warning (10230): Verilog HDL assignment warning at VGA_DRIVER.v(75): truncated value with size 32 to match size of target (10) File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/VGA_DRIVER.v Line: 75
@@ -1072,7 +1072,7 @@ Info (19000): Inferred 1 megafunctions from design logic
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
         Info (286033): Parameter RAM_BLOCK_TYPE set to M9K
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 137
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 129
 Info (12130): Elaborated megafunction instantiation "Dual_Port_RAM_M9K:mem|altsyncram:mem_rtl_0"
 Info (12133): Instantiated megafunction "Dual_Port_RAM_M9K:mem|altsyncram:mem_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -1098,8 +1098,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/deco
     Info (12023): Found entity 1: decode_e8a File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/db/decode_e8a.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_5nb.tdf
     Info (12023): Found entity 1: mux_5nb File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/db/mux_5nb.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 137
-Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter: File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 137
+Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 129
+Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter: File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 129
     Info (12134): Parameter "LPM_WIDTHA" = "10"
     Info (12134): Parameter "LPM_WIDTHB" = "8"
     Info (12134): Parameter "LPM_WIDTHP" = "18"
@@ -1148,7 +1148,7 @@ Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 31 input pin(s) that do not drive logic
+Warning (21074): Design contains 29 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "GPIO_0_IN[0]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 31
     Warning (15610): No output dependent on input pin "GPIO_0_IN[1]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 31
     Warning (15610): No output dependent on input pin "GPIO_1_D[0]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
@@ -1171,25 +1171,23 @@ Warning (21074): Design contains 31 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "GPIO_1_D[17]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
     Warning (15610): No output dependent on input pin "GPIO_1_D[18]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
     Warning (15610): No output dependent on input pin "GPIO_1_D[19]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
-    Warning (15610): No output dependent on input pin "GPIO_1_D[20]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
-    Warning (15610): No output dependent on input pin "GPIO_1_D[21]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
-    Warning (15610): No output dependent on input pin "GPIO_1_D[22]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
-    Warning (15610): No output dependent on input pin "GPIO_1_D[24]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
+    Warning (15610): No output dependent on input pin "GPIO_1_D[28]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
     Warning (15610): No output dependent on input pin "GPIO_1_D[29]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
     Warning (15610): No output dependent on input pin "GPIO_1_D[30]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
+    Warning (15610): No output dependent on input pin "GPIO_1_D[31]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 33
     Warning (15610): No output dependent on input pin "GPIO_1_IN[0]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 34
     Warning (15610): No output dependent on input pin "GPIO_1_IN[1]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 34
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 35
-Info (21057): Implemented 246 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 269 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 41 input pins
     Info (21059): Implemented 34 output pins
-    Info (21061): Implemented 146 logic cells
+    Info (21061): Implemented 169 logic cells
     Info (21064): Implemented 24 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 77 warnings
-    Info: Peak virtual memory: 674 megabytes
-    Info: Processing ended: Tue Jul 24 19:02:20 2018
-    Info: Elapsed time: 00:00:10
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 75 warnings
+    Info: Peak virtual memory: 672 megabytes
+    Info: Processing ended: Mon Jul 30 13:25:32 2018
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:24
 
 

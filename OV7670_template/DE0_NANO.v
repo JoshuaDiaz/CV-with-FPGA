@@ -14,7 +14,7 @@ module DE0_NANO(
 //  PARAMETER declarations
 //=======================================================
 localparam ONE_SEC = 25000000; // one second in 25MHz clock cycles
-localparam MAX_ADDRESS = 15'd21120; // MAx memory address in ram
+localparam MAX_ADDRESS = `SCREEN_WIDTH*`SCREEN_HEIGHT; // MAx memory address in ram
 localparam RED = 8'b111_000_00;
 localparam GREEN = 8'b000_111_00;
 localparam BLUE = 8'b000_000_11;
@@ -57,9 +57,9 @@ assign VGA_RESET = ~KEY[0];
 wire PCLK;
 wire HSYNC;
 wire VSYNC;
-assign PCLK = GPIO_1_D[25];
-assign VSYNC = GPIO_1_D[24];
-assign HSYNC = GPIO_1_D[23];
+assign PCLK = GPIO_1_D[32];
+assign VSYNC = GPIO_1_D[30];
+assign HSYNC = GPIO_1_D[33];
 
 /* States for write, control which half of pixeldata is being input
 	to which part of the reg. Also, when to write*/
@@ -103,30 +103,22 @@ VGA_DRIVER driver (
 );
 
 
-//always @ (posedge CLK_50_PLL)begin
-//	WRITE_ADDRESS = (WRITE_ADDRESS+15'd1);
-//end
-
 /* Store pixel data */
 always @ (posedge PCLK) begin
 	if(HSYNC == 1'b1) begin
+	
 		if(WRITE_STATE == W_EN) begin
 			WRITE_STATE = W_1;
+			WRITE_ADDRESS = (WRITE_ADDRESS+1);
+			if(WRITE_ADDRESS == MAX_ADDRESS) WRITE_ADDRESS = 15'd0;
 		end
 		if(WRITE_STATE == W_1) begin
-			pixel_data_RGB332[7] = GPIO_1_D[26];
-			pixel_data_RGB332[6] = GPIO_1_D[27];
-			pixel_data_RGB332[5] = GPIO_1_D[28];
-			pixel_data_RGB332[4] = GPIO_1_D[31];
-			pixel_data_RGB332[3] = GPIO_1_D[32];
-			pixel_data_RGB332[2] = GPIO_1_D[33];
+			pixel_data_RGB332[7:5] <= GPIO_1_D[27:25];
+			pixel_data_RGB332[4:2] <= GPIO_1_D[22:20];
 			WRITE_STATE = W_2;
 		end
 		else if(WRITE_STATE == W_2) begin 
-			pixel_data_RGB332[1] = GPIO_1_D[32];
-			pixel_data_RGB332[0] = GPIO_1_D[33];
-			WRITE_ADDRESS = (WRITE_ADDRESS+1);
-			if(WRITE_ADDRESS == MAX_ADDRESS) WRITE_ADDRESS = 15'd0;
+			pixel_data_RGB332[1:0] <= GPIO_1_D[24:23];
 			WRITE_STATE = W_EN;
 		end
 	end
@@ -143,7 +135,7 @@ always @ (VGA_PIXEL_X, VGA_PIXEL_Y) begin
 	end
 end
 
-///** MEMORY TO VGA TEST **/
+/** MEMORY TO VGA TEST **/
 //reg [7:0] test_colour = 8'b111_111_11;
 //reg [7:0] pattern_counter = 8'd0;
 //always @ (posedge CLK_50_PLL)begin
