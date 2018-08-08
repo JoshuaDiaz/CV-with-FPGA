@@ -1,5 +1,5 @@
 `define SCREEN_WIDTH 176
-`define SCREEN_HEIGHT 120
+`define SCREEN_HEIGHT 144
 
 module Dual_Port_RAM_M9K(
 	input_data,
