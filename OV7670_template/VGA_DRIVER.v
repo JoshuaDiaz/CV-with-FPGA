@@ -68,11 +68,11 @@ always @(posedge CLOCK) begin
 		line_count <= 0;
 		end 
 		else begin
-		line_count <= line_count + 1;
+		line_count <= line_count + 10'd1;
 		end
 	end 
 	else begin
-		pixel_count <= pixel_count + 1;
+		pixel_count <= pixel_count + 10'd1;
 		line_count <= line_count;
 	end
 end

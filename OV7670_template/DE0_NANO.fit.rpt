@@ -1,5 +1,5 @@
 Fitter report for DE0_NANO
-Wed Aug 08 13:09:11 2018
+Thu Aug 09 00:24:43 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -70,7 +70,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Aug 08 13:09:11 2018       ;
+; Fitter Status                      ; Successful - Thu Aug 09 00:24:43 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; DE0_NANO                                    ;
 ; Top-level Entity Name              ; DE0_NANO                                    ;
@@ -162,9 +162,9 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.1%      ;
-;     Processor 3            ;   1.1%      ;
-;     Processor 4            ;   1.1%      ;
+;     Processor 2            ;   0.9%      ;
+;     Processor 3            ;   0.9%      ;
+;     Processor 4            ;   0.9%      ;
 +----------------------------+-------------+
 
 
@@ -1043,7 +1043,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |PLL:PLL_inst|                              ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |DE0_NANO|PLL:PLL_inst                                                                                                           ; PLL               ; work         ;
 ;       |altpll:altpll_component|                ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |DE0_NANO|PLL:PLL_inst|altpll:altpll_component                                                                                   ; altpll            ; work         ;
 ;          |PLL_altpll:auto_generated|           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |DE0_NANO|PLL:PLL_inst|altpll:altpll_component|PLL_altpll:auto_generated                                                         ; PLL_altpll        ; work         ;
-;    |VGA_DRIVER:driver1|                        ; 60 (60)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 40 (40)      ; 0 (0)             ; 20 (20)          ; |DE0_NANO|VGA_DRIVER:driver1                                                                                                     ; VGA_DRIVER        ; work         ;
+;    |VGA_DRIVER:driver|                         ; 60 (60)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 40 (40)      ; 0 (0)             ; 20 (20)          ; |DE0_NANO|VGA_DRIVER:driver                                                                                                      ; VGA_DRIVER        ; work         ;
 ;    |lpm_mult:Mult0|                            ; 25 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (0)       ; 0 (0)             ; 0 (0)            ; |DE0_NANO|lpm_mult:Mult0                                                                                                         ; lpm_mult          ; work         ;
 ;       |multcore:mult_core|                     ; 25 (15)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (15)      ; 0 (0)             ; 0 (0)            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core                                                                                      ; multcore          ; work         ;
 ;          |mpar_add:padder|                     ; 10 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (0)       ; 0 (0)             ; 0 (0)            ; |DE0_NANO|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                      ; mpar_add          ; work         ;
@@ -1123,109 +1123,109 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+--------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                           ;
-+--------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                        ; Pad To Core Index ; Setting ;
-+--------------------------------------------+-------------------+---------+
-; GPIO_1_D[28]                               ;                   ;         ;
-; GPIO_1_D[29]                               ;                   ;         ;
-; GPIO_1_D[31]                               ;                   ;         ;
-; KEY[1]                                     ;                   ;         ;
-; CLOCK_50                                   ;                   ;         ;
-; KEY[0]                                     ;                   ;         ;
-;      - VGA_DRIVER:driver1|line_count[9]~16 ; 0                 ; 6       ;
-;      - VGA_DRIVER:driver1|line_count[9]~17 ; 0                 ; 6       ;
-; GPIO_1_D[32]                               ;                   ;         ;
-;      - pixel_data_RGB332[0]                ; 0                 ; 0       ;
-;      - pixel_data_RGB332[1]                ; 0                 ; 0       ;
-;      - pixel_data_RGB332[2]                ; 0                 ; 0       ;
-;      - pixel_data_RGB332[3]                ; 0                 ; 0       ;
-;      - pixel_data_RGB332[4]                ; 0                 ; 0       ;
-;      - pixel_data_RGB332[5]                ; 0                 ; 0       ;
-;      - pixel_data_RGB332[6]                ; 0                 ; 0       ;
-;      - pixel_data_RGB332[7]                ; 0                 ; 0       ;
-;      - W_EN                                ; 0                 ; 0       ;
-;      - X_ADDR[0]                           ; 0                 ; 0       ;
-;      - X_ADDR[1]                           ; 0                 ; 0       ;
-;      - X_ADDR[2]                           ; 0                 ; 0       ;
-;      - X_ADDR[3]                           ; 0                 ; 0       ;
-;      - X_ADDR[4]                           ; 0                 ; 0       ;
-;      - Y_ADDR[0]                           ; 0                 ; 0       ;
-;      - Y_ADDR[1]                           ; 0                 ; 0       ;
-;      - Y_ADDR[2]                           ; 0                 ; 0       ;
-;      - Y_ADDR[3]                           ; 0                 ; 0       ;
-;      - Y_ADDR[4]                           ; 0                 ; 0       ;
-;      - Y_ADDR[5]                           ; 0                 ; 0       ;
-;      - Y_ADDR[6]                           ; 0                 ; 0       ;
-;      - Y_ADDR[7]                           ; 0                 ; 0       ;
-;      - Y_ADDR[8]                           ; 0                 ; 0       ;
-;      - Y_ADDR[9]                           ; 0                 ; 0       ;
-;      - Y_ADDR[10]                          ; 0                 ; 0       ;
-;      - X_ADDR[5]                           ; 0                 ; 0       ;
-;      - X_ADDR[6]                           ; 0                 ; 0       ;
-;      - X_ADDR[7]                           ; 0                 ; 0       ;
-;      - X_ADDR[8]                           ; 0                 ; 0       ;
-;      - X_ADDR[9]                           ; 0                 ; 0       ;
-;      - X_ADDR[10]                          ; 0                 ; 0       ;
-;      - X_ADDR[11]                          ; 0                 ; 0       ;
-;      - X_ADDR[12]                          ; 0                 ; 0       ;
-;      - X_ADDR[13]                          ; 0                 ; 0       ;
-;      - X_ADDR[14]                          ; 0                 ; 0       ;
-;      - last_href                           ; 0                 ; 0       ;
-;      - is_lsb                              ; 0                 ; 0       ;
-; GPIO_1_D[30]                               ;                   ;         ;
-;      - always0~0                           ; 0                 ; 6       ;
-;      - X_ADDR[13]~43                       ; 0                 ; 6       ;
-; GPIO_1_D[33]                               ;                   ;         ;
-;      - X_ADDR[0]                           ; 0                 ; 6       ;
-;      - X_ADDR[1]                           ; 0                 ; 6       ;
-;      - X_ADDR[2]                           ; 0                 ; 6       ;
-;      - X_ADDR[3]                           ; 0                 ; 6       ;
-;      - X_ADDR[4]                           ; 0                 ; 6       ;
-;      - Y_ADDR[0]                           ; 0                 ; 6       ;
-;      - Y_ADDR[1]                           ; 0                 ; 6       ;
-;      - Y_ADDR[2]                           ; 0                 ; 6       ;
-;      - Y_ADDR[3]                           ; 0                 ; 6       ;
-;      - Y_ADDR[4]                           ; 0                 ; 6       ;
-;      - Y_ADDR[5]                           ; 0                 ; 6       ;
-;      - Y_ADDR[6]                           ; 0                 ; 6       ;
-;      - Y_ADDR[7]                           ; 0                 ; 6       ;
-;      - Y_ADDR[8]                           ; 0                 ; 6       ;
-;      - Y_ADDR[9]                           ; 0                 ; 6       ;
-;      - Y_ADDR[10]                          ; 0                 ; 6       ;
-;      - X_ADDR[5]                           ; 0                 ; 6       ;
-;      - X_ADDR[6]                           ; 0                 ; 6       ;
-;      - X_ADDR[7]                           ; 0                 ; 6       ;
-;      - X_ADDR[8]                           ; 0                 ; 6       ;
-;      - X_ADDR[9]                           ; 0                 ; 6       ;
-;      - X_ADDR[10]                          ; 0                 ; 6       ;
-;      - X_ADDR[11]                          ; 0                 ; 6       ;
-;      - X_ADDR[12]                          ; 0                 ; 6       ;
-;      - X_ADDR[13]                          ; 0                 ; 6       ;
-;      - X_ADDR[14]                          ; 0                 ; 6       ;
-;      - always0~0                           ; 0                 ; 6       ;
-;      - X_ADDR[13]~43                       ; 0                 ; 6       ;
-;      - W_EN~0                              ; 0                 ; 6       ;
-;      - pixel_data_RGB332[0]~0              ; 0                 ; 6       ;
-;      - last_href~feeder                    ; 0                 ; 6       ;
-; GPIO_1_D[27]                               ;                   ;         ;
-;      - pixel_data_RGB332[7]~feeder         ; 1                 ; 6       ;
-; GPIO_1_D[26]                               ;                   ;         ;
-;      - pixel_data_RGB332[6]                ; 0                 ; 6       ;
-; GPIO_1_D[25]                               ;                   ;         ;
-;      - pixel_data_RGB332[5]                ; 0                 ; 6       ;
-; GPIO_1_D[22]                               ;                   ;         ;
-;      - pixel_data_RGB332[4]~feeder         ; 1                 ; 6       ;
-; GPIO_1_D[21]                               ;                   ;         ;
-;      - pixel_data_RGB332[3]                ; 0                 ; 6       ;
-; GPIO_1_D[20]                               ;                   ;         ;
-;      - pixel_data_RGB332[2]                ; 0                 ; 6       ;
-; GPIO_1_D[24]                               ;                   ;         ;
-;      - pixel_data_RGB332[1]~feeder         ; 0                 ; 6       ;
-; GPIO_1_D[23]                               ;                   ;         ;
-;      - pixel_data_RGB332[0]~feeder         ; 1                 ; 6       ;
-+--------------------------------------------+-------------------+---------+
++-------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                          ;
++-------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                       ; Pad To Core Index ; Setting ;
++-------------------------------------------+-------------------+---------+
+; GPIO_1_D[28]                              ;                   ;         ;
+; GPIO_1_D[29]                              ;                   ;         ;
+; GPIO_1_D[31]                              ;                   ;         ;
+; KEY[1]                                    ;                   ;         ;
+; CLOCK_50                                  ;                   ;         ;
+; KEY[0]                                    ;                   ;         ;
+;      - VGA_DRIVER:driver|line_count[9]~16 ; 0                 ; 6       ;
+;      - VGA_DRIVER:driver|line_count[9]~17 ; 0                 ; 6       ;
+; GPIO_1_D[32]                              ;                   ;         ;
+;      - pixel_data_RGB332[0]               ; 0                 ; 0       ;
+;      - pixel_data_RGB332[1]               ; 0                 ; 0       ;
+;      - pixel_data_RGB332[2]               ; 0                 ; 0       ;
+;      - pixel_data_RGB332[3]               ; 0                 ; 0       ;
+;      - pixel_data_RGB332[4]               ; 0                 ; 0       ;
+;      - pixel_data_RGB332[5]               ; 0                 ; 0       ;
+;      - pixel_data_RGB332[6]               ; 0                 ; 0       ;
+;      - pixel_data_RGB332[7]               ; 0                 ; 0       ;
+;      - W_EN                               ; 0                 ; 0       ;
+;      - X_ADDR[0]                          ; 0                 ; 0       ;
+;      - X_ADDR[1]                          ; 0                 ; 0       ;
+;      - X_ADDR[2]                          ; 0                 ; 0       ;
+;      - X_ADDR[3]                          ; 0                 ; 0       ;
+;      - X_ADDR[4]                          ; 0                 ; 0       ;
+;      - Y_ADDR[0]                          ; 0                 ; 0       ;
+;      - Y_ADDR[1]                          ; 0                 ; 0       ;
+;      - Y_ADDR[2]                          ; 0                 ; 0       ;
+;      - Y_ADDR[3]                          ; 0                 ; 0       ;
+;      - Y_ADDR[4]                          ; 0                 ; 0       ;
+;      - Y_ADDR[5]                          ; 0                 ; 0       ;
+;      - Y_ADDR[6]                          ; 0                 ; 0       ;
+;      - Y_ADDR[7]                          ; 0                 ; 0       ;
+;      - Y_ADDR[8]                          ; 0                 ; 0       ;
+;      - Y_ADDR[9]                          ; 0                 ; 0       ;
+;      - Y_ADDR[10]                         ; 0                 ; 0       ;
+;      - X_ADDR[5]                          ; 0                 ; 0       ;
+;      - X_ADDR[6]                          ; 0                 ; 0       ;
+;      - X_ADDR[7]                          ; 0                 ; 0       ;
+;      - X_ADDR[8]                          ; 0                 ; 0       ;
+;      - X_ADDR[9]                          ; 0                 ; 0       ;
+;      - X_ADDR[10]                         ; 0                 ; 0       ;
+;      - X_ADDR[11]                         ; 0                 ; 0       ;
+;      - X_ADDR[12]                         ; 0                 ; 0       ;
+;      - X_ADDR[13]                         ; 0                 ; 0       ;
+;      - X_ADDR[14]                         ; 0                 ; 0       ;
+;      - last_href                          ; 0                 ; 0       ;
+;      - is_lsb                             ; 0                 ; 0       ;
+; GPIO_1_D[30]                              ;                   ;         ;
+;      - always0~0                          ; 0                 ; 6       ;
+;      - X_ADDR[13]~43                      ; 0                 ; 6       ;
+; GPIO_1_D[33]                              ;                   ;         ;
+;      - X_ADDR[0]                          ; 0                 ; 6       ;
+;      - X_ADDR[1]                          ; 0                 ; 6       ;
+;      - X_ADDR[2]                          ; 0                 ; 6       ;
+;      - X_ADDR[3]                          ; 0                 ; 6       ;
+;      - X_ADDR[4]                          ; 0                 ; 6       ;
+;      - Y_ADDR[0]                          ; 0                 ; 6       ;
+;      - Y_ADDR[1]                          ; 0                 ; 6       ;
+;      - Y_ADDR[2]                          ; 0                 ; 6       ;
+;      - Y_ADDR[3]                          ; 0                 ; 6       ;
+;      - Y_ADDR[4]                          ; 0                 ; 6       ;
+;      - Y_ADDR[5]                          ; 0                 ; 6       ;
+;      - Y_ADDR[6]                          ; 0                 ; 6       ;
+;      - Y_ADDR[7]                          ; 0                 ; 6       ;
+;      - Y_ADDR[8]                          ; 0                 ; 6       ;
+;      - Y_ADDR[9]                          ; 0                 ; 6       ;
+;      - Y_ADDR[10]                         ; 0                 ; 6       ;
+;      - X_ADDR[5]                          ; 0                 ; 6       ;
+;      - X_ADDR[6]                          ; 0                 ; 6       ;
+;      - X_ADDR[7]                          ; 0                 ; 6       ;
+;      - X_ADDR[8]                          ; 0                 ; 6       ;
+;      - X_ADDR[9]                          ; 0                 ; 6       ;
+;      - X_ADDR[10]                         ; 0                 ; 6       ;
+;      - X_ADDR[11]                         ; 0                 ; 6       ;
+;      - X_ADDR[12]                         ; 0                 ; 6       ;
+;      - X_ADDR[13]                         ; 0                 ; 6       ;
+;      - X_ADDR[14]                         ; 0                 ; 6       ;
+;      - always0~0                          ; 0                 ; 6       ;
+;      - X_ADDR[13]~43                      ; 0                 ; 6       ;
+;      - W_EN~0                             ; 0                 ; 6       ;
+;      - pixel_data_RGB332[0]~0             ; 0                 ; 6       ;
+;      - last_href~feeder                   ; 0                 ; 6       ;
+; GPIO_1_D[27]                              ;                   ;         ;
+;      - pixel_data_RGB332[7]~feeder        ; 1                 ; 6       ;
+; GPIO_1_D[26]                              ;                   ;         ;
+;      - pixel_data_RGB332[6]               ; 0                 ; 6       ;
+; GPIO_1_D[25]                              ;                   ;         ;
+;      - pixel_data_RGB332[5]               ; 0                 ; 6       ;
+; GPIO_1_D[22]                              ;                   ;         ;
+;      - pixel_data_RGB332[4]~feeder        ; 1                 ; 6       ;
+; GPIO_1_D[21]                              ;                   ;         ;
+;      - pixel_data_RGB332[3]               ; 0                 ; 6       ;
+; GPIO_1_D[20]                              ;                   ;         ;
+;      - pixel_data_RGB332[2]               ; 0                 ; 6       ;
+; GPIO_1_D[24]                              ;                   ;         ;
+;      - pixel_data_RGB332[1]~feeder        ; 0                 ; 6       ;
+; GPIO_1_D[23]                              ;                   ;         ;
+;      - pixel_data_RGB332[0]~feeder        ; 1                 ; 6       ;
++-------------------------------------------+-------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1246,8 +1246,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO_1_D[33]                                                                                                      ; PIN_J14            ; 31      ; Clock enable, Sync. clear  ; no     ; --                   ; --               ; --                        ;
 ; PLL:PLL_inst|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[1]                                   ; PLL_4              ; 47      ; Clock                      ; yes    ; Global Clock         ; GCLK19           ; --                        ;
 ; PLL:PLL_inst|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[2]                                   ; PLL_4              ; 25      ; Clock                      ; yes    ; Global Clock         ; GCLK17           ; --                        ;
-; VGA_DRIVER:driver1|line_count[9]~16                                                                               ; LCCOMB_X27_Y10_N18 ; 10      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; VGA_DRIVER:driver1|line_count[9]~17                                                                               ; LCCOMB_X28_Y13_N30 ; 20      ; Clock enable, Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; VGA_DRIVER:driver|line_count[9]~16                                                                                ; LCCOMB_X27_Y10_N18 ; 10      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; VGA_DRIVER:driver|line_count[9]~17                                                                                ; LCCOMB_X28_Y13_N30 ; 20      ; Clock enable, Sync. clear  ; no     ; --                   ; --               ; --                        ;
 ; W_EN~0                                                                                                            ; LCCOMB_X34_Y15_N2  ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; X_ADDR[13]~43                                                                                                     ; LCCOMB_X34_Y15_N0  ; 15      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; always0~0                                                                                                         ; LCCOMB_X34_Y15_N4  ; 11      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
@@ -1773,9 +1773,9 @@ Warning (169177): 17 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 
     Info (169178): Pin GPIO_1_D[23] uses I/O standard 3.3-V LVTTL at N16 File: C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v Line: 28
 Info (144001): Generated suppressed messages file C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 114 warnings
-    Info: Peak virtual memory: 1402 megabytes
-    Info: Processing ended: Wed Aug 08 13:09:12 2018
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 1407 megabytes
+    Info: Processing ended: Thu Aug 09 00:24:44 2018
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:06
 
 

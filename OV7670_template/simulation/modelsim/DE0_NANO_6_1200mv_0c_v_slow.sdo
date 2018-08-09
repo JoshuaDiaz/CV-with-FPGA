@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "DE0_NANO")
-  (DATE "08/08/2018 13:09:18")
+  (DATE "08/09/2018 00:24:51")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition")
@@ -195,7 +195,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[0\]\~10)
+    (INSTANCE driver\|line_count\[0\]\~10)
     (DELAY
       (ABSOLUTE
         (PORT dataa (257:257:257) (341:341:341))
@@ -207,7 +207,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[1\]\~12)
+    (INSTANCE driver\|line_count\[1\]\~12)
     (DELAY
       (ABSOLUTE
         (PORT datab (260:260:260) (337:337:337))
@@ -221,7 +221,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[2\]\~14)
+    (INSTANCE driver\|line_count\[2\]\~14)
     (DELAY
       (ABSOLUTE
         (PORT datab (267:267:267) (344:344:344))
@@ -235,7 +235,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|pixel_count\[0\]\~10)
+    (INSTANCE driver\|pixel_count\[0\]\~10)
     (DELAY
       (ABSOLUTE
         (PORT datab (246:246:246) (318:318:318))
@@ -247,7 +247,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|pixel_count\[0\])
+    (INSTANCE driver\|pixel_count\[0\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1351:1351:1351) (1369:1369:1369))
@@ -263,7 +263,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|pixel_count\[1\]\~12)
+    (INSTANCE driver\|pixel_count\[1\]\~12)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (325:325:325))
@@ -277,7 +277,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|pixel_count\[1\])
+    (INSTANCE driver\|pixel_count\[1\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1351:1351:1351) (1369:1369:1369))
@@ -293,7 +293,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|pixel_count\[2\]\~14)
+    (INSTANCE driver\|pixel_count\[2\]\~14)
     (DELAY
       (ABSOLUTE
         (PORT dataa (248:248:248) (324:324:324))
@@ -307,7 +307,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|pixel_count\[2\])
+    (INSTANCE driver\|pixel_count\[2\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1351:1351:1351) (1369:1369:1369))
@@ -323,7 +323,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|pixel_count\[3\]\~16)
+    (INSTANCE driver\|pixel_count\[3\]\~16)
     (DELAY
       (ABSOLUTE
         (PORT datab (247:247:247) (320:320:320))
@@ -337,7 +337,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|pixel_count\[3\])
+    (INSTANCE driver\|pixel_count\[3\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1351:1351:1351) (1369:1369:1369))
@@ -353,7 +353,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|pixel_count\[4\]\~18)
+    (INSTANCE driver\|pixel_count\[4\]\~18)
     (DELAY
       (ABSOLUTE
         (PORT dataa (381:381:381) (437:437:437))
@@ -367,7 +367,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|pixel_count\[4\])
+    (INSTANCE driver\|pixel_count\[4\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1351:1351:1351) (1369:1369:1369))
@@ -383,7 +383,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|pixel_count\[5\]\~20)
+    (INSTANCE driver\|pixel_count\[5\]\~20)
     (DELAY
       (ABSOLUTE
         (PORT datab (252:252:252) (330:330:330))
@@ -397,7 +397,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|pixel_count\[5\])
+    (INSTANCE driver\|pixel_count\[5\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1351:1351:1351) (1369:1369:1369))
@@ -413,7 +413,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|pixel_count\[6\]\~22)
+    (INSTANCE driver\|pixel_count\[6\]\~22)
     (DELAY
       (ABSOLUTE
         (PORT datab (254:254:254) (327:327:327))
@@ -427,7 +427,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|pixel_count\[6\])
+    (INSTANCE driver\|pixel_count\[6\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1351:1351:1351) (1369:1369:1369))
@@ -443,7 +443,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|pixel_count\[7\]\~24)
+    (INSTANCE driver\|pixel_count\[7\]\~24)
     (DELAY
       (ABSOLUTE
         (PORT dataa (271:271:271) (350:350:350))
@@ -457,7 +457,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|pixel_count\[7\])
+    (INSTANCE driver\|pixel_count\[7\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1351:1351:1351) (1369:1369:1369))
@@ -473,7 +473,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|pixel_count\[8\]\~26)
+    (INSTANCE driver\|pixel_count\[8\]\~26)
     (DELAY
       (ABSOLUTE
         (PORT dataa (385:385:385) (442:442:442))
@@ -487,7 +487,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|pixel_count\[8\])
+    (INSTANCE driver\|pixel_count\[8\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1351:1351:1351) (1369:1369:1369))
@@ -503,7 +503,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|pixel_count\[9\]\~28)
+    (INSTANCE driver\|pixel_count\[9\]\~28)
     (DELAY
       (ABSOLUTE
         (PORT dataa (254:254:254) (331:331:331))
@@ -514,7 +514,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|pixel_count\[9\])
+    (INSTANCE driver\|pixel_count\[9\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1351:1351:1351) (1369:1369:1369))
@@ -530,7 +530,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|Equal0\~1)
+    (INSTANCE driver\|Equal0\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (388:388:388) (444:444:444))
@@ -546,7 +546,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|Equal0\~2)
+    (INSTANCE driver\|Equal0\~2)
     (DELAY
       (ABSOLUTE
         (PORT datac (220:220:220) (292:292:292))
@@ -558,7 +558,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|Equal0\~0)
+    (INSTANCE driver\|Equal0\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (383:383:383) (438:438:438))
@@ -583,7 +583,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[9\]\~17)
+    (INSTANCE driver\|line_count\[9\]\~17)
     (DELAY
       (ABSOLUTE
         (PORT dataa (186:186:186) (224:224:224))
@@ -599,7 +599,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|line_count\[2\])
+    (INSTANCE driver\|line_count\[2\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1346:1346:1346) (1364:1364:1364))
@@ -617,7 +617,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[3\]\~18)
+    (INSTANCE driver\|line_count\[3\]\~18)
     (DELAY
       (ABSOLUTE
         (PORT datab (263:263:263) (350:350:350))
@@ -631,7 +631,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|line_count\[3\])
+    (INSTANCE driver\|line_count\[3\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1346:1346:1346) (1364:1364:1364))
@@ -649,7 +649,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[4\]\~20)
+    (INSTANCE driver\|line_count\[4\]\~20)
     (DELAY
       (ABSOLUTE
         (PORT datab (241:241:241) (310:310:310))
@@ -663,7 +663,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|line_count\[4\])
+    (INSTANCE driver\|line_count\[4\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1346:1346:1346) (1364:1364:1364))
@@ -681,7 +681,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[5\]\~22)
+    (INSTANCE driver\|line_count\[5\]\~22)
     (DELAY
       (ABSOLUTE
         (PORT dataa (242:242:242) (314:314:314))
@@ -695,7 +695,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|line_count\[5\])
+    (INSTANCE driver\|line_count\[5\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1346:1346:1346) (1364:1364:1364))
@@ -713,7 +713,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[6\]\~24)
+    (INSTANCE driver\|line_count\[6\]\~24)
     (DELAY
       (ABSOLUTE
         (PORT datab (240:240:240) (309:309:309))
@@ -727,7 +727,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|line_count\[6\])
+    (INSTANCE driver\|line_count\[6\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1346:1346:1346) (1364:1364:1364))
@@ -745,7 +745,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[7\]\~26)
+    (INSTANCE driver\|line_count\[7\]\~26)
     (DELAY
       (ABSOLUTE
         (PORT dataa (241:241:241) (313:313:313))
@@ -759,7 +759,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|line_count\[7\])
+    (INSTANCE driver\|line_count\[7\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1346:1346:1346) (1364:1364:1364))
@@ -777,7 +777,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[8\]\~28)
+    (INSTANCE driver\|line_count\[8\]\~28)
     (DELAY
       (ABSOLUTE
         (PORT datab (246:246:246) (316:316:316))
@@ -791,7 +791,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|line_count\[8\])
+    (INSTANCE driver\|line_count\[8\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1346:1346:1346) (1364:1364:1364))
@@ -809,7 +809,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[9\]\~30)
+    (INSTANCE driver\|line_count\[9\]\~30)
     (DELAY
       (ABSOLUTE
         (PORT dataa (248:248:248) (323:323:323))
@@ -820,7 +820,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|line_count\[9\])
+    (INSTANCE driver\|line_count\[9\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1346:1346:1346) (1364:1364:1364))
@@ -850,7 +850,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|Equal1\~0)
+    (INSTANCE driver\|Equal1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (644:644:644) (663:663:663))
@@ -864,7 +864,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|Equal1\~1)
+    (INSTANCE driver\|Equal1\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (595:595:595) (639:639:639))
@@ -892,7 +892,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|line_count\[9\]\~16)
+    (INSTANCE driver\|line_count\[9\]\~16)
     (DELAY
       (ABSOLUTE
         (PORT dataa (326:326:326) (343:343:343))
@@ -908,7 +908,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|line_count\[0\])
+    (INSTANCE driver\|line_count\[0\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1346:1346:1346) (1364:1364:1364))
@@ -926,7 +926,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE driver1\|line_count\[1\])
+    (INSTANCE driver\|line_count\[1\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1346:1346:1346) (1364:1364:1364))
@@ -944,7 +944,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|V_SYNC_NEG\~1)
+    (INSTANCE driver\|V_SYNC_NEG\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (593:593:593) (632:632:632))
@@ -960,7 +960,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|V_SYNC_NEG\~0)
+    (INSTANCE driver\|V_SYNC_NEG\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (593:593:593) (636:636:636))
@@ -976,7 +976,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|V_SYNC_NEG\~2)
+    (INSTANCE driver\|V_SYNC_NEG\~2)
     (DELAY
       (ABSOLUTE
         (PORT dataa (184:184:184) (221:221:221))
@@ -990,7 +990,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|H_SYNC_NEG\~0)
+    (INSTANCE driver\|H_SYNC_NEG\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (381:381:381) (437:437:437))
@@ -1006,7 +1006,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|H_SYNC_NEG\~1)
+    (INSTANCE driver\|H_SYNC_NEG\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (387:387:387) (446:446:446))
@@ -3515,7 +3515,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[7\]\~2)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[7\]\~2)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1158:1158:1158) (1222:1222:1222))
@@ -4119,7 +4119,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[7\]\~3)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[7\]\~3)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1161:1161:1161) (1229:1229:1229))
@@ -4135,7 +4135,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[7\]\~0)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[7\]\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (647:647:647) (699:699:699))
@@ -4165,7 +4165,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[7\]\~1)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[7\]\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (184:184:184) (221:221:221))
@@ -4181,7 +4181,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[7\]\~4)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[7\]\~4)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1093:1093:1093) (1123:1123:1123))
@@ -4527,7 +4527,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[6\]\~5)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[6\]\~5)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1154:1154:1154) (1220:1220:1220))
@@ -4708,7 +4708,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[6\]\~6)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[6\]\~6)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1160:1160:1160) (1226:1226:1226))
@@ -4724,7 +4724,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[6\]\~7)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[6\]\~7)
     (DELAY
       (ABSOLUTE
         (PORT dataa (183:183:183) (220:220:220))
@@ -5070,7 +5070,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[5\]\~8)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[5\]\~8)
     (DELAY
       (ABSOLUTE
         (PORT dataa (623:623:623) (637:637:637))
@@ -5251,7 +5251,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[5\]\~9)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[5\]\~9)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1160:1160:1160) (1226:1226:1226))
@@ -5267,7 +5267,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[5\]\~10)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[5\]\~10)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1096:1096:1096) (1125:1125:1125))
@@ -5448,7 +5448,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[4\]\~12)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[4\]\~12)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1157:1157:1157) (1222:1222:1222))
@@ -5794,7 +5794,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[4\]\~11)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[4\]\~11)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1153:1153:1153) (1216:1216:1216))
@@ -5810,7 +5810,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[4\]\~13)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[4\]\~13)
     (DELAY
       (ABSOLUTE
         (PORT dataa (184:184:184) (221:221:221))
@@ -6156,7 +6156,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[3\]\~14)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[3\]\~14)
     (DELAY
       (ABSOLUTE
         (PORT dataa (823:823:823) (791:791:791))
@@ -6337,7 +6337,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[3\]\~15)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[3\]\~15)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1157:1157:1157) (1229:1229:1229))
@@ -6353,7 +6353,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[3\]\~16)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[3\]\~16)
     (DELAY
       (ABSOLUTE
         (PORT dataa (358:358:358) (367:367:367))
@@ -6534,7 +6534,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[2\]\~18)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[2\]\~18)
     (DELAY
       (ABSOLUTE
         (PORT dataa (921:921:921) (989:989:989))
@@ -6880,7 +6880,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[2\]\~17)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[2\]\~17)
     (DELAY
       (ABSOLUTE
         (PORT dataa (927:927:927) (996:996:996))
@@ -6896,7 +6896,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[2\]\~19)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[2\]\~19)
     (DELAY
       (ABSOLUTE
         (PORT dataa (842:842:842) (875:875:875))
@@ -7242,7 +7242,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[1\]\~21)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[1\]\~21)
     (DELAY
       (ABSOLUTE
         (PORT dataa (955:955:955) (1028:1028:1028))
@@ -7423,7 +7423,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[1\]\~20)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[1\]\~20)
     (DELAY
       (ABSOLUTE
         (PORT dataa (925:925:925) (995:995:995))
@@ -7439,7 +7439,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[1\]\~22)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[1\]\~22)
     (DELAY
       (ABSOLUTE
         (PORT dataa (842:842:842) (875:875:875))
@@ -7455,7 +7455,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[1\]\~23)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[1\]\~23)
     (DELAY
       (ABSOLUTE
         (PORT dataa (184:184:184) (221:221:221))
@@ -7636,7 +7636,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[0\]\~24)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[0\]\~24)
     (DELAY
       (ABSOLUTE
         (PORT dataa (950:950:950) (1027:1027:1027))
@@ -7982,7 +7982,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[0\]\~25)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[0\]\~25)
     (DELAY
       (ABSOLUTE
         (PORT dataa (950:950:950) (1026:1026:1026))
@@ -7998,7 +7998,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[0\]\~26)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[0\]\~26)
     (DELAY
       (ABSOLUTE
         (PORT dataa (842:842:842) (875:875:875))
@@ -8014,7 +8014,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE driver1\|PIXEL_COLOR_OUT\[0\]\~27)
+    (INSTANCE driver\|PIXEL_COLOR_OUT\[0\]\~27)
     (DELAY
       (ABSOLUTE
         (PORT dataa (845:845:845) (876:876:876))

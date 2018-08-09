@@ -49,19 +49,19 @@ wire			VGA_VSYNC_NEG;
 wire			VGA_HSYNC_NEG;
 reg			VGA_READ_MEM_EN;
 
+assign GPIO_0_D[5] = VGA_VSYNC_NEG;
 assign VGA_RESET = ~KEY[0];
 
 ///// INPUTS FROM OV7670 /////
-wire PCLK;
-wire HSYNC; //MARK TO SPECIFY FOR CAM
-wire VSYNC;
-assign PCLK = GPIO_1_D[32];
-assign VSYNC = GPIO_1_D[30];
-assign HSYNC = GPIO_1_D[33];
+wire PCLK_CAM;
+wire HREF_CAM; 
+wire VSYNC_CAM;
+assign PCLK_CAM = GPIO_1_D[32];
+assign VSYNC_CAM = GPIO_1_D[30];
+assign HREF_CAM = GPIO_1_D[33];
 
 ///// I/O for Img Proc /////
 wire [8:0] RESULT;
-wire [14:0] READ_ADDR_NEXT;
 
 /* WRITE ENABLE */
 reg W_EN;
@@ -80,7 +80,7 @@ PLL	PLL_inst (
 	.c2 ( CLK_50_PLL )
 	);
 	
-//////////// M9K Module //////////
+///////* M9K Module *///////
 Dual_Port_RAM_M9K mem(
 	.input_data(pixel_data_RGB332),
 	.w_addr(WRITE_ADDRESS),
@@ -91,8 +91,8 @@ Dual_Port_RAM_M9K mem(
 	.output_data(MEM_OUTPUT)
 );
 	
-//////////// VGA Module //////////
-VGA_DRIVER driver1 (
+///////* VGA Module *///////
+VGA_DRIVER driver (
 	.RESET(VGA_RESET),
 	.CLOCK(CLK_25_PLL),
 	.PIXEL_COLOR_IN(VGA_READ_MEM_EN ? MEM_OUTPUT : BLUE),
@@ -100,35 +100,35 @@ VGA_DRIVER driver1 (
 	.PIXEL_Y(VGA_PIXEL_Y),
 	.PIXEL_COLOR_OUT({GPIO_0_D[9],GPIO_0_D[11],GPIO_0_D[13],GPIO_0_D[15],GPIO_0_D[17],GPIO_0_D[19],GPIO_0_D[21],GPIO_0_D[23]}),
    .H_SYNC_NEG(GPIO_0_D[7]),
-   .V_SYNC_NEG(GPIO_0_D[5])
+   .V_SYNC_NEG(VGA_VSYNC_NEG)
 );
 
-//////////// Image Processor //////////
-//IMAGE_PROCESSOR proc (
-//	.PIXEL_IN(MEM_OUTPUT),
-//	.VAL(W_EN),
-//	.RESULT(RESULT),
-//	.READ_ADDRESS_NEXT(READ_ADDR_NEXT)
-//);
+///////* Image Processor *///////
+IMAGE_PROCESSOR proc(
+	.PIXEL_IN(MEM_OUTPUT),
+	.CLK(CLK_25_PLL),
+	.VGA_PIXEL_X(VGA_PIXEL_X),
+	.VGA_PIXEL_Y(VGA_PIXEL_Y),
+	.VGA_VSYNC_NEG(VGA_VSYNC_NEG),
+	.RESULT(RESULT)
+);
 
-//=======================================================
-//  STORING PIXEL DATA
-//=======================================================
+//////* Storing Pixel Data *///////
 
 wire [7:0] data;
 assign data = {GPIO_1_D[27:25], GPIO_1_D[22:20], GPIO_1_D[24:23]};
 
 reg last_href;
 reg is_lsb = 1'b0;
-always@( posedge PCLK )begin
-		if(VSYNC == 1'b1 && HSYNC == 1'b0 && last_href == 1'b0)begin
+always@( posedge PCLK_CAM )begin
+		if(VSYNC_CAM == 1'b1 && HREF_CAM == 1'b0 && last_href == 1'b0)begin
 				X_ADDR <= 15'd0;
 				Y_ADDR <= 15'd0;
 				W_EN <= 1'b0;
 				is_lsb <= 1'b0;
 		end
 		else begin
-				if(HSYNC == 1'b1)begin
+				if(HREF_CAM == 1'b1)begin
 						if(is_lsb) begin
 								X_ADDR <= X_ADDR + 15'd1;
 								Y_ADDR <= Y_ADDR;
@@ -141,7 +141,6 @@ always@( posedge PCLK )begin
 								pixel_data_RGB332[1:0] <= data[1:0];
 								W_EN <= 1'b0;
 						end
-						
 						is_lsb <= ~is_lsb;
 				end
 				else begin
@@ -158,12 +157,22 @@ always@( posedge PCLK )begin
 						end
 				end
 		end
-		last_href <= HSYNC;
+		last_href <= HREF_CAM;
+end
+
+///////* Update Read Address *///////
+always @ (VGA_PIXEL_X, VGA_PIXEL_Y) begin
+		READ_ADDRESS = (VGA_PIXEL_X + VGA_PIXEL_Y*`SCREEN_WIDTH);
+		if(VGA_PIXEL_X>(`SCREEN_WIDTH-1) || VGA_PIXEL_Y>(`SCREEN_HEIGHT-1))begin
+				VGA_READ_MEM_EN = 1'b0;
+		end
+		else begin
+				VGA_READ_MEM_EN = 1'b1;
+		end
 end
 
 
-
-
+///////* Different implementations that DO NOT WORK *///////
 
 //reg HSYNC_PREV;
 //always @ (posedge PCLK) begin
@@ -218,7 +227,6 @@ end
 //end
 
 
-/////// ATTEMPT 3 /////
 //always @ (posedge PCLK) begin
 //	if(HSYNC && ~VSYNC) begin
 //		WRITE_STATE<= NEXT_STATE;
@@ -241,17 +249,6 @@ end
 //			end
 //	endcase
 //end
-
-/* Update Read Address */
-always @ (VGA_PIXEL_X, VGA_PIXEL_Y) begin
-	READ_ADDRESS = (VGA_PIXEL_X + VGA_PIXEL_Y*`SCREEN_WIDTH);
-	if(VGA_PIXEL_X>(`SCREEN_WIDTH-1) || VGA_PIXEL_Y>(`SCREEN_HEIGHT-1))begin
-		VGA_READ_MEM_EN = 1'b0;
-	end
-	else begin
-		VGA_READ_MEM_EN = 1'b1;
-	end
-end
 
 /** MEMORY TO VGA TEST **/
 //reg [7:0] test_colour = 8'b111_111_11;

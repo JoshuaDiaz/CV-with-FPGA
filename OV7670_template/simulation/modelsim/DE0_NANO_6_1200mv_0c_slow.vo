@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
 
-// DATE "08/08/2018 13:09:18"
+// DATE "08/09/2018 00:24:50"
 
 // 
 // Device: Altera EP4CE22F17C6 Package FBGA256
@@ -116,59 +116,59 @@ wire \CLOCK_50~input_o ;
 wire \PLL_inst|altpll_component|auto_generated|wire_pll1_fbout ;
 wire \PLL_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ;
 wire \PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ;
-wire \driver1|line_count[0]~10_combout ;
-wire \driver1|line_count[1]~13 ;
-wire \driver1|line_count[2]~14_combout ;
-wire \driver1|pixel_count[0]~10_combout ;
-wire \driver1|pixel_count[0]~11 ;
-wire \driver1|pixel_count[1]~12_combout ;
-wire \driver1|pixel_count[1]~13 ;
-wire \driver1|pixel_count[2]~14_combout ;
-wire \driver1|pixel_count[2]~15 ;
-wire \driver1|pixel_count[3]~16_combout ;
-wire \driver1|pixel_count[3]~17 ;
-wire \driver1|pixel_count[4]~18_combout ;
-wire \driver1|pixel_count[4]~19 ;
-wire \driver1|pixel_count[5]~20_combout ;
-wire \driver1|pixel_count[5]~21 ;
-wire \driver1|pixel_count[6]~22_combout ;
-wire \driver1|pixel_count[6]~23 ;
-wire \driver1|pixel_count[7]~24_combout ;
-wire \driver1|pixel_count[7]~25 ;
-wire \driver1|pixel_count[8]~26_combout ;
-wire \driver1|pixel_count[8]~27 ;
-wire \driver1|pixel_count[9]~28_combout ;
-wire \driver1|Equal0~1_combout ;
-wire \driver1|Equal0~2_combout ;
-wire \driver1|Equal0~0_combout ;
+wire \driver|line_count[0]~10_combout ;
+wire \driver|line_count[1]~13 ;
+wire \driver|line_count[2]~14_combout ;
+wire \driver|pixel_count[0]~10_combout ;
+wire \driver|pixel_count[0]~11 ;
+wire \driver|pixel_count[1]~12_combout ;
+wire \driver|pixel_count[1]~13 ;
+wire \driver|pixel_count[2]~14_combout ;
+wire \driver|pixel_count[2]~15 ;
+wire \driver|pixel_count[3]~16_combout ;
+wire \driver|pixel_count[3]~17 ;
+wire \driver|pixel_count[4]~18_combout ;
+wire \driver|pixel_count[4]~19 ;
+wire \driver|pixel_count[5]~20_combout ;
+wire \driver|pixel_count[5]~21 ;
+wire \driver|pixel_count[6]~22_combout ;
+wire \driver|pixel_count[6]~23 ;
+wire \driver|pixel_count[7]~24_combout ;
+wire \driver|pixel_count[7]~25 ;
+wire \driver|pixel_count[8]~26_combout ;
+wire \driver|pixel_count[8]~27 ;
+wire \driver|pixel_count[9]~28_combout ;
+wire \driver|Equal0~1_combout ;
+wire \driver|Equal0~2_combout ;
+wire \driver|Equal0~0_combout ;
 wire \KEY[0]~input_o ;
-wire \driver1|line_count[9]~17_combout ;
-wire \driver1|line_count[2]~15 ;
-wire \driver1|line_count[3]~18_combout ;
-wire \driver1|line_count[3]~19 ;
-wire \driver1|line_count[4]~20_combout ;
-wire \driver1|line_count[4]~21 ;
-wire \driver1|line_count[5]~22_combout ;
-wire \driver1|line_count[5]~23 ;
-wire \driver1|line_count[6]~24_combout ;
-wire \driver1|line_count[6]~25 ;
-wire \driver1|line_count[7]~26_combout ;
-wire \driver1|line_count[7]~27 ;
-wire \driver1|line_count[8]~28_combout ;
-wire \driver1|line_count[8]~29 ;
-wire \driver1|line_count[9]~30_combout ;
+wire \driver|line_count[9]~17_combout ;
+wire \driver|line_count[2]~15 ;
+wire \driver|line_count[3]~18_combout ;
+wire \driver|line_count[3]~19 ;
+wire \driver|line_count[4]~20_combout ;
+wire \driver|line_count[4]~21 ;
+wire \driver|line_count[5]~22_combout ;
+wire \driver|line_count[5]~23 ;
+wire \driver|line_count[6]~24_combout ;
+wire \driver|line_count[6]~25 ;
+wire \driver|line_count[7]~26_combout ;
+wire \driver|line_count[7]~27 ;
+wire \driver|line_count[8]~28_combout ;
+wire \driver|line_count[8]~29 ;
+wire \driver|line_count[9]~30_combout ;
 wire \Mult1|mult_core|_~1_combout ;
-wire \driver1|Equal1~0_combout ;
-wire \driver1|Equal1~1_combout ;
+wire \driver|Equal1~0_combout ;
+wire \driver|Equal1~1_combout ;
 wire \Mult1|mult_core|_~0_combout ;
-wire \driver1|line_count[9]~16_combout ;
-wire \driver1|line_count[0]~11 ;
-wire \driver1|line_count[1]~12_combout ;
-wire \driver1|V_SYNC_NEG~1_combout ;
-wire \driver1|V_SYNC_NEG~0_combout ;
-wire \driver1|V_SYNC_NEG~2_combout ;
-wire \driver1|H_SYNC_NEG~0_combout ;
-wire \driver1|H_SYNC_NEG~1_combout ;
+wire \driver|line_count[9]~16_combout ;
+wire \driver|line_count[0]~11 ;
+wire \driver|line_count[1]~12_combout ;
+wire \driver|V_SYNC_NEG~1_combout ;
+wire \driver|V_SYNC_NEG~0_combout ;
+wire \driver|V_SYNC_NEG~2_combout ;
+wire \driver|H_SYNC_NEG~0_combout ;
+wire \driver|H_SYNC_NEG~1_combout ;
 wire \Mult1|mult_core|romout[1][9]~0_combout ;
 wire \Mult1|mult_core|romout[1][8]~1_combout ;
 wire \Mult1|mult_core|romout[1][7]~2_combout ;
@@ -346,7 +346,7 @@ wire \Add3~16_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a7~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|decode2|w_anode313w[2]~0_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a15~portbdataout ;
-wire \driver1|PIXEL_COLOR_OUT[7]~2_combout ;
+wire \driver|PIXEL_COLOR_OUT[7]~2_combout ;
 wire \mem|mem_rtl_0|auto_generated|decode2|w_anode321w[2]~0_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a23~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|decode2|w_anode329w[2]~0_combout ;
@@ -361,70 +361,70 @@ wire \pixel_data_RGB332[4]~feeder_combout ;
 wire \GPIO_1_D[25]~input_o ;
 wire \GPIO_1_D[26]~input_o ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a31 ;
-wire \driver1|PIXEL_COLOR_OUT[7]~3_combout ;
-wire \driver1|PIXEL_COLOR_OUT[7]~0_combout ;
+wire \driver|PIXEL_COLOR_OUT[7]~3_combout ;
+wire \driver|PIXEL_COLOR_OUT[7]~0_combout ;
 wire \LessThan0~0_combout ;
-wire \driver1|PIXEL_COLOR_OUT[7]~1_combout ;
-wire \driver1|PIXEL_COLOR_OUT[7]~4_combout ;
+wire \driver|PIXEL_COLOR_OUT[7]~1_combout ;
+wire \driver|PIXEL_COLOR_OUT[7]~4_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a14~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a6~portbdataout ;
-wire \driver1|PIXEL_COLOR_OUT[6]~5_combout ;
+wire \driver|PIXEL_COLOR_OUT[6]~5_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a22~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a30 ;
-wire \driver1|PIXEL_COLOR_OUT[6]~6_combout ;
-wire \driver1|PIXEL_COLOR_OUT[6]~7_combout ;
+wire \driver|PIXEL_COLOR_OUT[6]~6_combout ;
+wire \driver|PIXEL_COLOR_OUT[6]~7_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a5~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a13~portbdataout ;
-wire \driver1|PIXEL_COLOR_OUT[5]~8_combout ;
+wire \driver|PIXEL_COLOR_OUT[5]~8_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a21~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a29 ;
-wire \driver1|PIXEL_COLOR_OUT[5]~9_combout ;
-wire \driver1|PIXEL_COLOR_OUT[5]~10_combout ;
+wire \driver|PIXEL_COLOR_OUT[5]~9_combout ;
+wire \driver|PIXEL_COLOR_OUT[5]~10_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a20~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a28 ;
-wire \driver1|PIXEL_COLOR_OUT[4]~12_combout ;
+wire \driver|PIXEL_COLOR_OUT[4]~12_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a4~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a12~portbdataout ;
-wire \driver1|PIXEL_COLOR_OUT[4]~11_combout ;
-wire \driver1|PIXEL_COLOR_OUT[4]~13_combout ;
+wire \driver|PIXEL_COLOR_OUT[4]~11_combout ;
+wire \driver|PIXEL_COLOR_OUT[4]~13_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a11~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a3~portbdataout ;
-wire \driver1|PIXEL_COLOR_OUT[3]~14_combout ;
+wire \driver|PIXEL_COLOR_OUT[3]~14_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a19~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a27 ;
-wire \driver1|PIXEL_COLOR_OUT[3]~15_combout ;
-wire \driver1|PIXEL_COLOR_OUT[3]~16_combout ;
+wire \driver|PIXEL_COLOR_OUT[3]~15_combout ;
+wire \driver|PIXEL_COLOR_OUT[3]~16_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a26 ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a18~portbdataout ;
-wire \driver1|PIXEL_COLOR_OUT[2]~18_combout ;
+wire \driver|PIXEL_COLOR_OUT[2]~18_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a10~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a2~portbdataout ;
-wire \driver1|PIXEL_COLOR_OUT[2]~17_combout ;
-wire \driver1|PIXEL_COLOR_OUT[2]~19_combout ;
+wire \driver|PIXEL_COLOR_OUT[2]~17_combout ;
+wire \driver|PIXEL_COLOR_OUT[2]~19_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a1~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a9~portbdataout ;
-wire \driver1|PIXEL_COLOR_OUT[1]~21_combout ;
+wire \driver|PIXEL_COLOR_OUT[1]~21_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a25 ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a17~portbdataout ;
-wire \driver1|PIXEL_COLOR_OUT[1]~20_combout ;
-wire \driver1|PIXEL_COLOR_OUT[1]~22_combout ;
-wire \driver1|PIXEL_COLOR_OUT[1]~23_combout ;
+wire \driver|PIXEL_COLOR_OUT[1]~20_combout ;
+wire \driver|PIXEL_COLOR_OUT[1]~22_combout ;
+wire \driver|PIXEL_COLOR_OUT[1]~23_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a24~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a16~portbdataout ;
-wire \driver1|PIXEL_COLOR_OUT[0]~24_combout ;
+wire \driver|PIXEL_COLOR_OUT[0]~24_combout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a8~portbdataout ;
 wire \mem|mem_rtl_0|auto_generated|ram_block1a0~portbdataout ;
-wire \driver1|PIXEL_COLOR_OUT[0]~25_combout ;
-wire \driver1|PIXEL_COLOR_OUT[0]~26_combout ;
-wire \driver1|PIXEL_COLOR_OUT[0]~27_combout ;
+wire \driver|PIXEL_COLOR_OUT[0]~25_combout ;
+wire \driver|PIXEL_COLOR_OUT[0]~26_combout ;
+wire \driver|PIXEL_COLOR_OUT[0]~27_combout ;
 wire [2:0] \mem|mem_rtl_0|auto_generated|rden_decode_b|w_anode352w ;
 wire [4:0] \PLL_inst|altpll_component|auto_generated|wire_pll1_clk ;
 wire [14:0] Y_ADDR;
-wire [9:0] \driver1|line_count ;
+wire [9:0] \driver|line_count ;
 wire [2:0] \mem|mem_rtl_0|auto_generated|rden_decode_b|w_anode338w ;
 wire [7:0] pixel_data_RGB332;
 wire [1:0] \mem|mem_rtl_0|auto_generated|address_reg_b ;
-wire [9:0] \driver1|pixel_count ;
+wire [9:0] \driver|pixel_count ;
 wire [14:0] X_ADDR;
 wire [2:0] \mem|mem_rtl_0|auto_generated|rden_decode_b|w_anode370w ;
 wire [2:0] \mem|mem_rtl_0|auto_generated|rden_decode_b|w_anode361w ;
@@ -586,7 +586,7 @@ defparam \GPIO_0_D[4]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X7_Y34_N2
 cycloneive_io_obuf \GPIO_0_D[5]~output (
-	.i(\driver1|V_SYNC_NEG~2_combout ),
+	.i(\driver|V_SYNC_NEG~2_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -612,7 +612,7 @@ defparam \GPIO_0_D[6]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X11_Y34_N2
 cycloneive_io_obuf \GPIO_0_D[7]~output (
-	.i(\driver1|H_SYNC_NEG~1_combout ),
+	.i(\driver|H_SYNC_NEG~1_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -638,7 +638,7 @@ defparam \GPIO_0_D[8]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X5_Y34_N16
 cycloneive_io_obuf \GPIO_0_D[9]~output (
-	.i(\driver1|PIXEL_COLOR_OUT[7]~4_combout ),
+	.i(\driver|PIXEL_COLOR_OUT[7]~4_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -664,7 +664,7 @@ defparam \GPIO_0_D[10]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X16_Y34_N2
 cycloneive_io_obuf \GPIO_0_D[11]~output (
-	.i(\driver1|PIXEL_COLOR_OUT[6]~7_combout ),
+	.i(\driver|PIXEL_COLOR_OUT[6]~7_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -690,7 +690,7 @@ defparam \GPIO_0_D[12]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X9_Y34_N9
 cycloneive_io_obuf \GPIO_0_D[13]~output (
-	.i(\driver1|PIXEL_COLOR_OUT[5]~10_combout ),
+	.i(\driver|PIXEL_COLOR_OUT[5]~10_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -716,7 +716,7 @@ defparam \GPIO_0_D[14]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X18_Y34_N23
 cycloneive_io_obuf \GPIO_0_D[15]~output (
-	.i(\driver1|PIXEL_COLOR_OUT[4]~13_combout ),
+	.i(\driver|PIXEL_COLOR_OUT[4]~13_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -742,7 +742,7 @@ defparam \GPIO_0_D[16]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X14_Y34_N16
 cycloneive_io_obuf \GPIO_0_D[17]~output (
-	.i(\driver1|PIXEL_COLOR_OUT[3]~16_combout ),
+	.i(\driver|PIXEL_COLOR_OUT[3]~16_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -768,7 +768,7 @@ defparam \GPIO_0_D[18]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X23_Y34_N23
 cycloneive_io_obuf \GPIO_0_D[19]~output (
-	.i(\driver1|PIXEL_COLOR_OUT[2]~19_combout ),
+	.i(\driver|PIXEL_COLOR_OUT[2]~19_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -794,7 +794,7 @@ defparam \GPIO_0_D[20]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X20_Y34_N16
 cycloneive_io_obuf \GPIO_0_D[21]~output (
-	.i(\driver1|PIXEL_COLOR_OUT[1]~23_combout ),
+	.i(\driver|PIXEL_COLOR_OUT[1]~23_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -820,7 +820,7 @@ defparam \GPIO_0_D[22]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X29_Y34_N16
 cycloneive_io_obuf \GPIO_0_D[23]~output (
-	.i(\driver1|PIXEL_COLOR_OUT[0]~27_combout ),
+	.i(\driver|PIXEL_COLOR_OUT[0]~27_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -1105,477 +1105,477 @@ defparam \PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl .ena
 // synopsys translate_on
 
 // Location: LCCOMB_X30_Y10_N12
-cycloneive_lcell_comb \driver1|line_count[0]~10 (
+cycloneive_lcell_comb \driver|line_count[0]~10 (
 // Equation(s):
-// \driver1|line_count[0]~10_combout  = \driver1|line_count [0] $ (VCC)
-// \driver1|line_count[0]~11  = CARRY(\driver1|line_count [0])
+// \driver|line_count[0]~10_combout  = \driver|line_count [0] $ (VCC)
+// \driver|line_count[0]~11  = CARRY(\driver|line_count [0])
 
-	.dataa(\driver1|line_count [0]),
+	.dataa(\driver|line_count [0]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(gnd),
-	.combout(\driver1|line_count[0]~10_combout ),
-	.cout(\driver1|line_count[0]~11 ));
+	.combout(\driver|line_count[0]~10_combout ),
+	.cout(\driver|line_count[0]~11 ));
 // synopsys translate_off
-defparam \driver1|line_count[0]~10 .lut_mask = 16'h55AA;
-defparam \driver1|line_count[0]~10 .sum_lutc_input = "datac";
+defparam \driver|line_count[0]~10 .lut_mask = 16'h55AA;
+defparam \driver|line_count[0]~10 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X30_Y10_N14
-cycloneive_lcell_comb \driver1|line_count[1]~12 (
+cycloneive_lcell_comb \driver|line_count[1]~12 (
 // Equation(s):
-// \driver1|line_count[1]~12_combout  = (\driver1|line_count [1] & (!\driver1|line_count[0]~11 )) # (!\driver1|line_count [1] & ((\driver1|line_count[0]~11 ) # (GND)))
-// \driver1|line_count[1]~13  = CARRY((!\driver1|line_count[0]~11 ) # (!\driver1|line_count [1]))
+// \driver|line_count[1]~12_combout  = (\driver|line_count [1] & (!\driver|line_count[0]~11 )) # (!\driver|line_count [1] & ((\driver|line_count[0]~11 ) # (GND)))
+// \driver|line_count[1]~13  = CARRY((!\driver|line_count[0]~11 ) # (!\driver|line_count [1]))
 
 	.dataa(gnd),
-	.datab(\driver1|line_count [1]),
+	.datab(\driver|line_count [1]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|line_count[0]~11 ),
-	.combout(\driver1|line_count[1]~12_combout ),
-	.cout(\driver1|line_count[1]~13 ));
+	.cin(\driver|line_count[0]~11 ),
+	.combout(\driver|line_count[1]~12_combout ),
+	.cout(\driver|line_count[1]~13 ));
 // synopsys translate_off
-defparam \driver1|line_count[1]~12 .lut_mask = 16'h3C3F;
-defparam \driver1|line_count[1]~12 .sum_lutc_input = "cin";
+defparam \driver|line_count[1]~12 .lut_mask = 16'h3C3F;
+defparam \driver|line_count[1]~12 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: LCCOMB_X30_Y10_N16
-cycloneive_lcell_comb \driver1|line_count[2]~14 (
+cycloneive_lcell_comb \driver|line_count[2]~14 (
 // Equation(s):
-// \driver1|line_count[2]~14_combout  = (\driver1|line_count [2] & (\driver1|line_count[1]~13  $ (GND))) # (!\driver1|line_count [2] & (!\driver1|line_count[1]~13  & VCC))
-// \driver1|line_count[2]~15  = CARRY((\driver1|line_count [2] & !\driver1|line_count[1]~13 ))
+// \driver|line_count[2]~14_combout  = (\driver|line_count [2] & (\driver|line_count[1]~13  $ (GND))) # (!\driver|line_count [2] & (!\driver|line_count[1]~13  & VCC))
+// \driver|line_count[2]~15  = CARRY((\driver|line_count [2] & !\driver|line_count[1]~13 ))
 
 	.dataa(gnd),
-	.datab(\driver1|line_count [2]),
+	.datab(\driver|line_count [2]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|line_count[1]~13 ),
-	.combout(\driver1|line_count[2]~14_combout ),
-	.cout(\driver1|line_count[2]~15 ));
+	.cin(\driver|line_count[1]~13 ),
+	.combout(\driver|line_count[2]~14_combout ),
+	.cout(\driver|line_count[2]~15 ));
 // synopsys translate_off
-defparam \driver1|line_count[2]~14 .lut_mask = 16'hC30C;
-defparam \driver1|line_count[2]~14 .sum_lutc_input = "cin";
+defparam \driver|line_count[2]~14 .lut_mask = 16'hC30C;
+defparam \driver|line_count[2]~14 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N8
-cycloneive_lcell_comb \driver1|pixel_count[0]~10 (
+cycloneive_lcell_comb \driver|pixel_count[0]~10 (
 // Equation(s):
-// \driver1|pixel_count[0]~10_combout  = \driver1|pixel_count [0] $ (VCC)
-// \driver1|pixel_count[0]~11  = CARRY(\driver1|pixel_count [0])
+// \driver|pixel_count[0]~10_combout  = \driver|pixel_count [0] $ (VCC)
+// \driver|pixel_count[0]~11  = CARRY(\driver|pixel_count [0])
 
 	.dataa(gnd),
-	.datab(\driver1|pixel_count [0]),
+	.datab(\driver|pixel_count [0]),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(gnd),
-	.combout(\driver1|pixel_count[0]~10_combout ),
-	.cout(\driver1|pixel_count[0]~11 ));
+	.combout(\driver|pixel_count[0]~10_combout ),
+	.cout(\driver|pixel_count[0]~11 ));
 // synopsys translate_off
-defparam \driver1|pixel_count[0]~10 .lut_mask = 16'h33CC;
-defparam \driver1|pixel_count[0]~10 .sum_lutc_input = "datac";
+defparam \driver|pixel_count[0]~10 .lut_mask = 16'h33CC;
+defparam \driver|pixel_count[0]~10 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X28_Y13_N9
-dffeas \driver1|pixel_count[0] (
+dffeas \driver|pixel_count[0] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|pixel_count[0]~10_combout ),
+	.d(\driver|pixel_count[0]~10_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~17_combout ),
+	.sclr(\driver|line_count[9]~17_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|pixel_count [0]),
+	.q(\driver|pixel_count [0]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|pixel_count[0] .is_wysiwyg = "true";
-defparam \driver1|pixel_count[0] .power_up = "low";
+defparam \driver|pixel_count[0] .is_wysiwyg = "true";
+defparam \driver|pixel_count[0] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N10
-cycloneive_lcell_comb \driver1|pixel_count[1]~12 (
+cycloneive_lcell_comb \driver|pixel_count[1]~12 (
 // Equation(s):
-// \driver1|pixel_count[1]~12_combout  = (\driver1|pixel_count [1] & (!\driver1|pixel_count[0]~11 )) # (!\driver1|pixel_count [1] & ((\driver1|pixel_count[0]~11 ) # (GND)))
-// \driver1|pixel_count[1]~13  = CARRY((!\driver1|pixel_count[0]~11 ) # (!\driver1|pixel_count [1]))
+// \driver|pixel_count[1]~12_combout  = (\driver|pixel_count [1] & (!\driver|pixel_count[0]~11 )) # (!\driver|pixel_count [1] & ((\driver|pixel_count[0]~11 ) # (GND)))
+// \driver|pixel_count[1]~13  = CARRY((!\driver|pixel_count[0]~11 ) # (!\driver|pixel_count [1]))
 
-	.dataa(\driver1|pixel_count [1]),
+	.dataa(\driver|pixel_count [1]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|pixel_count[0]~11 ),
-	.combout(\driver1|pixel_count[1]~12_combout ),
-	.cout(\driver1|pixel_count[1]~13 ));
+	.cin(\driver|pixel_count[0]~11 ),
+	.combout(\driver|pixel_count[1]~12_combout ),
+	.cout(\driver|pixel_count[1]~13 ));
 // synopsys translate_off
-defparam \driver1|pixel_count[1]~12 .lut_mask = 16'h5A5F;
-defparam \driver1|pixel_count[1]~12 .sum_lutc_input = "cin";
+defparam \driver|pixel_count[1]~12 .lut_mask = 16'h5A5F;
+defparam \driver|pixel_count[1]~12 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X28_Y13_N11
-dffeas \driver1|pixel_count[1] (
+dffeas \driver|pixel_count[1] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|pixel_count[1]~12_combout ),
+	.d(\driver|pixel_count[1]~12_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~17_combout ),
+	.sclr(\driver|line_count[9]~17_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|pixel_count [1]),
+	.q(\driver|pixel_count [1]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|pixel_count[1] .is_wysiwyg = "true";
-defparam \driver1|pixel_count[1] .power_up = "low";
+defparam \driver|pixel_count[1] .is_wysiwyg = "true";
+defparam \driver|pixel_count[1] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N12
-cycloneive_lcell_comb \driver1|pixel_count[2]~14 (
+cycloneive_lcell_comb \driver|pixel_count[2]~14 (
 // Equation(s):
-// \driver1|pixel_count[2]~14_combout  = (\driver1|pixel_count [2] & (\driver1|pixel_count[1]~13  $ (GND))) # (!\driver1|pixel_count [2] & (!\driver1|pixel_count[1]~13  & VCC))
-// \driver1|pixel_count[2]~15  = CARRY((\driver1|pixel_count [2] & !\driver1|pixel_count[1]~13 ))
+// \driver|pixel_count[2]~14_combout  = (\driver|pixel_count [2] & (\driver|pixel_count[1]~13  $ (GND))) # (!\driver|pixel_count [2] & (!\driver|pixel_count[1]~13  & VCC))
+// \driver|pixel_count[2]~15  = CARRY((\driver|pixel_count [2] & !\driver|pixel_count[1]~13 ))
 
-	.dataa(\driver1|pixel_count [2]),
+	.dataa(\driver|pixel_count [2]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|pixel_count[1]~13 ),
-	.combout(\driver1|pixel_count[2]~14_combout ),
-	.cout(\driver1|pixel_count[2]~15 ));
+	.cin(\driver|pixel_count[1]~13 ),
+	.combout(\driver|pixel_count[2]~14_combout ),
+	.cout(\driver|pixel_count[2]~15 ));
 // synopsys translate_off
-defparam \driver1|pixel_count[2]~14 .lut_mask = 16'hA50A;
-defparam \driver1|pixel_count[2]~14 .sum_lutc_input = "cin";
+defparam \driver|pixel_count[2]~14 .lut_mask = 16'hA50A;
+defparam \driver|pixel_count[2]~14 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X28_Y13_N13
-dffeas \driver1|pixel_count[2] (
+dffeas \driver|pixel_count[2] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|pixel_count[2]~14_combout ),
+	.d(\driver|pixel_count[2]~14_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~17_combout ),
+	.sclr(\driver|line_count[9]~17_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|pixel_count [2]),
+	.q(\driver|pixel_count [2]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|pixel_count[2] .is_wysiwyg = "true";
-defparam \driver1|pixel_count[2] .power_up = "low";
+defparam \driver|pixel_count[2] .is_wysiwyg = "true";
+defparam \driver|pixel_count[2] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N14
-cycloneive_lcell_comb \driver1|pixel_count[3]~16 (
+cycloneive_lcell_comb \driver|pixel_count[3]~16 (
 // Equation(s):
-// \driver1|pixel_count[3]~16_combout  = (\driver1|pixel_count [3] & (!\driver1|pixel_count[2]~15 )) # (!\driver1|pixel_count [3] & ((\driver1|pixel_count[2]~15 ) # (GND)))
-// \driver1|pixel_count[3]~17  = CARRY((!\driver1|pixel_count[2]~15 ) # (!\driver1|pixel_count [3]))
+// \driver|pixel_count[3]~16_combout  = (\driver|pixel_count [3] & (!\driver|pixel_count[2]~15 )) # (!\driver|pixel_count [3] & ((\driver|pixel_count[2]~15 ) # (GND)))
+// \driver|pixel_count[3]~17  = CARRY((!\driver|pixel_count[2]~15 ) # (!\driver|pixel_count [3]))
 
 	.dataa(gnd),
-	.datab(\driver1|pixel_count [3]),
+	.datab(\driver|pixel_count [3]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|pixel_count[2]~15 ),
-	.combout(\driver1|pixel_count[3]~16_combout ),
-	.cout(\driver1|pixel_count[3]~17 ));
+	.cin(\driver|pixel_count[2]~15 ),
+	.combout(\driver|pixel_count[3]~16_combout ),
+	.cout(\driver|pixel_count[3]~17 ));
 // synopsys translate_off
-defparam \driver1|pixel_count[3]~16 .lut_mask = 16'h3C3F;
-defparam \driver1|pixel_count[3]~16 .sum_lutc_input = "cin";
+defparam \driver|pixel_count[3]~16 .lut_mask = 16'h3C3F;
+defparam \driver|pixel_count[3]~16 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X28_Y13_N15
-dffeas \driver1|pixel_count[3] (
+dffeas \driver|pixel_count[3] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|pixel_count[3]~16_combout ),
+	.d(\driver|pixel_count[3]~16_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~17_combout ),
+	.sclr(\driver|line_count[9]~17_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|pixel_count [3]),
+	.q(\driver|pixel_count [3]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|pixel_count[3] .is_wysiwyg = "true";
-defparam \driver1|pixel_count[3] .power_up = "low";
+defparam \driver|pixel_count[3] .is_wysiwyg = "true";
+defparam \driver|pixel_count[3] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N16
-cycloneive_lcell_comb \driver1|pixel_count[4]~18 (
+cycloneive_lcell_comb \driver|pixel_count[4]~18 (
 // Equation(s):
-// \driver1|pixel_count[4]~18_combout  = (\driver1|pixel_count [4] & (\driver1|pixel_count[3]~17  $ (GND))) # (!\driver1|pixel_count [4] & (!\driver1|pixel_count[3]~17  & VCC))
-// \driver1|pixel_count[4]~19  = CARRY((\driver1|pixel_count [4] & !\driver1|pixel_count[3]~17 ))
+// \driver|pixel_count[4]~18_combout  = (\driver|pixel_count [4] & (\driver|pixel_count[3]~17  $ (GND))) # (!\driver|pixel_count [4] & (!\driver|pixel_count[3]~17  & VCC))
+// \driver|pixel_count[4]~19  = CARRY((\driver|pixel_count [4] & !\driver|pixel_count[3]~17 ))
 
-	.dataa(\driver1|pixel_count [4]),
+	.dataa(\driver|pixel_count [4]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|pixel_count[3]~17 ),
-	.combout(\driver1|pixel_count[4]~18_combout ),
-	.cout(\driver1|pixel_count[4]~19 ));
+	.cin(\driver|pixel_count[3]~17 ),
+	.combout(\driver|pixel_count[4]~18_combout ),
+	.cout(\driver|pixel_count[4]~19 ));
 // synopsys translate_off
-defparam \driver1|pixel_count[4]~18 .lut_mask = 16'hA50A;
-defparam \driver1|pixel_count[4]~18 .sum_lutc_input = "cin";
+defparam \driver|pixel_count[4]~18 .lut_mask = 16'hA50A;
+defparam \driver|pixel_count[4]~18 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X28_Y13_N17
-dffeas \driver1|pixel_count[4] (
+dffeas \driver|pixel_count[4] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|pixel_count[4]~18_combout ),
+	.d(\driver|pixel_count[4]~18_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~17_combout ),
+	.sclr(\driver|line_count[9]~17_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|pixel_count [4]),
+	.q(\driver|pixel_count [4]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|pixel_count[4] .is_wysiwyg = "true";
-defparam \driver1|pixel_count[4] .power_up = "low";
+defparam \driver|pixel_count[4] .is_wysiwyg = "true";
+defparam \driver|pixel_count[4] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N18
-cycloneive_lcell_comb \driver1|pixel_count[5]~20 (
+cycloneive_lcell_comb \driver|pixel_count[5]~20 (
 // Equation(s):
-// \driver1|pixel_count[5]~20_combout  = (\driver1|pixel_count [5] & (!\driver1|pixel_count[4]~19 )) # (!\driver1|pixel_count [5] & ((\driver1|pixel_count[4]~19 ) # (GND)))
-// \driver1|pixel_count[5]~21  = CARRY((!\driver1|pixel_count[4]~19 ) # (!\driver1|pixel_count [5]))
+// \driver|pixel_count[5]~20_combout  = (\driver|pixel_count [5] & (!\driver|pixel_count[4]~19 )) # (!\driver|pixel_count [5] & ((\driver|pixel_count[4]~19 ) # (GND)))
+// \driver|pixel_count[5]~21  = CARRY((!\driver|pixel_count[4]~19 ) # (!\driver|pixel_count [5]))
 
 	.dataa(gnd),
-	.datab(\driver1|pixel_count [5]),
+	.datab(\driver|pixel_count [5]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|pixel_count[4]~19 ),
-	.combout(\driver1|pixel_count[5]~20_combout ),
-	.cout(\driver1|pixel_count[5]~21 ));
+	.cin(\driver|pixel_count[4]~19 ),
+	.combout(\driver|pixel_count[5]~20_combout ),
+	.cout(\driver|pixel_count[5]~21 ));
 // synopsys translate_off
-defparam \driver1|pixel_count[5]~20 .lut_mask = 16'h3C3F;
-defparam \driver1|pixel_count[5]~20 .sum_lutc_input = "cin";
+defparam \driver|pixel_count[5]~20 .lut_mask = 16'h3C3F;
+defparam \driver|pixel_count[5]~20 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X28_Y13_N19
-dffeas \driver1|pixel_count[5] (
+dffeas \driver|pixel_count[5] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|pixel_count[5]~20_combout ),
+	.d(\driver|pixel_count[5]~20_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~17_combout ),
+	.sclr(\driver|line_count[9]~17_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|pixel_count [5]),
+	.q(\driver|pixel_count [5]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|pixel_count[5] .is_wysiwyg = "true";
-defparam \driver1|pixel_count[5] .power_up = "low";
+defparam \driver|pixel_count[5] .is_wysiwyg = "true";
+defparam \driver|pixel_count[5] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N20
-cycloneive_lcell_comb \driver1|pixel_count[6]~22 (
+cycloneive_lcell_comb \driver|pixel_count[6]~22 (
 // Equation(s):
-// \driver1|pixel_count[6]~22_combout  = (\driver1|pixel_count [6] & (\driver1|pixel_count[5]~21  $ (GND))) # (!\driver1|pixel_count [6] & (!\driver1|pixel_count[5]~21  & VCC))
-// \driver1|pixel_count[6]~23  = CARRY((\driver1|pixel_count [6] & !\driver1|pixel_count[5]~21 ))
+// \driver|pixel_count[6]~22_combout  = (\driver|pixel_count [6] & (\driver|pixel_count[5]~21  $ (GND))) # (!\driver|pixel_count [6] & (!\driver|pixel_count[5]~21  & VCC))
+// \driver|pixel_count[6]~23  = CARRY((\driver|pixel_count [6] & !\driver|pixel_count[5]~21 ))
 
 	.dataa(gnd),
-	.datab(\driver1|pixel_count [6]),
+	.datab(\driver|pixel_count [6]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|pixel_count[5]~21 ),
-	.combout(\driver1|pixel_count[6]~22_combout ),
-	.cout(\driver1|pixel_count[6]~23 ));
+	.cin(\driver|pixel_count[5]~21 ),
+	.combout(\driver|pixel_count[6]~22_combout ),
+	.cout(\driver|pixel_count[6]~23 ));
 // synopsys translate_off
-defparam \driver1|pixel_count[6]~22 .lut_mask = 16'hC30C;
-defparam \driver1|pixel_count[6]~22 .sum_lutc_input = "cin";
+defparam \driver|pixel_count[6]~22 .lut_mask = 16'hC30C;
+defparam \driver|pixel_count[6]~22 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X28_Y13_N21
-dffeas \driver1|pixel_count[6] (
+dffeas \driver|pixel_count[6] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|pixel_count[6]~22_combout ),
+	.d(\driver|pixel_count[6]~22_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~17_combout ),
+	.sclr(\driver|line_count[9]~17_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|pixel_count [6]),
+	.q(\driver|pixel_count [6]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|pixel_count[6] .is_wysiwyg = "true";
-defparam \driver1|pixel_count[6] .power_up = "low";
+defparam \driver|pixel_count[6] .is_wysiwyg = "true";
+defparam \driver|pixel_count[6] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N22
-cycloneive_lcell_comb \driver1|pixel_count[7]~24 (
+cycloneive_lcell_comb \driver|pixel_count[7]~24 (
 // Equation(s):
-// \driver1|pixel_count[7]~24_combout  = (\driver1|pixel_count [7] & (!\driver1|pixel_count[6]~23 )) # (!\driver1|pixel_count [7] & ((\driver1|pixel_count[6]~23 ) # (GND)))
-// \driver1|pixel_count[7]~25  = CARRY((!\driver1|pixel_count[6]~23 ) # (!\driver1|pixel_count [7]))
+// \driver|pixel_count[7]~24_combout  = (\driver|pixel_count [7] & (!\driver|pixel_count[6]~23 )) # (!\driver|pixel_count [7] & ((\driver|pixel_count[6]~23 ) # (GND)))
+// \driver|pixel_count[7]~25  = CARRY((!\driver|pixel_count[6]~23 ) # (!\driver|pixel_count [7]))
 
-	.dataa(\driver1|pixel_count [7]),
+	.dataa(\driver|pixel_count [7]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|pixel_count[6]~23 ),
-	.combout(\driver1|pixel_count[7]~24_combout ),
-	.cout(\driver1|pixel_count[7]~25 ));
+	.cin(\driver|pixel_count[6]~23 ),
+	.combout(\driver|pixel_count[7]~24_combout ),
+	.cout(\driver|pixel_count[7]~25 ));
 // synopsys translate_off
-defparam \driver1|pixel_count[7]~24 .lut_mask = 16'h5A5F;
-defparam \driver1|pixel_count[7]~24 .sum_lutc_input = "cin";
+defparam \driver|pixel_count[7]~24 .lut_mask = 16'h5A5F;
+defparam \driver|pixel_count[7]~24 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X28_Y13_N23
-dffeas \driver1|pixel_count[7] (
+dffeas \driver|pixel_count[7] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|pixel_count[7]~24_combout ),
+	.d(\driver|pixel_count[7]~24_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~17_combout ),
+	.sclr(\driver|line_count[9]~17_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|pixel_count [7]),
+	.q(\driver|pixel_count [7]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|pixel_count[7] .is_wysiwyg = "true";
-defparam \driver1|pixel_count[7] .power_up = "low";
+defparam \driver|pixel_count[7] .is_wysiwyg = "true";
+defparam \driver|pixel_count[7] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N24
-cycloneive_lcell_comb \driver1|pixel_count[8]~26 (
+cycloneive_lcell_comb \driver|pixel_count[8]~26 (
 // Equation(s):
-// \driver1|pixel_count[8]~26_combout  = (\driver1|pixel_count [8] & (\driver1|pixel_count[7]~25  $ (GND))) # (!\driver1|pixel_count [8] & (!\driver1|pixel_count[7]~25  & VCC))
-// \driver1|pixel_count[8]~27  = CARRY((\driver1|pixel_count [8] & !\driver1|pixel_count[7]~25 ))
+// \driver|pixel_count[8]~26_combout  = (\driver|pixel_count [8] & (\driver|pixel_count[7]~25  $ (GND))) # (!\driver|pixel_count [8] & (!\driver|pixel_count[7]~25  & VCC))
+// \driver|pixel_count[8]~27  = CARRY((\driver|pixel_count [8] & !\driver|pixel_count[7]~25 ))
 
-	.dataa(\driver1|pixel_count [8]),
+	.dataa(\driver|pixel_count [8]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|pixel_count[7]~25 ),
-	.combout(\driver1|pixel_count[8]~26_combout ),
-	.cout(\driver1|pixel_count[8]~27 ));
+	.cin(\driver|pixel_count[7]~25 ),
+	.combout(\driver|pixel_count[8]~26_combout ),
+	.cout(\driver|pixel_count[8]~27 ));
 // synopsys translate_off
-defparam \driver1|pixel_count[8]~26 .lut_mask = 16'hA50A;
-defparam \driver1|pixel_count[8]~26 .sum_lutc_input = "cin";
+defparam \driver|pixel_count[8]~26 .lut_mask = 16'hA50A;
+defparam \driver|pixel_count[8]~26 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X28_Y13_N25
-dffeas \driver1|pixel_count[8] (
+dffeas \driver|pixel_count[8] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|pixel_count[8]~26_combout ),
+	.d(\driver|pixel_count[8]~26_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~17_combout ),
+	.sclr(\driver|line_count[9]~17_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|pixel_count [8]),
+	.q(\driver|pixel_count [8]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|pixel_count[8] .is_wysiwyg = "true";
-defparam \driver1|pixel_count[8] .power_up = "low";
+defparam \driver|pixel_count[8] .is_wysiwyg = "true";
+defparam \driver|pixel_count[8] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N26
-cycloneive_lcell_comb \driver1|pixel_count[9]~28 (
+cycloneive_lcell_comb \driver|pixel_count[9]~28 (
 // Equation(s):
-// \driver1|pixel_count[9]~28_combout  = \driver1|pixel_count [9] $ (\driver1|pixel_count[8]~27 )
+// \driver|pixel_count[9]~28_combout  = \driver|pixel_count [9] $ (\driver|pixel_count[8]~27 )
 
-	.dataa(\driver1|pixel_count [9]),
+	.dataa(\driver|pixel_count [9]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
-	.cin(\driver1|pixel_count[8]~27 ),
-	.combout(\driver1|pixel_count[9]~28_combout ),
+	.cin(\driver|pixel_count[8]~27 ),
+	.combout(\driver|pixel_count[9]~28_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|pixel_count[9]~28 .lut_mask = 16'h5A5A;
-defparam \driver1|pixel_count[9]~28 .sum_lutc_input = "cin";
+defparam \driver|pixel_count[9]~28 .lut_mask = 16'h5A5A;
+defparam \driver|pixel_count[9]~28 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X28_Y13_N27
-dffeas \driver1|pixel_count[9] (
+dffeas \driver|pixel_count[9] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|pixel_count[9]~28_combout ),
+	.d(\driver|pixel_count[9]~28_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~17_combout ),
+	.sclr(\driver|line_count[9]~17_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|pixel_count [9]),
+	.q(\driver|pixel_count [9]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|pixel_count[9] .is_wysiwyg = "true";
-defparam \driver1|pixel_count[9] .power_up = "low";
+defparam \driver|pixel_count[9] .is_wysiwyg = "true";
+defparam \driver|pixel_count[9] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N6
-cycloneive_lcell_comb \driver1|Equal0~1 (
+cycloneive_lcell_comb \driver|Equal0~1 (
 // Equation(s):
-// \driver1|Equal0~1_combout  = ((\driver1|pixel_count [0]) # ((!\driver1|pixel_count [1]) # (!\driver1|pixel_count [9]))) # (!\driver1|pixel_count [8])
+// \driver|Equal0~1_combout  = ((\driver|pixel_count [0]) # ((!\driver|pixel_count [1]) # (!\driver|pixel_count [9]))) # (!\driver|pixel_count [8])
 
-	.dataa(\driver1|pixel_count [8]),
-	.datab(\driver1|pixel_count [0]),
-	.datac(\driver1|pixel_count [9]),
-	.datad(\driver1|pixel_count [1]),
+	.dataa(\driver|pixel_count [8]),
+	.datab(\driver|pixel_count [0]),
+	.datac(\driver|pixel_count [9]),
+	.datad(\driver|pixel_count [1]),
 	.cin(gnd),
-	.combout(\driver1|Equal0~1_combout ),
+	.combout(\driver|Equal0~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|Equal0~1 .lut_mask = 16'hDFFF;
-defparam \driver1|Equal0~1 .sum_lutc_input = "datac";
+defparam \driver|Equal0~1 .lut_mask = 16'hDFFF;
+defparam \driver|Equal0~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N28
-cycloneive_lcell_comb \driver1|Equal0~2 (
+cycloneive_lcell_comb \driver|Equal0~2 (
 // Equation(s):
-// \driver1|Equal0~2_combout  = (\driver1|pixel_count [2]) # (!\driver1|pixel_count [3])
+// \driver|Equal0~2_combout  = (\driver|pixel_count [2]) # (!\driver|pixel_count [3])
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\driver1|pixel_count [3]),
-	.datad(\driver1|pixel_count [2]),
+	.datac(\driver|pixel_count [3]),
+	.datad(\driver|pixel_count [2]),
 	.cin(gnd),
-	.combout(\driver1|Equal0~2_combout ),
+	.combout(\driver|Equal0~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|Equal0~2 .lut_mask = 16'hFF0F;
-defparam \driver1|Equal0~2 .sum_lutc_input = "datac";
+defparam \driver|Equal0~2 .lut_mask = 16'hFF0F;
+defparam \driver|Equal0~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N4
-cycloneive_lcell_comb \driver1|Equal0~0 (
+cycloneive_lcell_comb \driver|Equal0~0 (
 // Equation(s):
-// \driver1|Equal0~0_combout  = ((\driver1|pixel_count [5]) # ((\driver1|pixel_count [7]) # (\driver1|pixel_count [6]))) # (!\driver1|pixel_count [4])
+// \driver|Equal0~0_combout  = ((\driver|pixel_count [5]) # ((\driver|pixel_count [7]) # (\driver|pixel_count [6]))) # (!\driver|pixel_count [4])
 
-	.dataa(\driver1|pixel_count [4]),
-	.datab(\driver1|pixel_count [5]),
-	.datac(\driver1|pixel_count [7]),
-	.datad(\driver1|pixel_count [6]),
+	.dataa(\driver|pixel_count [4]),
+	.datab(\driver|pixel_count [5]),
+	.datac(\driver|pixel_count [7]),
+	.datad(\driver|pixel_count [6]),
 	.cin(gnd),
-	.combout(\driver1|Equal0~0_combout ),
+	.combout(\driver|Equal0~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|Equal0~0 .lut_mask = 16'hFFFD;
-defparam \driver1|Equal0~0 .sum_lutc_input = "datac";
+defparam \driver|Equal0~0 .lut_mask = 16'hFFFD;
+defparam \driver|Equal0~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: IOIBUF_X53_Y14_N1
@@ -1589,308 +1589,308 @@ defparam \KEY[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N30
-cycloneive_lcell_comb \driver1|line_count[9]~17 (
+cycloneive_lcell_comb \driver|line_count[9]~17 (
 // Equation(s):
-// \driver1|line_count[9]~17_combout  = ((!\driver1|Equal0~1_combout  & (!\driver1|Equal0~2_combout  & !\driver1|Equal0~0_combout ))) # (!\KEY[0]~input_o )
+// \driver|line_count[9]~17_combout  = ((!\driver|Equal0~1_combout  & (!\driver|Equal0~2_combout  & !\driver|Equal0~0_combout ))) # (!\KEY[0]~input_o )
 
-	.dataa(\driver1|Equal0~1_combout ),
-	.datab(\driver1|Equal0~2_combout ),
-	.datac(\driver1|Equal0~0_combout ),
+	.dataa(\driver|Equal0~1_combout ),
+	.datab(\driver|Equal0~2_combout ),
+	.datac(\driver|Equal0~0_combout ),
 	.datad(\KEY[0]~input_o ),
 	.cin(gnd),
-	.combout(\driver1|line_count[9]~17_combout ),
+	.combout(\driver|line_count[9]~17_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|line_count[9]~17 .lut_mask = 16'h01FF;
-defparam \driver1|line_count[9]~17 .sum_lutc_input = "datac";
+defparam \driver|line_count[9]~17 .lut_mask = 16'h01FF;
+defparam \driver|line_count[9]~17 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X30_Y10_N17
-dffeas \driver1|line_count[2] (
+dffeas \driver|line_count[2] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|line_count[2]~14_combout ),
+	.d(\driver|line_count[2]~14_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~16_combout ),
+	.sclr(\driver|line_count[9]~16_combout ),
 	.sload(gnd),
-	.ena(\driver1|line_count[9]~17_combout ),
+	.ena(\driver|line_count[9]~17_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|line_count [2]),
+	.q(\driver|line_count [2]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|line_count[2] .is_wysiwyg = "true";
-defparam \driver1|line_count[2] .power_up = "low";
+defparam \driver|line_count[2] .is_wysiwyg = "true";
+defparam \driver|line_count[2] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X30_Y10_N18
-cycloneive_lcell_comb \driver1|line_count[3]~18 (
+cycloneive_lcell_comb \driver|line_count[3]~18 (
 // Equation(s):
-// \driver1|line_count[3]~18_combout  = (\driver1|line_count [3] & (!\driver1|line_count[2]~15 )) # (!\driver1|line_count [3] & ((\driver1|line_count[2]~15 ) # (GND)))
-// \driver1|line_count[3]~19  = CARRY((!\driver1|line_count[2]~15 ) # (!\driver1|line_count [3]))
+// \driver|line_count[3]~18_combout  = (\driver|line_count [3] & (!\driver|line_count[2]~15 )) # (!\driver|line_count [3] & ((\driver|line_count[2]~15 ) # (GND)))
+// \driver|line_count[3]~19  = CARRY((!\driver|line_count[2]~15 ) # (!\driver|line_count [3]))
 
 	.dataa(gnd),
-	.datab(\driver1|line_count [3]),
+	.datab(\driver|line_count [3]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|line_count[2]~15 ),
-	.combout(\driver1|line_count[3]~18_combout ),
-	.cout(\driver1|line_count[3]~19 ));
+	.cin(\driver|line_count[2]~15 ),
+	.combout(\driver|line_count[3]~18_combout ),
+	.cout(\driver|line_count[3]~19 ));
 // synopsys translate_off
-defparam \driver1|line_count[3]~18 .lut_mask = 16'h3C3F;
-defparam \driver1|line_count[3]~18 .sum_lutc_input = "cin";
+defparam \driver|line_count[3]~18 .lut_mask = 16'h3C3F;
+defparam \driver|line_count[3]~18 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X30_Y10_N19
-dffeas \driver1|line_count[3] (
+dffeas \driver|line_count[3] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|line_count[3]~18_combout ),
+	.d(\driver|line_count[3]~18_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~16_combout ),
+	.sclr(\driver|line_count[9]~16_combout ),
 	.sload(gnd),
-	.ena(\driver1|line_count[9]~17_combout ),
+	.ena(\driver|line_count[9]~17_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|line_count [3]),
+	.q(\driver|line_count [3]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|line_count[3] .is_wysiwyg = "true";
-defparam \driver1|line_count[3] .power_up = "low";
+defparam \driver|line_count[3] .is_wysiwyg = "true";
+defparam \driver|line_count[3] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X30_Y10_N20
-cycloneive_lcell_comb \driver1|line_count[4]~20 (
+cycloneive_lcell_comb \driver|line_count[4]~20 (
 // Equation(s):
-// \driver1|line_count[4]~20_combout  = (\driver1|line_count [4] & (\driver1|line_count[3]~19  $ (GND))) # (!\driver1|line_count [4] & (!\driver1|line_count[3]~19  & VCC))
-// \driver1|line_count[4]~21  = CARRY((\driver1|line_count [4] & !\driver1|line_count[3]~19 ))
+// \driver|line_count[4]~20_combout  = (\driver|line_count [4] & (\driver|line_count[3]~19  $ (GND))) # (!\driver|line_count [4] & (!\driver|line_count[3]~19  & VCC))
+// \driver|line_count[4]~21  = CARRY((\driver|line_count [4] & !\driver|line_count[3]~19 ))
 
 	.dataa(gnd),
-	.datab(\driver1|line_count [4]),
+	.datab(\driver|line_count [4]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|line_count[3]~19 ),
-	.combout(\driver1|line_count[4]~20_combout ),
-	.cout(\driver1|line_count[4]~21 ));
+	.cin(\driver|line_count[3]~19 ),
+	.combout(\driver|line_count[4]~20_combout ),
+	.cout(\driver|line_count[4]~21 ));
 // synopsys translate_off
-defparam \driver1|line_count[4]~20 .lut_mask = 16'hC30C;
-defparam \driver1|line_count[4]~20 .sum_lutc_input = "cin";
+defparam \driver|line_count[4]~20 .lut_mask = 16'hC30C;
+defparam \driver|line_count[4]~20 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X30_Y10_N21
-dffeas \driver1|line_count[4] (
+dffeas \driver|line_count[4] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|line_count[4]~20_combout ),
+	.d(\driver|line_count[4]~20_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~16_combout ),
+	.sclr(\driver|line_count[9]~16_combout ),
 	.sload(gnd),
-	.ena(\driver1|line_count[9]~17_combout ),
+	.ena(\driver|line_count[9]~17_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|line_count [4]),
+	.q(\driver|line_count [4]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|line_count[4] .is_wysiwyg = "true";
-defparam \driver1|line_count[4] .power_up = "low";
+defparam \driver|line_count[4] .is_wysiwyg = "true";
+defparam \driver|line_count[4] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X30_Y10_N22
-cycloneive_lcell_comb \driver1|line_count[5]~22 (
+cycloneive_lcell_comb \driver|line_count[5]~22 (
 // Equation(s):
-// \driver1|line_count[5]~22_combout  = (\driver1|line_count [5] & (!\driver1|line_count[4]~21 )) # (!\driver1|line_count [5] & ((\driver1|line_count[4]~21 ) # (GND)))
-// \driver1|line_count[5]~23  = CARRY((!\driver1|line_count[4]~21 ) # (!\driver1|line_count [5]))
+// \driver|line_count[5]~22_combout  = (\driver|line_count [5] & (!\driver|line_count[4]~21 )) # (!\driver|line_count [5] & ((\driver|line_count[4]~21 ) # (GND)))
+// \driver|line_count[5]~23  = CARRY((!\driver|line_count[4]~21 ) # (!\driver|line_count [5]))
 
-	.dataa(\driver1|line_count [5]),
+	.dataa(\driver|line_count [5]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|line_count[4]~21 ),
-	.combout(\driver1|line_count[5]~22_combout ),
-	.cout(\driver1|line_count[5]~23 ));
+	.cin(\driver|line_count[4]~21 ),
+	.combout(\driver|line_count[5]~22_combout ),
+	.cout(\driver|line_count[5]~23 ));
 // synopsys translate_off
-defparam \driver1|line_count[5]~22 .lut_mask = 16'h5A5F;
-defparam \driver1|line_count[5]~22 .sum_lutc_input = "cin";
+defparam \driver|line_count[5]~22 .lut_mask = 16'h5A5F;
+defparam \driver|line_count[5]~22 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X30_Y10_N23
-dffeas \driver1|line_count[5] (
+dffeas \driver|line_count[5] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|line_count[5]~22_combout ),
+	.d(\driver|line_count[5]~22_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~16_combout ),
+	.sclr(\driver|line_count[9]~16_combout ),
 	.sload(gnd),
-	.ena(\driver1|line_count[9]~17_combout ),
+	.ena(\driver|line_count[9]~17_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|line_count [5]),
+	.q(\driver|line_count [5]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|line_count[5] .is_wysiwyg = "true";
-defparam \driver1|line_count[5] .power_up = "low";
+defparam \driver|line_count[5] .is_wysiwyg = "true";
+defparam \driver|line_count[5] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X30_Y10_N24
-cycloneive_lcell_comb \driver1|line_count[6]~24 (
+cycloneive_lcell_comb \driver|line_count[6]~24 (
 // Equation(s):
-// \driver1|line_count[6]~24_combout  = (\driver1|line_count [6] & (\driver1|line_count[5]~23  $ (GND))) # (!\driver1|line_count [6] & (!\driver1|line_count[5]~23  & VCC))
-// \driver1|line_count[6]~25  = CARRY((\driver1|line_count [6] & !\driver1|line_count[5]~23 ))
+// \driver|line_count[6]~24_combout  = (\driver|line_count [6] & (\driver|line_count[5]~23  $ (GND))) # (!\driver|line_count [6] & (!\driver|line_count[5]~23  & VCC))
+// \driver|line_count[6]~25  = CARRY((\driver|line_count [6] & !\driver|line_count[5]~23 ))
 
 	.dataa(gnd),
-	.datab(\driver1|line_count [6]),
+	.datab(\driver|line_count [6]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|line_count[5]~23 ),
-	.combout(\driver1|line_count[6]~24_combout ),
-	.cout(\driver1|line_count[6]~25 ));
+	.cin(\driver|line_count[5]~23 ),
+	.combout(\driver|line_count[6]~24_combout ),
+	.cout(\driver|line_count[6]~25 ));
 // synopsys translate_off
-defparam \driver1|line_count[6]~24 .lut_mask = 16'hC30C;
-defparam \driver1|line_count[6]~24 .sum_lutc_input = "cin";
+defparam \driver|line_count[6]~24 .lut_mask = 16'hC30C;
+defparam \driver|line_count[6]~24 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X30_Y10_N25
-dffeas \driver1|line_count[6] (
+dffeas \driver|line_count[6] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|line_count[6]~24_combout ),
+	.d(\driver|line_count[6]~24_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~16_combout ),
+	.sclr(\driver|line_count[9]~16_combout ),
 	.sload(gnd),
-	.ena(\driver1|line_count[9]~17_combout ),
+	.ena(\driver|line_count[9]~17_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|line_count [6]),
+	.q(\driver|line_count [6]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|line_count[6] .is_wysiwyg = "true";
-defparam \driver1|line_count[6] .power_up = "low";
+defparam \driver|line_count[6] .is_wysiwyg = "true";
+defparam \driver|line_count[6] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X30_Y10_N26
-cycloneive_lcell_comb \driver1|line_count[7]~26 (
+cycloneive_lcell_comb \driver|line_count[7]~26 (
 // Equation(s):
-// \driver1|line_count[7]~26_combout  = (\driver1|line_count [7] & (!\driver1|line_count[6]~25 )) # (!\driver1|line_count [7] & ((\driver1|line_count[6]~25 ) # (GND)))
-// \driver1|line_count[7]~27  = CARRY((!\driver1|line_count[6]~25 ) # (!\driver1|line_count [7]))
+// \driver|line_count[7]~26_combout  = (\driver|line_count [7] & (!\driver|line_count[6]~25 )) # (!\driver|line_count [7] & ((\driver|line_count[6]~25 ) # (GND)))
+// \driver|line_count[7]~27  = CARRY((!\driver|line_count[6]~25 ) # (!\driver|line_count [7]))
 
-	.dataa(\driver1|line_count [7]),
+	.dataa(\driver|line_count [7]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|line_count[6]~25 ),
-	.combout(\driver1|line_count[7]~26_combout ),
-	.cout(\driver1|line_count[7]~27 ));
+	.cin(\driver|line_count[6]~25 ),
+	.combout(\driver|line_count[7]~26_combout ),
+	.cout(\driver|line_count[7]~27 ));
 // synopsys translate_off
-defparam \driver1|line_count[7]~26 .lut_mask = 16'h5A5F;
-defparam \driver1|line_count[7]~26 .sum_lutc_input = "cin";
+defparam \driver|line_count[7]~26 .lut_mask = 16'h5A5F;
+defparam \driver|line_count[7]~26 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X30_Y10_N27
-dffeas \driver1|line_count[7] (
+dffeas \driver|line_count[7] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|line_count[7]~26_combout ),
+	.d(\driver|line_count[7]~26_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~16_combout ),
+	.sclr(\driver|line_count[9]~16_combout ),
 	.sload(gnd),
-	.ena(\driver1|line_count[9]~17_combout ),
+	.ena(\driver|line_count[9]~17_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|line_count [7]),
+	.q(\driver|line_count [7]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|line_count[7] .is_wysiwyg = "true";
-defparam \driver1|line_count[7] .power_up = "low";
+defparam \driver|line_count[7] .is_wysiwyg = "true";
+defparam \driver|line_count[7] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X30_Y10_N28
-cycloneive_lcell_comb \driver1|line_count[8]~28 (
+cycloneive_lcell_comb \driver|line_count[8]~28 (
 // Equation(s):
-// \driver1|line_count[8]~28_combout  = (\driver1|line_count [8] & (\driver1|line_count[7]~27  $ (GND))) # (!\driver1|line_count [8] & (!\driver1|line_count[7]~27  & VCC))
-// \driver1|line_count[8]~29  = CARRY((\driver1|line_count [8] & !\driver1|line_count[7]~27 ))
+// \driver|line_count[8]~28_combout  = (\driver|line_count [8] & (\driver|line_count[7]~27  $ (GND))) # (!\driver|line_count [8] & (!\driver|line_count[7]~27  & VCC))
+// \driver|line_count[8]~29  = CARRY((\driver|line_count [8] & !\driver|line_count[7]~27 ))
 
 	.dataa(gnd),
-	.datab(\driver1|line_count [8]),
+	.datab(\driver|line_count [8]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\driver1|line_count[7]~27 ),
-	.combout(\driver1|line_count[8]~28_combout ),
-	.cout(\driver1|line_count[8]~29 ));
+	.cin(\driver|line_count[7]~27 ),
+	.combout(\driver|line_count[8]~28_combout ),
+	.cout(\driver|line_count[8]~29 ));
 // synopsys translate_off
-defparam \driver1|line_count[8]~28 .lut_mask = 16'hC30C;
-defparam \driver1|line_count[8]~28 .sum_lutc_input = "cin";
+defparam \driver|line_count[8]~28 .lut_mask = 16'hC30C;
+defparam \driver|line_count[8]~28 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X30_Y10_N29
-dffeas \driver1|line_count[8] (
+dffeas \driver|line_count[8] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|line_count[8]~28_combout ),
+	.d(\driver|line_count[8]~28_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~16_combout ),
+	.sclr(\driver|line_count[9]~16_combout ),
 	.sload(gnd),
-	.ena(\driver1|line_count[9]~17_combout ),
+	.ena(\driver|line_count[9]~17_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|line_count [8]),
+	.q(\driver|line_count [8]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|line_count[8] .is_wysiwyg = "true";
-defparam \driver1|line_count[8] .power_up = "low";
+defparam \driver|line_count[8] .is_wysiwyg = "true";
+defparam \driver|line_count[8] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X30_Y10_N30
-cycloneive_lcell_comb \driver1|line_count[9]~30 (
+cycloneive_lcell_comb \driver|line_count[9]~30 (
 // Equation(s):
-// \driver1|line_count[9]~30_combout  = \driver1|line_count [9] $ (\driver1|line_count[8]~29 )
+// \driver|line_count[9]~30_combout  = \driver|line_count [9] $ (\driver|line_count[8]~29 )
 
-	.dataa(\driver1|line_count [9]),
+	.dataa(\driver|line_count [9]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
-	.cin(\driver1|line_count[8]~29 ),
-	.combout(\driver1|line_count[9]~30_combout ),
+	.cin(\driver|line_count[8]~29 ),
+	.combout(\driver|line_count[9]~30_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|line_count[9]~30 .lut_mask = 16'h5A5A;
-defparam \driver1|line_count[9]~30 .sum_lutc_input = "cin";
+defparam \driver|line_count[9]~30 .lut_mask = 16'h5A5A;
+defparam \driver|line_count[9]~30 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X30_Y10_N31
-dffeas \driver1|line_count[9] (
+dffeas \driver|line_count[9] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|line_count[9]~30_combout ),
+	.d(\driver|line_count[9]~30_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~16_combout ),
+	.sclr(\driver|line_count[9]~16_combout ),
 	.sload(gnd),
-	.ena(\driver1|line_count[9]~17_combout ),
+	.ena(\driver|line_count[9]~17_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|line_count [9]),
+	.q(\driver|line_count [9]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|line_count[9] .is_wysiwyg = "true";
-defparam \driver1|line_count[9] .power_up = "low";
+defparam \driver|line_count[9] .is_wysiwyg = "true";
+defparam \driver|line_count[9] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X27_Y10_N8
 cycloneive_lcell_comb \Mult1|mult_core|_~1 (
 // Equation(s):
-// \Mult1|mult_core|_~1_combout  = (\driver1|line_count [9] & !\driver1|line_count [8])
+// \Mult1|mult_core|_~1_combout  = (\driver|line_count [9] & !\driver|line_count [8])
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\driver1|line_count [9]),
-	.datad(\driver1|line_count [8]),
+	.datac(\driver|line_count [9]),
+	.datad(\driver|line_count [8]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|_~1_combout ),
 	.cout());
@@ -1900,48 +1900,48 @@ defparam \Mult1|mult_core|_~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X27_Y10_N24
-cycloneive_lcell_comb \driver1|Equal1~0 (
+cycloneive_lcell_comb \driver|Equal1~0 (
 // Equation(s):
-// \driver1|Equal1~0_combout  = (!\driver1|line_count [4] & (!\driver1|line_count [5] & !\driver1|line_count [6]))
+// \driver|Equal1~0_combout  = (!\driver|line_count [4] & (!\driver|line_count [5] & !\driver|line_count [6]))
 
 	.dataa(gnd),
-	.datab(\driver1|line_count [4]),
-	.datac(\driver1|line_count [5]),
-	.datad(\driver1|line_count [6]),
+	.datab(\driver|line_count [4]),
+	.datac(\driver|line_count [5]),
+	.datad(\driver|line_count [6]),
 	.cin(gnd),
-	.combout(\driver1|Equal1~0_combout ),
+	.combout(\driver|Equal1~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|Equal1~0 .lut_mask = 16'h0003;
-defparam \driver1|Equal1~0 .sum_lutc_input = "datac";
+defparam \driver|Equal1~0 .lut_mask = 16'h0003;
+defparam \driver|Equal1~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X27_Y10_N20
-cycloneive_lcell_comb \driver1|Equal1~1 (
+cycloneive_lcell_comb \driver|Equal1~1 (
 // Equation(s):
-// \driver1|Equal1~1_combout  = ((\driver1|line_count [0]) # ((\driver1|line_count [7]) # (!\driver1|Equal1~0_combout ))) # (!\driver1|line_count [3])
+// \driver|Equal1~1_combout  = ((\driver|line_count [0]) # ((\driver|line_count [7]) # (!\driver|Equal1~0_combout ))) # (!\driver|line_count [3])
 
-	.dataa(\driver1|line_count [3]),
-	.datab(\driver1|line_count [0]),
-	.datac(\driver1|line_count [7]),
-	.datad(\driver1|Equal1~0_combout ),
+	.dataa(\driver|line_count [3]),
+	.datab(\driver|line_count [0]),
+	.datac(\driver|line_count [7]),
+	.datad(\driver|Equal1~0_combout ),
 	.cin(gnd),
-	.combout(\driver1|Equal1~1_combout ),
+	.combout(\driver|Equal1~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|Equal1~1 .lut_mask = 16'hFDFF;
-defparam \driver1|Equal1~1 .sum_lutc_input = "datac";
+defparam \driver|Equal1~1 .lut_mask = 16'hFDFF;
+defparam \driver|Equal1~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X27_Y10_N14
 cycloneive_lcell_comb \Mult1|mult_core|_~0 (
 // Equation(s):
-// \Mult1|mult_core|_~0_combout  = (!\driver1|line_count [1] & \driver1|line_count [2])
+// \Mult1|mult_core|_~0_combout  = (!\driver|line_count [1] & \driver|line_count [2])
 
-	.dataa(\driver1|line_count [1]),
+	.dataa(\driver|line_count [1]),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(\driver1|line_count [2]),
+	.datad(\driver|line_count [2]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|_~0_combout ),
 	.cout());
@@ -1951,155 +1951,155 @@ defparam \Mult1|mult_core|_~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X27_Y10_N18
-cycloneive_lcell_comb \driver1|line_count[9]~16 (
+cycloneive_lcell_comb \driver|line_count[9]~16 (
 // Equation(s):
-// \driver1|line_count[9]~16_combout  = ((\Mult1|mult_core|_~1_combout  & (!\driver1|Equal1~1_combout  & \Mult1|mult_core|_~0_combout ))) # (!\KEY[0]~input_o )
+// \driver|line_count[9]~16_combout  = ((\Mult1|mult_core|_~1_combout  & (!\driver|Equal1~1_combout  & \Mult1|mult_core|_~0_combout ))) # (!\KEY[0]~input_o )
 
 	.dataa(\Mult1|mult_core|_~1_combout ),
-	.datab(\driver1|Equal1~1_combout ),
+	.datab(\driver|Equal1~1_combout ),
 	.datac(\Mult1|mult_core|_~0_combout ),
 	.datad(\KEY[0]~input_o ),
 	.cin(gnd),
-	.combout(\driver1|line_count[9]~16_combout ),
+	.combout(\driver|line_count[9]~16_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|line_count[9]~16 .lut_mask = 16'h20FF;
-defparam \driver1|line_count[9]~16 .sum_lutc_input = "datac";
+defparam \driver|line_count[9]~16 .lut_mask = 16'h20FF;
+defparam \driver|line_count[9]~16 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X30_Y10_N13
-dffeas \driver1|line_count[0] (
+dffeas \driver|line_count[0] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|line_count[0]~10_combout ),
+	.d(\driver|line_count[0]~10_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~16_combout ),
+	.sclr(\driver|line_count[9]~16_combout ),
 	.sload(gnd),
-	.ena(\driver1|line_count[9]~17_combout ),
+	.ena(\driver|line_count[9]~17_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|line_count [0]),
+	.q(\driver|line_count [0]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|line_count[0] .is_wysiwyg = "true";
-defparam \driver1|line_count[0] .power_up = "low";
+defparam \driver|line_count[0] .is_wysiwyg = "true";
+defparam \driver|line_count[0] .power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X30_Y10_N15
-dffeas \driver1|line_count[1] (
+dffeas \driver|line_count[1] (
 	.clk(\PLL_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
-	.d(\driver1|line_count[1]~12_combout ),
+	.d(\driver|line_count[1]~12_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\driver1|line_count[9]~16_combout ),
+	.sclr(\driver|line_count[9]~16_combout ),
 	.sload(gnd),
-	.ena(\driver1|line_count[9]~17_combout ),
+	.ena(\driver|line_count[9]~17_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\driver1|line_count [1]),
+	.q(\driver|line_count [1]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \driver1|line_count[1] .is_wysiwyg = "true";
-defparam \driver1|line_count[1] .power_up = "low";
+defparam \driver|line_count[1] .is_wysiwyg = "true";
+defparam \driver|line_count[1] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X27_Y10_N10
-cycloneive_lcell_comb \driver1|V_SYNC_NEG~1 (
+cycloneive_lcell_comb \driver|V_SYNC_NEG~1 (
 // Equation(s):
-// \driver1|V_SYNC_NEG~1_combout  = (((!\driver1|line_count [6]) # (!\driver1|line_count [7])) # (!\driver1|line_count [8])) # (!\driver1|line_count [1])
+// \driver|V_SYNC_NEG~1_combout  = (((!\driver|line_count [6]) # (!\driver|line_count [7])) # (!\driver|line_count [8])) # (!\driver|line_count [1])
 
-	.dataa(\driver1|line_count [1]),
-	.datab(\driver1|line_count [8]),
-	.datac(\driver1|line_count [7]),
-	.datad(\driver1|line_count [6]),
+	.dataa(\driver|line_count [1]),
+	.datab(\driver|line_count [8]),
+	.datac(\driver|line_count [7]),
+	.datad(\driver|line_count [6]),
 	.cin(gnd),
-	.combout(\driver1|V_SYNC_NEG~1_combout ),
+	.combout(\driver|V_SYNC_NEG~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|V_SYNC_NEG~1 .lut_mask = 16'h7FFF;
-defparam \driver1|V_SYNC_NEG~1 .sum_lutc_input = "datac";
+defparam \driver|V_SYNC_NEG~1 .lut_mask = 16'h7FFF;
+defparam \driver|V_SYNC_NEG~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X27_Y10_N16
-cycloneive_lcell_comb \driver1|V_SYNC_NEG~0 (
+cycloneive_lcell_comb \driver|V_SYNC_NEG~0 (
 // Equation(s):
-// \driver1|V_SYNC_NEG~0_combout  = ((\driver1|line_count [4]) # ((\driver1|line_count [2]) # (!\driver1|line_count [5]))) # (!\driver1|line_count [3])
+// \driver|V_SYNC_NEG~0_combout  = ((\driver|line_count [4]) # ((\driver|line_count [2]) # (!\driver|line_count [5]))) # (!\driver|line_count [3])
 
-	.dataa(\driver1|line_count [3]),
-	.datab(\driver1|line_count [4]),
-	.datac(\driver1|line_count [5]),
-	.datad(\driver1|line_count [2]),
+	.dataa(\driver|line_count [3]),
+	.datab(\driver|line_count [4]),
+	.datac(\driver|line_count [5]),
+	.datad(\driver|line_count [2]),
 	.cin(gnd),
-	.combout(\driver1|V_SYNC_NEG~0_combout ),
+	.combout(\driver|V_SYNC_NEG~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|V_SYNC_NEG~0 .lut_mask = 16'hFFDF;
-defparam \driver1|V_SYNC_NEG~0 .sum_lutc_input = "datac";
+defparam \driver|V_SYNC_NEG~0 .lut_mask = 16'hFFDF;
+defparam \driver|V_SYNC_NEG~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X27_Y10_N28
-cycloneive_lcell_comb \driver1|V_SYNC_NEG~2 (
+cycloneive_lcell_comb \driver|V_SYNC_NEG~2 (
 // Equation(s):
-// \driver1|V_SYNC_NEG~2_combout  = (\driver1|V_SYNC_NEG~1_combout ) # ((\driver1|V_SYNC_NEG~0_combout ) # (\driver1|line_count [9]))
+// \driver|V_SYNC_NEG~2_combout  = (\driver|V_SYNC_NEG~1_combout ) # ((\driver|V_SYNC_NEG~0_combout ) # (\driver|line_count [9]))
 
-	.dataa(\driver1|V_SYNC_NEG~1_combout ),
-	.datab(\driver1|V_SYNC_NEG~0_combout ),
-	.datac(\driver1|line_count [9]),
+	.dataa(\driver|V_SYNC_NEG~1_combout ),
+	.datab(\driver|V_SYNC_NEG~0_combout ),
+	.datac(\driver|line_count [9]),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\driver1|V_SYNC_NEG~2_combout ),
+	.combout(\driver|V_SYNC_NEG~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|V_SYNC_NEG~2 .lut_mask = 16'hFEFE;
-defparam \driver1|V_SYNC_NEG~2 .sum_lutc_input = "datac";
+defparam \driver|V_SYNC_NEG~2 .lut_mask = 16'hFEFE;
+defparam \driver|V_SYNC_NEG~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N0
-cycloneive_lcell_comb \driver1|H_SYNC_NEG~0 (
+cycloneive_lcell_comb \driver|H_SYNC_NEG~0 (
 // Equation(s):
-// \driver1|H_SYNC_NEG~0_combout  = ((\driver1|pixel_count [4] & (\driver1|pixel_count [5] & \driver1|pixel_count [6])) # (!\driver1|pixel_count [4] & (!\driver1|pixel_count [5] & !\driver1|pixel_count [6]))) # (!\driver1|pixel_count [7])
+// \driver|H_SYNC_NEG~0_combout  = ((\driver|pixel_count [4] & (\driver|pixel_count [5] & \driver|pixel_count [6])) # (!\driver|pixel_count [4] & (!\driver|pixel_count [5] & !\driver|pixel_count [6]))) # (!\driver|pixel_count [7])
 
-	.dataa(\driver1|pixel_count [4]),
-	.datab(\driver1|pixel_count [5]),
-	.datac(\driver1|pixel_count [7]),
-	.datad(\driver1|pixel_count [6]),
+	.dataa(\driver|pixel_count [4]),
+	.datab(\driver|pixel_count [5]),
+	.datac(\driver|pixel_count [7]),
+	.datad(\driver|pixel_count [6]),
 	.cin(gnd),
-	.combout(\driver1|H_SYNC_NEG~0_combout ),
+	.combout(\driver|H_SYNC_NEG~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|H_SYNC_NEG~0 .lut_mask = 16'h8F1F;
-defparam \driver1|H_SYNC_NEG~0 .sum_lutc_input = "datac";
+defparam \driver|H_SYNC_NEG~0 .lut_mask = 16'h8F1F;
+defparam \driver|H_SYNC_NEG~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y13_N2
-cycloneive_lcell_comb \driver1|H_SYNC_NEG~1 (
+cycloneive_lcell_comb \driver|H_SYNC_NEG~1 (
 // Equation(s):
-// \driver1|H_SYNC_NEG~1_combout  = (\driver1|pixel_count [8]) # ((\driver1|H_SYNC_NEG~0_combout ) # (!\driver1|pixel_count [9]))
+// \driver|H_SYNC_NEG~1_combout  = (\driver|pixel_count [8]) # ((\driver|H_SYNC_NEG~0_combout ) # (!\driver|pixel_count [9]))
 
-	.dataa(\driver1|pixel_count [8]),
-	.datab(\driver1|H_SYNC_NEG~0_combout ),
-	.datac(\driver1|pixel_count [9]),
+	.dataa(\driver|pixel_count [8]),
+	.datab(\driver|H_SYNC_NEG~0_combout ),
+	.datac(\driver|pixel_count [9]),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\driver1|H_SYNC_NEG~1_combout ),
+	.combout(\driver|H_SYNC_NEG~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|H_SYNC_NEG~1 .lut_mask = 16'hEFEF;
-defparam \driver1|H_SYNC_NEG~1 .sum_lutc_input = "datac";
+defparam \driver|H_SYNC_NEG~1 .lut_mask = 16'hEFEF;
+defparam \driver|H_SYNC_NEG~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X29_Y10_N16
 cycloneive_lcell_comb \Mult1|mult_core|romout[1][9]~0 (
 // Equation(s):
-// \Mult1|mult_core|romout[1][9]~0_combout  = (\driver1|line_count [6] & ((\driver1|line_count [7] & (\driver1|line_count [4] & \driver1|line_count [5])) # (!\driver1|line_count [7] & ((!\driver1|line_count [5]))))) # (!\driver1|line_count [6] & 
-// ((\driver1|line_count [7] & ((\driver1|line_count [4]) # (\driver1|line_count [5]))) # (!\driver1|line_count [7] & (\driver1|line_count [4] & \driver1|line_count [5]))))
+// \Mult1|mult_core|romout[1][9]~0_combout  = (\driver|line_count [6] & ((\driver|line_count [7] & (\driver|line_count [4] & \driver|line_count [5])) # (!\driver|line_count [7] & ((!\driver|line_count [5]))))) # (!\driver|line_count [6] & 
+// ((\driver|line_count [7] & ((\driver|line_count [4]) # (\driver|line_count [5]))) # (!\driver|line_count [7] & (\driver|line_count [4] & \driver|line_count [5]))))
 
-	.dataa(\driver1|line_count [6]),
-	.datab(\driver1|line_count [7]),
-	.datac(\driver1|line_count [4]),
-	.datad(\driver1|line_count [5]),
+	.dataa(\driver|line_count [6]),
+	.datab(\driver|line_count [7]),
+	.datac(\driver|line_count [4]),
+	.datad(\driver|line_count [5]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[1][9]~0_combout ),
 	.cout());
@@ -2111,13 +2111,13 @@ defparam \Mult1|mult_core|romout[1][9]~0 .sum_lutc_input = "datac";
 // Location: LCCOMB_X29_Y10_N0
 cycloneive_lcell_comb \Mult1|mult_core|romout[1][8]~1 (
 // Equation(s):
-// \Mult1|mult_core|romout[1][8]~1_combout  = (\driver1|line_count [6] & ((\driver1|line_count [7] & (!\driver1|line_count [4] & \driver1|line_count [5])) # (!\driver1|line_count [7] & (\driver1|line_count [4] & !\driver1|line_count [5])))) # 
-// (!\driver1|line_count [6] & ((\driver1|line_count [7] & (\driver1|line_count [4] $ (!\driver1|line_count [5]))) # (!\driver1|line_count [7] & (!\driver1|line_count [4] & \driver1|line_count [5]))))
+// \Mult1|mult_core|romout[1][8]~1_combout  = (\driver|line_count [6] & ((\driver|line_count [7] & (!\driver|line_count [4] & \driver|line_count [5])) # (!\driver|line_count [7] & (\driver|line_count [4] & !\driver|line_count [5])))) # (!\driver|line_count 
+// [6] & ((\driver|line_count [7] & (\driver|line_count [4] $ (!\driver|line_count [5]))) # (!\driver|line_count [7] & (!\driver|line_count [4] & \driver|line_count [5]))))
 
-	.dataa(\driver1|line_count [6]),
-	.datab(\driver1|line_count [7]),
-	.datac(\driver1|line_count [4]),
-	.datad(\driver1|line_count [5]),
+	.dataa(\driver|line_count [6]),
+	.datab(\driver|line_count [7]),
+	.datac(\driver|line_count [4]),
+	.datad(\driver|line_count [5]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[1][8]~1_combout ),
 	.cout());
@@ -2129,12 +2129,12 @@ defparam \Mult1|mult_core|romout[1][8]~1 .sum_lutc_input = "datac";
 // Location: LCCOMB_X29_Y10_N26
 cycloneive_lcell_comb \Mult1|mult_core|romout[1][7]~2 (
 // Equation(s):
-// \Mult1|mult_core|romout[1][7]~2_combout  = \driver1|line_count [7] $ (((\driver1|line_count [6] & (\driver1|line_count [4] $ (!\driver1|line_count [5]))) # (!\driver1|line_count [6] & (\driver1|line_count [4] & !\driver1|line_count [5]))))
+// \Mult1|mult_core|romout[1][7]~2_combout  = \driver|line_count [7] $ (((\driver|line_count [6] & (\driver|line_count [4] $ (!\driver|line_count [5]))) # (!\driver|line_count [6] & (\driver|line_count [4] & !\driver|line_count [5]))))
 
-	.dataa(\driver1|line_count [6]),
-	.datab(\driver1|line_count [7]),
-	.datac(\driver1|line_count [4]),
-	.datad(\driver1|line_count [5]),
+	.dataa(\driver|line_count [6]),
+	.datab(\driver|line_count [7]),
+	.datac(\driver|line_count [4]),
+	.datad(\driver|line_count [5]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[1][7]~2_combout ),
 	.cout());
@@ -2146,12 +2146,12 @@ defparam \Mult1|mult_core|romout[1][7]~2 .sum_lutc_input = "datac";
 // Location: LCCOMB_X30_Y10_N0
 cycloneive_lcell_comb \Mult1|mult_core|_~2 (
 // Equation(s):
-// \Mult1|mult_core|_~2_combout  = (\driver1|line_count [3] & \driver1|line_count [2])
+// \Mult1|mult_core|_~2_combout  = (\driver|line_count [3] & \driver|line_count [2])
 
 	.dataa(gnd),
-	.datab(\driver1|line_count [3]),
+	.datab(\driver|line_count [3]),
 	.datac(gnd),
-	.datad(\driver1|line_count [2]),
+	.datad(\driver|line_count [2]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|_~2_combout ),
 	.cout());
@@ -2163,12 +2163,12 @@ defparam \Mult1|mult_core|_~2 .sum_lutc_input = "datac";
 // Location: LCCOMB_X30_Y10_N2
 cycloneive_lcell_comb \Mult1|mult_core|romout[0][10]~4 (
 // Equation(s):
-// \Mult1|mult_core|romout[0][10]~4_combout  = (\driver1|line_count [3] & ((!\driver1|line_count [2]))) # (!\driver1|line_count [3] & (\driver1|line_count [1] & \driver1|line_count [2]))
+// \Mult1|mult_core|romout[0][10]~4_combout  = (\driver|line_count [3] & ((!\driver|line_count [2]))) # (!\driver|line_count [3] & (\driver|line_count [1] & \driver|line_count [2]))
 
 	.dataa(gnd),
-	.datab(\driver1|line_count [3]),
-	.datac(\driver1|line_count [1]),
-	.datad(\driver1|line_count [2]),
+	.datab(\driver|line_count [3]),
+	.datac(\driver|line_count [1]),
+	.datad(\driver|line_count [2]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[0][10]~4_combout ),
 	.cout());
@@ -2180,11 +2180,11 @@ defparam \Mult1|mult_core|romout[0][10]~4 .sum_lutc_input = "datac";
 // Location: LCCOMB_X29_Y10_N28
 cycloneive_lcell_comb \Mult1|mult_core|romout[1][6]~3 (
 // Equation(s):
-// \Mult1|mult_core|romout[1][6]~3_combout  = \driver1|line_count [6] $ (((\driver1|line_count [5] & !\driver1|line_count [4])))
+// \Mult1|mult_core|romout[1][6]~3_combout  = \driver|line_count [6] $ (((\driver|line_count [5] & !\driver|line_count [4])))
 
-	.dataa(\driver1|line_count [6]),
-	.datab(\driver1|line_count [5]),
-	.datac(\driver1|line_count [4]),
+	.dataa(\driver|line_count [6]),
+	.datab(\driver|line_count [5]),
+	.datac(\driver|line_count [4]),
 	.datad(gnd),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[1][6]~3_combout ),
@@ -2197,12 +2197,12 @@ defparam \Mult1|mult_core|romout[1][6]~3 .sum_lutc_input = "datac";
 // Location: LCCOMB_X29_Y10_N22
 cycloneive_lcell_comb \Mult1|mult_core|romout[1][5]~5 (
 // Equation(s):
-// \Mult1|mult_core|romout[1][5]~5_combout  = \driver1|line_count [4] $ (\driver1|line_count [5])
+// \Mult1|mult_core|romout[1][5]~5_combout  = \driver|line_count [4] $ (\driver|line_count [5])
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\driver1|line_count [4]),
-	.datad(\driver1|line_count [5]),
+	.datac(\driver|line_count [4]),
+	.datad(\driver|line_count [5]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[1][5]~5_combout ),
 	.cout());
@@ -2214,13 +2214,13 @@ defparam \Mult1|mult_core|romout[1][5]~5 .sum_lutc_input = "datac";
 // Location: LCCOMB_X30_Y10_N4
 cycloneive_lcell_comb \Mult1|mult_core|romout[0][9]~6 (
 // Equation(s):
-// \Mult1|mult_core|romout[0][9]~6_combout  = (\driver1|line_count [3] & ((\driver1|line_count [0] & ((\driver1|line_count [1]) # (!\driver1|line_count [2]))) # (!\driver1|line_count [0] & (\driver1|line_count [1] & !\driver1|line_count [2])))) # 
-// (!\driver1|line_count [3] & ((\driver1|line_count [1] & (\driver1|line_count [0] & !\driver1|line_count [2])) # (!\driver1|line_count [1] & ((\driver1|line_count [2])))))
+// \Mult1|mult_core|romout[0][9]~6_combout  = (\driver|line_count [3] & ((\driver|line_count [0] & ((\driver|line_count [1]) # (!\driver|line_count [2]))) # (!\driver|line_count [0] & (\driver|line_count [1] & !\driver|line_count [2])))) # 
+// (!\driver|line_count [3] & ((\driver|line_count [1] & (\driver|line_count [0] & !\driver|line_count [2])) # (!\driver|line_count [1] & ((\driver|line_count [2])))))
 
-	.dataa(\driver1|line_count [0]),
-	.datab(\driver1|line_count [3]),
-	.datac(\driver1|line_count [1]),
-	.datad(\driver1|line_count [2]),
+	.dataa(\driver|line_count [0]),
+	.datab(\driver|line_count [3]),
+	.datac(\driver|line_count [1]),
+	.datad(\driver|line_count [2]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[0][9]~6_combout ),
 	.cout());
@@ -2232,13 +2232,13 @@ defparam \Mult1|mult_core|romout[0][9]~6 .sum_lutc_input = "datac";
 // Location: LCCOMB_X30_Y10_N6
 cycloneive_lcell_comb \Mult1|mult_core|romout[0][8]~7 (
 // Equation(s):
-// \Mult1|mult_core|romout[0][8]~7_combout  = (\driver1|line_count [0] & ((\driver1|line_count [3] & (\driver1|line_count [1] & !\driver1|line_count [2])) # (!\driver1|line_count [3] & (!\driver1|line_count [1] & \driver1|line_count [2])))) # 
-// (!\driver1|line_count [0] & ((\driver1|line_count [3] & (\driver1|line_count [1] $ (!\driver1|line_count [2]))) # (!\driver1|line_count [3] & (\driver1|line_count [1] & !\driver1|line_count [2]))))
+// \Mult1|mult_core|romout[0][8]~7_combout  = (\driver|line_count [0] & ((\driver|line_count [3] & (\driver|line_count [1] & !\driver|line_count [2])) # (!\driver|line_count [3] & (!\driver|line_count [1] & \driver|line_count [2])))) # (!\driver|line_count 
+// [0] & ((\driver|line_count [3] & (\driver|line_count [1] $ (!\driver|line_count [2]))) # (!\driver|line_count [3] & (\driver|line_count [1] & !\driver|line_count [2]))))
 
-	.dataa(\driver1|line_count [0]),
-	.datab(\driver1|line_count [3]),
-	.datac(\driver1|line_count [1]),
-	.datad(\driver1|line_count [2]),
+	.dataa(\driver|line_count [0]),
+	.datab(\driver|line_count [3]),
+	.datac(\driver|line_count [1]),
+	.datad(\driver|line_count [2]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[0][8]~7_combout ),
 	.cout());
@@ -2250,11 +2250,11 @@ defparam \Mult1|mult_core|romout[0][8]~7 .sum_lutc_input = "datac";
 // Location: LCCOMB_X29_Y10_N2
 cycloneive_lcell_comb \Mult1|mult_core|padder|adder[0]|auto_generated|op_1~0 (
 // Equation(s):
-// \Mult1|mult_core|padder|adder[0]|auto_generated|op_1~0_combout  = (\Mult1|mult_core|romout[0][8]~7_combout  & (\driver1|line_count [4] $ (VCC))) # (!\Mult1|mult_core|romout[0][8]~7_combout  & (\driver1|line_count [4] & VCC))
-// \Mult1|mult_core|padder|adder[0]|auto_generated|op_1~1  = CARRY((\Mult1|mult_core|romout[0][8]~7_combout  & \driver1|line_count [4]))
+// \Mult1|mult_core|padder|adder[0]|auto_generated|op_1~0_combout  = (\Mult1|mult_core|romout[0][8]~7_combout  & (\driver|line_count [4] $ (VCC))) # (!\Mult1|mult_core|romout[0][8]~7_combout  & (\driver|line_count [4] & VCC))
+// \Mult1|mult_core|padder|adder[0]|auto_generated|op_1~1  = CARRY((\Mult1|mult_core|romout[0][8]~7_combout  & \driver|line_count [4]))
 
 	.dataa(\Mult1|mult_core|romout[0][8]~7_combout ),
-	.datab(\driver1|line_count [4]),
+	.datab(\driver|line_count [4]),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(gnd),
@@ -2367,12 +2367,12 @@ defparam \Mult1|mult_core|padder|adder[0]|auto_generated|op_1~10 .sum_lutc_input
 // Location: LCCOMB_X30_Y10_N8
 cycloneive_lcell_comb \Mult1|mult_core|romout[2][5]~8 (
 // Equation(s):
-// \Mult1|mult_core|romout[2][5]~8_combout  = \driver1|line_count [9] $ (\driver1|line_count [8])
+// \Mult1|mult_core|romout[2][5]~8_combout  = \driver|line_count [9] $ (\driver|line_count [8])
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\driver1|line_count [9]),
-	.datad(\driver1|line_count [8]),
+	.datac(\driver|line_count [9]),
+	.datad(\driver|line_count [8]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[2][5]~8_combout ),
 	.cout());
@@ -2384,11 +2384,11 @@ defparam \Mult1|mult_core|romout[2][5]~8 .sum_lutc_input = "datac";
 // Location: LCCOMB_X28_Y10_N0
 cycloneive_lcell_comb \Mult1|mult_core|padder|sub_par_add|adder[0]|auto_generated|op_1~0 (
 // Equation(s):
-// \Mult1|mult_core|padder|sub_par_add|adder[0]|auto_generated|op_1~0_combout  = (\driver1|line_count [8] & (\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~8_combout  $ (VCC))) # (!\driver1|line_count [8] & 
+// \Mult1|mult_core|padder|sub_par_add|adder[0]|auto_generated|op_1~0_combout  = (\driver|line_count [8] & (\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~8_combout  $ (VCC))) # (!\driver|line_count [8] & 
 // (\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~8_combout  & VCC))
-// \Mult1|mult_core|padder|sub_par_add|adder[0]|auto_generated|op_1~1  = CARRY((\driver1|line_count [8] & \Mult1|mult_core|padder|adder[0]|auto_generated|op_1~8_combout ))
+// \Mult1|mult_core|padder|sub_par_add|adder[0]|auto_generated|op_1~1  = CARRY((\driver|line_count [8] & \Mult1|mult_core|padder|adder[0]|auto_generated|op_1~8_combout ))
 
-	.dataa(\driver1|line_count [8]),
+	.dataa(\driver|line_count [8]),
 	.datab(\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~8_combout ),
 	.datac(gnd),
 	.datad(vcc),
@@ -2426,12 +2426,12 @@ defparam \Mult1|mult_core|padder|sub_par_add|adder[0]|auto_generated|op_1~2 .sum
 // Location: LCCOMB_X27_Y10_N12
 cycloneive_lcell_comb \Mult1|mult_core|romout[0][7]~9 (
 // Equation(s):
-// \Mult1|mult_core|romout[0][7]~9_combout  = \driver1|line_count [3] $ (((\driver1|line_count [1] & (\driver1|line_count [0] & \driver1|line_count [2])) # (!\driver1|line_count [1] & (\driver1|line_count [0] $ (\driver1|line_count [2])))))
+// \Mult1|mult_core|romout[0][7]~9_combout  = \driver|line_count [3] $ (((\driver|line_count [1] & (\driver|line_count [0] & \driver|line_count [2])) # (!\driver|line_count [1] & (\driver|line_count [0] $ (\driver|line_count [2])))))
 
-	.dataa(\driver1|line_count [1]),
-	.datab(\driver1|line_count [3]),
-	.datac(\driver1|line_count [0]),
-	.datad(\driver1|line_count [2]),
+	.dataa(\driver|line_count [1]),
+	.datab(\driver|line_count [3]),
+	.datac(\driver|line_count [0]),
+	.datad(\driver|line_count [2]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[0][7]~9_combout ),
 	.cout());
@@ -2443,12 +2443,12 @@ defparam \Mult1|mult_core|romout[0][7]~9 .sum_lutc_input = "datac";
 // Location: LCCOMB_X27_Y10_N6
 cycloneive_lcell_comb \Mult1|mult_core|romout[0][6]~10 (
 // Equation(s):
-// \Mult1|mult_core|romout[0][6]~10_combout  = \driver1|line_count [2] $ (((\driver1|line_count [1] & !\driver1|line_count [0])))
+// \Mult1|mult_core|romout[0][6]~10_combout  = \driver|line_count [2] $ (((\driver|line_count [1] & !\driver|line_count [0])))
 
-	.dataa(\driver1|line_count [1]),
+	.dataa(\driver|line_count [1]),
 	.datab(gnd),
-	.datac(\driver1|line_count [0]),
-	.datad(\driver1|line_count [2]),
+	.datac(\driver|line_count [0]),
+	.datad(\driver|line_count [2]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[0][6]~10_combout ),
 	.cout());
@@ -2460,12 +2460,12 @@ defparam \Mult1|mult_core|romout[0][6]~10 .sum_lutc_input = "datac";
 // Location: LCCOMB_X27_Y10_N0
 cycloneive_lcell_comb \Mult1|mult_core|romout[0][5]~11 (
 // Equation(s):
-// \Mult1|mult_core|romout[0][5]~11_combout  = \driver1|line_count [0] $ (\driver1|line_count [1])
+// \Mult1|mult_core|romout[0][5]~11_combout  = \driver|line_count [0] $ (\driver|line_count [1])
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\driver1|line_count [0]),
-	.datad(\driver1|line_count [1]),
+	.datac(\driver|line_count [0]),
+	.datad(\driver|line_count [1]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[0][5]~11_combout ),
 	.cout());
@@ -2477,11 +2477,11 @@ defparam \Mult1|mult_core|romout[0][5]~11 .sum_lutc_input = "datac";
 // Location: LCCOMB_X28_Y10_N6
 cycloneive_lcell_comb \Add3~0 (
 // Equation(s):
-// \Add3~0_combout  = (\driver1|pixel_count [4] & (\driver1|line_count [0] $ (VCC))) # (!\driver1|pixel_count [4] & (\driver1|line_count [0] & VCC))
-// \Add3~1  = CARRY((\driver1|pixel_count [4] & \driver1|line_count [0]))
+// \Add3~0_combout  = (\driver|pixel_count [4] & (\driver|line_count [0] $ (VCC))) # (!\driver|pixel_count [4] & (\driver|line_count [0] & VCC))
+// \Add3~1  = CARRY((\driver|pixel_count [4] & \driver|line_count [0]))
 
-	.dataa(\driver1|pixel_count [4]),
-	.datab(\driver1|line_count [0]),
+	.dataa(\driver|pixel_count [4]),
+	.datab(\driver|line_count [0]),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(gnd),
@@ -2495,12 +2495,12 @@ defparam \Add3~0 .sum_lutc_input = "datac";
 // Location: LCCOMB_X28_Y10_N8
 cycloneive_lcell_comb \Add3~2 (
 // Equation(s):
-// \Add3~2_combout  = (\Mult1|mult_core|romout[0][5]~11_combout  & ((\driver1|pixel_count [5] & (\Add3~1  & VCC)) # (!\driver1|pixel_count [5] & (!\Add3~1 )))) # (!\Mult1|mult_core|romout[0][5]~11_combout  & ((\driver1|pixel_count [5] & (!\Add3~1 )) # 
-// (!\driver1|pixel_count [5] & ((\Add3~1 ) # (GND)))))
-// \Add3~3  = CARRY((\Mult1|mult_core|romout[0][5]~11_combout  & (!\driver1|pixel_count [5] & !\Add3~1 )) # (!\Mult1|mult_core|romout[0][5]~11_combout  & ((!\Add3~1 ) # (!\driver1|pixel_count [5]))))
+// \Add3~2_combout  = (\Mult1|mult_core|romout[0][5]~11_combout  & ((\driver|pixel_count [5] & (\Add3~1  & VCC)) # (!\driver|pixel_count [5] & (!\Add3~1 )))) # (!\Mult1|mult_core|romout[0][5]~11_combout  & ((\driver|pixel_count [5] & (!\Add3~1 )) # 
+// (!\driver|pixel_count [5] & ((\Add3~1 ) # (GND)))))
+// \Add3~3  = CARRY((\Mult1|mult_core|romout[0][5]~11_combout  & (!\driver|pixel_count [5] & !\Add3~1 )) # (!\Mult1|mult_core|romout[0][5]~11_combout  & ((!\Add3~1 ) # (!\driver|pixel_count [5]))))
 
 	.dataa(\Mult1|mult_core|romout[0][5]~11_combout ),
-	.datab(\driver1|pixel_count [5]),
+	.datab(\driver|pixel_count [5]),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(\Add3~1 ),
@@ -2514,10 +2514,10 @@ defparam \Add3~2 .sum_lutc_input = "cin";
 // Location: LCCOMB_X28_Y10_N10
 cycloneive_lcell_comb \Add3~4 (
 // Equation(s):
-// \Add3~4_combout  = ((\driver1|pixel_count [6] $ (\Mult1|mult_core|romout[0][6]~10_combout  $ (!\Add3~3 )))) # (GND)
-// \Add3~5  = CARRY((\driver1|pixel_count [6] & ((\Mult1|mult_core|romout[0][6]~10_combout ) # (!\Add3~3 ))) # (!\driver1|pixel_count [6] & (\Mult1|mult_core|romout[0][6]~10_combout  & !\Add3~3 )))
+// \Add3~4_combout  = ((\driver|pixel_count [6] $ (\Mult1|mult_core|romout[0][6]~10_combout  $ (!\Add3~3 )))) # (GND)
+// \Add3~5  = CARRY((\driver|pixel_count [6] & ((\Mult1|mult_core|romout[0][6]~10_combout ) # (!\Add3~3 ))) # (!\driver|pixel_count [6] & (\Mult1|mult_core|romout[0][6]~10_combout  & !\Add3~3 )))
 
-	.dataa(\driver1|pixel_count [6]),
+	.dataa(\driver|pixel_count [6]),
 	.datab(\Mult1|mult_core|romout[0][6]~10_combout ),
 	.datac(gnd),
 	.datad(vcc),
@@ -2532,12 +2532,12 @@ defparam \Add3~4 .sum_lutc_input = "cin";
 // Location: LCCOMB_X28_Y10_N12
 cycloneive_lcell_comb \Add3~6 (
 // Equation(s):
-// \Add3~6_combout  = (\Mult1|mult_core|romout[0][7]~9_combout  & ((\driver1|pixel_count [7] & (\Add3~5  & VCC)) # (!\driver1|pixel_count [7] & (!\Add3~5 )))) # (!\Mult1|mult_core|romout[0][7]~9_combout  & ((\driver1|pixel_count [7] & (!\Add3~5 )) # 
-// (!\driver1|pixel_count [7] & ((\Add3~5 ) # (GND)))))
-// \Add3~7  = CARRY((\Mult1|mult_core|romout[0][7]~9_combout  & (!\driver1|pixel_count [7] & !\Add3~5 )) # (!\Mult1|mult_core|romout[0][7]~9_combout  & ((!\Add3~5 ) # (!\driver1|pixel_count [7]))))
+// \Add3~6_combout  = (\Mult1|mult_core|romout[0][7]~9_combout  & ((\driver|pixel_count [7] & (\Add3~5  & VCC)) # (!\driver|pixel_count [7] & (!\Add3~5 )))) # (!\Mult1|mult_core|romout[0][7]~9_combout  & ((\driver|pixel_count [7] & (!\Add3~5 )) # 
+// (!\driver|pixel_count [7] & ((\Add3~5 ) # (GND)))))
+// \Add3~7  = CARRY((\Mult1|mult_core|romout[0][7]~9_combout  & (!\driver|pixel_count [7] & !\Add3~5 )) # (!\Mult1|mult_core|romout[0][7]~9_combout  & ((!\Add3~5 ) # (!\driver|pixel_count [7]))))
 
 	.dataa(\Mult1|mult_core|romout[0][7]~9_combout ),
-	.datab(\driver1|pixel_count [7]),
+	.datab(\driver|pixel_count [7]),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(\Add3~5 ),
@@ -2551,11 +2551,11 @@ defparam \Add3~6 .sum_lutc_input = "cin";
 // Location: LCCOMB_X28_Y10_N14
 cycloneive_lcell_comb \Add3~8 (
 // Equation(s):
-// \Add3~8_combout  = ((\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~0_combout  $ (\driver1|pixel_count [8] $ (!\Add3~7 )))) # (GND)
-// \Add3~9  = CARRY((\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~0_combout  & ((\driver1|pixel_count [8]) # (!\Add3~7 ))) # (!\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~0_combout  & (\driver1|pixel_count [8] & !\Add3~7 )))
+// \Add3~8_combout  = ((\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~0_combout  $ (\driver|pixel_count [8] $ (!\Add3~7 )))) # (GND)
+// \Add3~9  = CARRY((\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~0_combout  & ((\driver|pixel_count [8]) # (!\Add3~7 ))) # (!\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~0_combout  & (\driver|pixel_count [8] & !\Add3~7 )))
 
 	.dataa(\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~0_combout ),
-	.datab(\driver1|pixel_count [8]),
+	.datab(\driver|pixel_count [8]),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(\Add3~7 ),
@@ -2569,12 +2569,12 @@ defparam \Add3~8 .sum_lutc_input = "cin";
 // Location: LCCOMB_X28_Y10_N16
 cycloneive_lcell_comb \Add3~10 (
 // Equation(s):
-// \Add3~10_combout  = (\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~2_combout  & ((\driver1|pixel_count [9] & (\Add3~9  & VCC)) # (!\driver1|pixel_count [9] & (!\Add3~9 )))) # (!\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~2_combout  & 
-// ((\driver1|pixel_count [9] & (!\Add3~9 )) # (!\driver1|pixel_count [9] & ((\Add3~9 ) # (GND)))))
-// \Add3~11  = CARRY((\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~2_combout  & (!\driver1|pixel_count [9] & !\Add3~9 )) # (!\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~2_combout  & ((!\Add3~9 ) # (!\driver1|pixel_count [9]))))
+// \Add3~10_combout  = (\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~2_combout  & ((\driver|pixel_count [9] & (\Add3~9  & VCC)) # (!\driver|pixel_count [9] & (!\Add3~9 )))) # (!\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~2_combout  & 
+// ((\driver|pixel_count [9] & (!\Add3~9 )) # (!\driver|pixel_count [9] & ((\Add3~9 ) # (GND)))))
+// \Add3~11  = CARRY((\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~2_combout  & (!\driver|pixel_count [9] & !\Add3~9 )) # (!\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~2_combout  & ((!\Add3~9 ) # (!\driver|pixel_count [9]))))
 
 	.dataa(\Mult1|mult_core|padder|adder[0]|auto_generated|op_1~2_combout ),
-	.datab(\driver1|pixel_count [9]),
+	.datab(\driver|pixel_count [9]),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(\Add3~9 ),
@@ -4524,12 +4524,12 @@ defparam \PLL_inst|altpll_component|auto_generated|wire_pll1_clk[2]~clkctrl .ena
 // Location: LCCOMB_X29_Y10_N24
 cycloneive_lcell_comb \Mult1|mult_core|romout[1][10]~12 (
 // Equation(s):
-// \Mult1|mult_core|romout[1][10]~12_combout  = (\driver1|line_count [7] & (!\driver1|line_count [6])) # (!\driver1|line_count [7] & (\driver1|line_count [6] & \driver1|line_count [5]))
+// \Mult1|mult_core|romout[1][10]~12_combout  = (\driver|line_count [7] & (!\driver|line_count [6])) # (!\driver|line_count [7] & (\driver|line_count [6] & \driver|line_count [5]))
 
 	.dataa(gnd),
-	.datab(\driver1|line_count [7]),
-	.datac(\driver1|line_count [6]),
-	.datad(\driver1|line_count [5]),
+	.datab(\driver|line_count [7]),
+	.datac(\driver|line_count [6]),
+	.datad(\driver|line_count [5]),
 	.cin(gnd),
 	.combout(\Mult1|mult_core|romout[1][10]~12_combout ),
 	.cout());
@@ -4672,7 +4672,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a7 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -4768,7 +4768,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a15 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -4830,9 +4830,9 @@ defparam \mem|mem_rtl_0|auto_generated|address_reg_b[1] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N16
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[7]~2 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[7]~2 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[7]~2_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a15~portbdataout ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
+// \driver|PIXEL_COLOR_OUT[7]~2_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a15~portbdataout ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
 // [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a7~portbdataout ))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
@@ -4840,11 +4840,11 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[7]~2 (
 	.datac(\mem|mem_rtl_0|auto_generated|ram_block1a15~portbdataout ),
 	.datad(\mem|mem_rtl_0|auto_generated|address_reg_b [1]),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[7]~2_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[7]~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[7]~2 .lut_mask = 16'h00E4;
-defparam \driver1|PIXEL_COLOR_OUT[7]~2 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[7]~2 .lut_mask = 16'h00E4;
+defparam \driver|PIXEL_COLOR_OUT[7]~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X31_Y18_N30
@@ -4901,7 +4901,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a23 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -5251,7 +5251,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a24 (
 	.portaaddr({\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(9'b000000000),
-	.portbaddr({\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -5294,9 +5294,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a24 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N26
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[7]~3 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[7]~3 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[7]~3_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a31 ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
+// \driver|PIXEL_COLOR_OUT[7]~3_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a31 ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
 // (\mem|mem_rtl_0|auto_generated|ram_block1a23~portbdataout ))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
@@ -5304,39 +5304,39 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[7]~3 (
 	.datac(\mem|mem_rtl_0|auto_generated|ram_block1a23~portbdataout ),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a31 ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[7]~3_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[7]~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[7]~3 .lut_mask = 16'hC840;
-defparam \driver1|PIXEL_COLOR_OUT[7]~3 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[7]~3 .lut_mask = 16'hC840;
+defparam \driver|PIXEL_COLOR_OUT[7]~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X27_Y10_N22
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[7]~0 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[7]~0 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[7]~0_combout  = (!\driver1|pixel_count [8] & (!\driver1|line_count [9] & !\driver1|line_count [8]))
+// \driver|PIXEL_COLOR_OUT[7]~0_combout  = (!\driver|pixel_count [8] & (!\driver|line_count [9] & !\driver|line_count [8]))
 
 	.dataa(gnd),
-	.datab(\driver1|pixel_count [8]),
-	.datac(\driver1|line_count [9]),
-	.datad(\driver1|line_count [8]),
+	.datab(\driver|pixel_count [8]),
+	.datac(\driver|line_count [9]),
+	.datad(\driver|line_count [8]),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[7]~0_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[7]~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[7]~0 .lut_mask = 16'h0003;
-defparam \driver1|PIXEL_COLOR_OUT[7]~0 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[7]~0 .lut_mask = 16'h0003;
+defparam \driver|PIXEL_COLOR_OUT[7]~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y10_N28
 cycloneive_lcell_comb \LessThan0~0 (
 // Equation(s):
-// \LessThan0~0_combout  = (\driver1|pixel_count [7] & ((\driver1|pixel_count [6]) # ((\driver1|pixel_count [5] & \driver1|pixel_count [4]))))
+// \LessThan0~0_combout  = (\driver|pixel_count [7] & ((\driver|pixel_count [6]) # ((\driver|pixel_count [5] & \driver|pixel_count [4]))))
 
-	.dataa(\driver1|pixel_count [6]),
-	.datab(\driver1|pixel_count [5]),
-	.datac(\driver1|pixel_count [4]),
-	.datad(\driver1|pixel_count [7]),
+	.dataa(\driver|pixel_count [6]),
+	.datab(\driver|pixel_count [5]),
+	.datac(\driver|pixel_count [4]),
+	.datad(\driver|pixel_count [7]),
 	.cin(gnd),
 	.combout(\LessThan0~0_combout ),
 	.cout());
@@ -5346,37 +5346,37 @@ defparam \LessThan0~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X27_Y10_N2
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[7]~1 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[7]~1 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[7]~1_combout  = (\driver1|PIXEL_COLOR_OUT[7]~0_combout  & (!\LessThan0~0_combout  & ((\driver1|Equal1~0_combout ) # (!\driver1|line_count [7]))))
+// \driver|PIXEL_COLOR_OUT[7]~1_combout  = (\driver|PIXEL_COLOR_OUT[7]~0_combout  & (!\LessThan0~0_combout  & ((\driver|Equal1~0_combout ) # (!\driver|line_count [7]))))
 
-	.dataa(\driver1|PIXEL_COLOR_OUT[7]~0_combout ),
-	.datab(\driver1|Equal1~0_combout ),
-	.datac(\driver1|line_count [7]),
+	.dataa(\driver|PIXEL_COLOR_OUT[7]~0_combout ),
+	.datab(\driver|Equal1~0_combout ),
+	.datac(\driver|line_count [7]),
 	.datad(\LessThan0~0_combout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[7]~1_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[7]~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[7]~1 .lut_mask = 16'h008A;
-defparam \driver1|PIXEL_COLOR_OUT[7]~1 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[7]~1 .lut_mask = 16'h008A;
+defparam \driver|PIXEL_COLOR_OUT[7]~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N28
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[7]~4 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[7]~4 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[7]~4_combout  = (!\driver1|pixel_count [9] & (\driver1|PIXEL_COLOR_OUT[7]~1_combout  & ((\driver1|PIXEL_COLOR_OUT[7]~2_combout ) # (\driver1|PIXEL_COLOR_OUT[7]~3_combout ))))
+// \driver|PIXEL_COLOR_OUT[7]~4_combout  = (!\driver|pixel_count [9] & (\driver|PIXEL_COLOR_OUT[7]~1_combout  & ((\driver|PIXEL_COLOR_OUT[7]~2_combout ) # (\driver|PIXEL_COLOR_OUT[7]~3_combout ))))
 
-	.dataa(\driver1|pixel_count [9]),
-	.datab(\driver1|PIXEL_COLOR_OUT[7]~2_combout ),
-	.datac(\driver1|PIXEL_COLOR_OUT[7]~3_combout ),
-	.datad(\driver1|PIXEL_COLOR_OUT[7]~1_combout ),
+	.dataa(\driver|pixel_count [9]),
+	.datab(\driver|PIXEL_COLOR_OUT[7]~2_combout ),
+	.datac(\driver|PIXEL_COLOR_OUT[7]~3_combout ),
+	.datad(\driver|PIXEL_COLOR_OUT[7]~1_combout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[7]~4_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[7]~4_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[7]~4 .lut_mask = 16'h5400;
-defparam \driver1|PIXEL_COLOR_OUT[7]~4 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[7]~4 .lut_mask = 16'h5400;
+defparam \driver|PIXEL_COLOR_OUT[7]~4 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X22_Y13_N0
@@ -5399,7 +5399,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a14 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -5461,7 +5461,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a6 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -5504,9 +5504,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a6 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N6
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[6]~5 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[6]~5 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[6]~5_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a14~portbdataout )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
+// \driver|PIXEL_COLOR_OUT[6]~5_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a14~portbdataout )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
 // [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a6~portbdataout )))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
@@ -5514,11 +5514,11 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[6]~5 (
 	.datac(\mem|mem_rtl_0|auto_generated|ram_block1a6~portbdataout ),
 	.datad(\mem|mem_rtl_0|auto_generated|address_reg_b [1]),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[6]~5_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[6]~5_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[6]~5 .lut_mask = 16'h00D8;
-defparam \driver1|PIXEL_COLOR_OUT[6]~5 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[6]~5 .lut_mask = 16'h00D8;
+defparam \driver|PIXEL_COLOR_OUT[6]~5 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X22_Y9_N0
@@ -5541,7 +5541,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a22 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -5584,9 +5584,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a22 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N24
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[6]~6 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[6]~6 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[6]~6_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a30 ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
+// \driver|PIXEL_COLOR_OUT[6]~6_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a30 ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
 // (\mem|mem_rtl_0|auto_generated|ram_block1a22~portbdataout ))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
@@ -5594,28 +5594,28 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[6]~6 (
 	.datac(\mem|mem_rtl_0|auto_generated|ram_block1a22~portbdataout ),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a30 ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[6]~6_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[6]~6_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[6]~6 .lut_mask = 16'hC840;
-defparam \driver1|PIXEL_COLOR_OUT[6]~6 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[6]~6 .lut_mask = 16'hC840;
+defparam \driver|PIXEL_COLOR_OUT[6]~6 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N10
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[6]~7 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[6]~7 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[6]~7_combout  = (!\driver1|pixel_count [9] & (\driver1|PIXEL_COLOR_OUT[7]~1_combout  & ((\driver1|PIXEL_COLOR_OUT[6]~5_combout ) # (\driver1|PIXEL_COLOR_OUT[6]~6_combout ))))
+// \driver|PIXEL_COLOR_OUT[6]~7_combout  = (!\driver|pixel_count [9] & (\driver|PIXEL_COLOR_OUT[7]~1_combout  & ((\driver|PIXEL_COLOR_OUT[6]~5_combout ) # (\driver|PIXEL_COLOR_OUT[6]~6_combout ))))
 
-	.dataa(\driver1|PIXEL_COLOR_OUT[6]~5_combout ),
-	.datab(\driver1|PIXEL_COLOR_OUT[6]~6_combout ),
-	.datac(\driver1|pixel_count [9]),
-	.datad(\driver1|PIXEL_COLOR_OUT[7]~1_combout ),
+	.dataa(\driver|PIXEL_COLOR_OUT[6]~5_combout ),
+	.datab(\driver|PIXEL_COLOR_OUT[6]~6_combout ),
+	.datac(\driver|pixel_count [9]),
+	.datad(\driver|PIXEL_COLOR_OUT[7]~1_combout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[6]~7_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[6]~7_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[6]~7 .lut_mask = 16'h0E00;
-defparam \driver1|PIXEL_COLOR_OUT[6]~7 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[6]~7 .lut_mask = 16'h0E00;
+defparam \driver|PIXEL_COLOR_OUT[6]~7 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X22_Y15_N0
@@ -5638,7 +5638,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a5 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -5700,7 +5700,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a13 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -5743,9 +5743,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a13 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N20
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[5]~8 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[5]~8 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[5]~8_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a13~portbdataout ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
+// \driver|PIXEL_COLOR_OUT[5]~8_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a13~portbdataout ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
 // [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a5~portbdataout ))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|ram_block1a5~portbdataout ),
@@ -5753,11 +5753,11 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[5]~8 (
 	.datac(\mem|mem_rtl_0|auto_generated|ram_block1a13~portbdataout ),
 	.datad(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[5]~8_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[5]~8_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[5]~8 .lut_mask = 16'h3022;
-defparam \driver1|PIXEL_COLOR_OUT[5]~8 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[5]~8 .lut_mask = 16'h3022;
+defparam \driver|PIXEL_COLOR_OUT[5]~8 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X33_Y8_N0
@@ -5780,7 +5780,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a21 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -5823,9 +5823,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a21 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N22
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[5]~9 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[5]~9 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[5]~9_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a29 ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
+// \driver|PIXEL_COLOR_OUT[5]~9_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a29 ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
 // (\mem|mem_rtl_0|auto_generated|ram_block1a21~portbdataout ))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
@@ -5833,28 +5833,28 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[5]~9 (
 	.datac(\mem|mem_rtl_0|auto_generated|ram_block1a21~portbdataout ),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a29 ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[5]~9_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[5]~9_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[5]~9 .lut_mask = 16'hC840;
-defparam \driver1|PIXEL_COLOR_OUT[5]~9 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[5]~9 .lut_mask = 16'hC840;
+defparam \driver|PIXEL_COLOR_OUT[5]~9 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N8
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[5]~10 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[5]~10 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[5]~10_combout  = (!\driver1|pixel_count [9] & (\driver1|PIXEL_COLOR_OUT[7]~1_combout  & ((\driver1|PIXEL_COLOR_OUT[5]~8_combout ) # (\driver1|PIXEL_COLOR_OUT[5]~9_combout ))))
+// \driver|PIXEL_COLOR_OUT[5]~10_combout  = (!\driver|pixel_count [9] & (\driver|PIXEL_COLOR_OUT[7]~1_combout  & ((\driver|PIXEL_COLOR_OUT[5]~8_combout ) # (\driver|PIXEL_COLOR_OUT[5]~9_combout ))))
 
-	.dataa(\driver1|pixel_count [9]),
-	.datab(\driver1|PIXEL_COLOR_OUT[5]~8_combout ),
-	.datac(\driver1|PIXEL_COLOR_OUT[5]~9_combout ),
-	.datad(\driver1|PIXEL_COLOR_OUT[7]~1_combout ),
+	.dataa(\driver|pixel_count [9]),
+	.datab(\driver|PIXEL_COLOR_OUT[5]~8_combout ),
+	.datac(\driver|PIXEL_COLOR_OUT[5]~9_combout ),
+	.datad(\driver|PIXEL_COLOR_OUT[7]~1_combout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[5]~10_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[5]~10_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[5]~10 .lut_mask = 16'h5400;
-defparam \driver1|PIXEL_COLOR_OUT[5]~10 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[5]~10 .lut_mask = 16'h5400;
+defparam \driver|PIXEL_COLOR_OUT[5]~10 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X33_Y9_N0
@@ -5877,7 +5877,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a20 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -5920,9 +5920,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a20 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N12
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[4]~12 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[4]~12 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[4]~12_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a28 ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
+// \driver|PIXEL_COLOR_OUT[4]~12_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a28 ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
 // (\mem|mem_rtl_0|auto_generated|ram_block1a20~portbdataout ))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
@@ -5930,11 +5930,11 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[4]~12 (
 	.datac(\mem|mem_rtl_0|auto_generated|ram_block1a20~portbdataout ),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a28 ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[4]~12_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[4]~12_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[4]~12 .lut_mask = 16'hC840;
-defparam \driver1|PIXEL_COLOR_OUT[4]~12 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[4]~12 .lut_mask = 16'hC840;
+defparam \driver|PIXEL_COLOR_OUT[4]~12 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X33_Y10_N0
@@ -5957,7 +5957,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a4 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6019,7 +6019,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a12 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6062,38 +6062,38 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a12 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N2
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[4]~11 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[4]~11 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[4]~11_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a12~portbdataout ))) # 
-// (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a4~portbdataout ))))
+// \driver|PIXEL_COLOR_OUT[4]~11_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a12~portbdataout ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
+// [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a4~portbdataout ))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
 	.datab(\mem|mem_rtl_0|auto_generated|address_reg_b [1]),
 	.datac(\mem|mem_rtl_0|auto_generated|ram_block1a4~portbdataout ),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a12~portbdataout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[4]~11_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[4]~11_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[4]~11 .lut_mask = 16'h3210;
-defparam \driver1|PIXEL_COLOR_OUT[4]~11 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[4]~11 .lut_mask = 16'h3210;
+defparam \driver|PIXEL_COLOR_OUT[4]~11 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N30
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[4]~13 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[4]~13 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[4]~13_combout  = (!\driver1|pixel_count [9] & (\driver1|PIXEL_COLOR_OUT[7]~1_combout  & ((\driver1|PIXEL_COLOR_OUT[4]~12_combout ) # (\driver1|PIXEL_COLOR_OUT[4]~11_combout ))))
+// \driver|PIXEL_COLOR_OUT[4]~13_combout  = (!\driver|pixel_count [9] & (\driver|PIXEL_COLOR_OUT[7]~1_combout  & ((\driver|PIXEL_COLOR_OUT[4]~12_combout ) # (\driver|PIXEL_COLOR_OUT[4]~11_combout ))))
 
-	.dataa(\driver1|PIXEL_COLOR_OUT[4]~12_combout ),
-	.datab(\driver1|PIXEL_COLOR_OUT[4]~11_combout ),
-	.datac(\driver1|pixel_count [9]),
-	.datad(\driver1|PIXEL_COLOR_OUT[7]~1_combout ),
+	.dataa(\driver|PIXEL_COLOR_OUT[4]~12_combout ),
+	.datab(\driver|PIXEL_COLOR_OUT[4]~11_combout ),
+	.datac(\driver|pixel_count [9]),
+	.datad(\driver|PIXEL_COLOR_OUT[7]~1_combout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[4]~13_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[4]~13_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[4]~13 .lut_mask = 16'h0E00;
-defparam \driver1|PIXEL_COLOR_OUT[4]~13 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[4]~13 .lut_mask = 16'h0E00;
+defparam \driver|PIXEL_COLOR_OUT[4]~13 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X22_Y11_N0
@@ -6116,7 +6116,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a11 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6178,7 +6178,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a3 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6221,9 +6221,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a3 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N0
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[3]~14 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[3]~14 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[3]~14_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a11~portbdataout )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
+// \driver|PIXEL_COLOR_OUT[3]~14_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a11~portbdataout )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
 // [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a3~portbdataout )))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|ram_block1a11~portbdataout ),
@@ -6231,11 +6231,11 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[3]~14 (
 	.datac(\mem|mem_rtl_0|auto_generated|ram_block1a3~portbdataout ),
 	.datad(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[3]~14_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[3]~14_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[3]~14 .lut_mask = 16'h2230;
-defparam \driver1|PIXEL_COLOR_OUT[3]~14 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[3]~14 .lut_mask = 16'h2230;
+defparam \driver|PIXEL_COLOR_OUT[3]~14 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X22_Y8_N0
@@ -6258,7 +6258,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a19 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6301,9 +6301,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a19 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N18
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[3]~15 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[3]~15 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[3]~15_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a27 ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
+// \driver|PIXEL_COLOR_OUT[3]~15_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a27 ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
 // (\mem|mem_rtl_0|auto_generated|ram_block1a19~portbdataout ))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
@@ -6311,28 +6311,28 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[3]~15 (
 	.datac(\mem|mem_rtl_0|auto_generated|ram_block1a19~portbdataout ),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a27 ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[3]~15_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[3]~15_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[3]~15 .lut_mask = 16'hC840;
-defparam \driver1|PIXEL_COLOR_OUT[3]~15 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[3]~15 .lut_mask = 16'hC840;
+defparam \driver|PIXEL_COLOR_OUT[3]~15 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X23_Y12_N4
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[3]~16 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[3]~16 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[3]~16_combout  = (!\driver1|pixel_count [9] & (\driver1|PIXEL_COLOR_OUT[7]~1_combout  & ((\driver1|PIXEL_COLOR_OUT[3]~14_combout ) # (\driver1|PIXEL_COLOR_OUT[3]~15_combout ))))
+// \driver|PIXEL_COLOR_OUT[3]~16_combout  = (!\driver|pixel_count [9] & (\driver|PIXEL_COLOR_OUT[7]~1_combout  & ((\driver|PIXEL_COLOR_OUT[3]~14_combout ) # (\driver|PIXEL_COLOR_OUT[3]~15_combout ))))
 
-	.dataa(\driver1|PIXEL_COLOR_OUT[3]~14_combout ),
-	.datab(\driver1|PIXEL_COLOR_OUT[3]~15_combout ),
-	.datac(\driver1|pixel_count [9]),
-	.datad(\driver1|PIXEL_COLOR_OUT[7]~1_combout ),
+	.dataa(\driver|PIXEL_COLOR_OUT[3]~14_combout ),
+	.datab(\driver|PIXEL_COLOR_OUT[3]~15_combout ),
+	.datac(\driver|pixel_count [9]),
+	.datad(\driver|PIXEL_COLOR_OUT[7]~1_combout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[3]~16_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[3]~16_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[3]~16 .lut_mask = 16'h0E00;
-defparam \driver1|PIXEL_COLOR_OUT[3]~16 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[3]~16 .lut_mask = 16'h0E00;
+defparam \driver|PIXEL_COLOR_OUT[3]~16 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X33_Y16_N0
@@ -6355,7 +6355,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a18 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6398,9 +6398,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a18 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y16_N26
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[2]~18 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[2]~18 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[2]~18_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a26 )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
+// \driver|PIXEL_COLOR_OUT[2]~18_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a26 )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
 // ((\mem|mem_rtl_0|auto_generated|ram_block1a18~portbdataout )))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
@@ -6408,11 +6408,11 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[2]~18 (
 	.datac(\mem|mem_rtl_0|auto_generated|address_reg_b [1]),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a18~portbdataout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[2]~18_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[2]~18_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[2]~18 .lut_mask = 16'hD080;
-defparam \driver1|PIXEL_COLOR_OUT[2]~18 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[2]~18 .lut_mask = 16'hD080;
+defparam \driver|PIXEL_COLOR_OUT[2]~18 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X33_Y18_N0
@@ -6435,7 +6435,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a10 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6497,7 +6497,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a2 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6540,9 +6540,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a2 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y16_N0
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[2]~17 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[2]~17 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[2]~17_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a10~portbdataout )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
+// \driver|PIXEL_COLOR_OUT[2]~17_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a10~portbdataout )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
 // [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a2~portbdataout )))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
@@ -6550,28 +6550,28 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[2]~17 (
 	.datac(\mem|mem_rtl_0|auto_generated|address_reg_b [1]),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a2~portbdataout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[2]~17_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[2]~17_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[2]~17 .lut_mask = 16'h0D08;
-defparam \driver1|PIXEL_COLOR_OUT[2]~17 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[2]~17 .lut_mask = 16'h0D08;
+defparam \driver|PIXEL_COLOR_OUT[2]~17 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y16_N12
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[2]~19 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[2]~19 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[2]~19_combout  = (\driver1|PIXEL_COLOR_OUT[7]~1_combout  & (!\driver1|pixel_count [9] & ((\driver1|PIXEL_COLOR_OUT[2]~18_combout ) # (\driver1|PIXEL_COLOR_OUT[2]~17_combout ))))
+// \driver|PIXEL_COLOR_OUT[2]~19_combout  = (\driver|PIXEL_COLOR_OUT[7]~1_combout  & (!\driver|pixel_count [9] & ((\driver|PIXEL_COLOR_OUT[2]~18_combout ) # (\driver|PIXEL_COLOR_OUT[2]~17_combout ))))
 
-	.dataa(\driver1|PIXEL_COLOR_OUT[7]~1_combout ),
-	.datab(\driver1|pixel_count [9]),
-	.datac(\driver1|PIXEL_COLOR_OUT[2]~18_combout ),
-	.datad(\driver1|PIXEL_COLOR_OUT[2]~17_combout ),
+	.dataa(\driver|PIXEL_COLOR_OUT[7]~1_combout ),
+	.datab(\driver|pixel_count [9]),
+	.datac(\driver|PIXEL_COLOR_OUT[2]~18_combout ),
+	.datad(\driver|PIXEL_COLOR_OUT[2]~17_combout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[2]~19_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[2]~19_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[2]~19 .lut_mask = 16'h2220;
-defparam \driver1|PIXEL_COLOR_OUT[2]~19 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[2]~19 .lut_mask = 16'h2220;
+defparam \driver|PIXEL_COLOR_OUT[2]~19 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X33_Y14_N0
@@ -6594,7 +6594,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a1 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6656,7 +6656,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a9 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6699,9 +6699,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a9 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y16_N8
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[1]~21 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[1]~21 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[1]~21_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a9~portbdataout ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
+// \driver|PIXEL_COLOR_OUT[1]~21_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a9~portbdataout ))) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
 // [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a1~portbdataout ))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [1]),
@@ -6709,11 +6709,11 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[1]~21 (
 	.datac(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a9~portbdataout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[1]~21_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[1]~21_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[1]~21 .lut_mask = 16'h5404;
-defparam \driver1|PIXEL_COLOR_OUT[1]~21 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[1]~21 .lut_mask = 16'h5404;
+defparam \driver|PIXEL_COLOR_OUT[1]~21 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X33_Y15_N0
@@ -6736,7 +6736,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a17 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6779,9 +6779,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a17 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y16_N6
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[1]~20 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[1]~20 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[1]~20_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a25 )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
+// \driver|PIXEL_COLOR_OUT[1]~20_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a25 )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b [0] & 
 // ((\mem|mem_rtl_0|auto_generated|ram_block1a17~portbdataout )))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
@@ -6789,45 +6789,45 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[1]~20 (
 	.datac(\mem|mem_rtl_0|auto_generated|address_reg_b [1]),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a17~portbdataout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[1]~20_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[1]~20_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[1]~20 .lut_mask = 16'hD080;
-defparam \driver1|PIXEL_COLOR_OUT[1]~20 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[1]~20 .lut_mask = 16'hD080;
+defparam \driver|PIXEL_COLOR_OUT[1]~20 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y16_N10
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[1]~22 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[1]~22 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[1]~22_combout  = (!\driver1|pixel_count [9] & (((\driver1|PIXEL_COLOR_OUT[1]~21_combout ) # (\driver1|PIXEL_COLOR_OUT[1]~20_combout )) # (!\driver1|PIXEL_COLOR_OUT[7]~1_combout )))
+// \driver|PIXEL_COLOR_OUT[1]~22_combout  = (!\driver|pixel_count [9] & (((\driver|PIXEL_COLOR_OUT[1]~21_combout ) # (\driver|PIXEL_COLOR_OUT[1]~20_combout )) # (!\driver|PIXEL_COLOR_OUT[7]~1_combout )))
 
-	.dataa(\driver1|PIXEL_COLOR_OUT[7]~1_combout ),
-	.datab(\driver1|pixel_count [9]),
-	.datac(\driver1|PIXEL_COLOR_OUT[1]~21_combout ),
-	.datad(\driver1|PIXEL_COLOR_OUT[1]~20_combout ),
+	.dataa(\driver|PIXEL_COLOR_OUT[7]~1_combout ),
+	.datab(\driver|pixel_count [9]),
+	.datac(\driver|PIXEL_COLOR_OUT[1]~21_combout ),
+	.datad(\driver|PIXEL_COLOR_OUT[1]~20_combout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[1]~22_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[1]~22_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[1]~22 .lut_mask = 16'h3331;
-defparam \driver1|PIXEL_COLOR_OUT[1]~22 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[1]~22 .lut_mask = 16'h3331;
+defparam \driver|PIXEL_COLOR_OUT[1]~22 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y16_N20
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[1]~23 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[1]~23 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[1]~23_combout  = (\driver1|PIXEL_COLOR_OUT[1]~22_combout ) # ((\driver1|pixel_count [9] & (!\driver1|pixel_count [8] & !\driver1|pixel_count [7])))
+// \driver|PIXEL_COLOR_OUT[1]~23_combout  = (\driver|PIXEL_COLOR_OUT[1]~22_combout ) # ((\driver|pixel_count [9] & (!\driver|pixel_count [8] & !\driver|pixel_count [7])))
 
-	.dataa(\driver1|PIXEL_COLOR_OUT[1]~22_combout ),
-	.datab(\driver1|pixel_count [9]),
-	.datac(\driver1|pixel_count [8]),
-	.datad(\driver1|pixel_count [7]),
+	.dataa(\driver|PIXEL_COLOR_OUT[1]~22_combout ),
+	.datab(\driver|pixel_count [9]),
+	.datac(\driver|pixel_count [8]),
+	.datad(\driver|pixel_count [7]),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[1]~23_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[1]~23_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[1]~23 .lut_mask = 16'hAAAE;
-defparam \driver1|PIXEL_COLOR_OUT[1]~23 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[1]~23 .lut_mask = 16'hAAAE;
+defparam \driver|PIXEL_COLOR_OUT[1]~23 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X33_Y17_N0
@@ -6850,7 +6850,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a16 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6893,9 +6893,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a16 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y16_N22
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[0]~24 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[0]~24 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[0]~24_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a24~portbdataout )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
+// \driver|PIXEL_COLOR_OUT[0]~24_combout  = (\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a24~portbdataout )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
 // [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a16~portbdataout )))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [1]),
@@ -6903,11 +6903,11 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[0]~24 (
 	.datac(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a16~portbdataout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[0]~24_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[0]~24_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[0]~24 .lut_mask = 16'h8A80;
-defparam \driver1|PIXEL_COLOR_OUT[0]~24 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[0]~24 .lut_mask = 16'h8A80;
+defparam \driver|PIXEL_COLOR_OUT[0]~24 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: M9K_X22_Y18_N0
@@ -6930,7 +6930,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a8 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -6992,7 +6992,7 @@ cycloneive_ram_block \mem|mem_rtl_0|auto_generated|ram_block1a0 (
 	.portaaddr({\Add0~16_combout ,\Add0~14_combout ,\Add0~12_combout ,\Add0~10_combout ,\Add0~8_combout ,\Add0~6_combout ,\Add0~4_combout ,\Add0~2_combout ,\Add0~0_combout ,X_ADDR[3],X_ADDR[2],X_ADDR[1],X_ADDR[0]}),
 	.portabyteenamasks(1'b1),
 	.portbdatain(1'b0),
-	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver1|pixel_count [3],\driver1|pixel_count [2],\driver1|pixel_count [1],\driver1|pixel_count [0]}),
+	.portbaddr({\Add3~16_combout ,\Add3~14_combout ,\Add3~12_combout ,\Add3~10_combout ,\Add3~8_combout ,\Add3~6_combout ,\Add3~4_combout ,\Add3~2_combout ,\Add3~0_combout ,\driver|pixel_count [3],\driver|pixel_count [2],\driver|pixel_count [1],\driver|pixel_count [0]}),
 	.portbbyteenamasks(1'b1),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -7035,9 +7035,9 @@ defparam \mem|mem_rtl_0|auto_generated|ram_block1a0 .ram_block_type = "M9K";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y16_N24
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[0]~25 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[0]~25 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[0]~25_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a8~portbdataout )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
+// \driver|PIXEL_COLOR_OUT[0]~25_combout  = (!\mem|mem_rtl_0|auto_generated|address_reg_b [1] & ((\mem|mem_rtl_0|auto_generated|address_reg_b [0] & (\mem|mem_rtl_0|auto_generated|ram_block1a8~portbdataout )) # (!\mem|mem_rtl_0|auto_generated|address_reg_b 
 // [0] & ((\mem|mem_rtl_0|auto_generated|ram_block1a0~portbdataout )))))
 
 	.dataa(\mem|mem_rtl_0|auto_generated|address_reg_b [1]),
@@ -7045,45 +7045,45 @@ cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[0]~25 (
 	.datac(\mem|mem_rtl_0|auto_generated|address_reg_b [0]),
 	.datad(\mem|mem_rtl_0|auto_generated|ram_block1a0~portbdataout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[0]~25_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[0]~25_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[0]~25 .lut_mask = 16'h4540;
-defparam \driver1|PIXEL_COLOR_OUT[0]~25 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[0]~25 .lut_mask = 16'h4540;
+defparam \driver|PIXEL_COLOR_OUT[0]~25 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y16_N18
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[0]~26 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[0]~26 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[0]~26_combout  = (!\driver1|pixel_count [9] & (((\driver1|PIXEL_COLOR_OUT[0]~24_combout ) # (\driver1|PIXEL_COLOR_OUT[0]~25_combout )) # (!\driver1|PIXEL_COLOR_OUT[7]~1_combout )))
+// \driver|PIXEL_COLOR_OUT[0]~26_combout  = (!\driver|pixel_count [9] & (((\driver|PIXEL_COLOR_OUT[0]~24_combout ) # (\driver|PIXEL_COLOR_OUT[0]~25_combout )) # (!\driver|PIXEL_COLOR_OUT[7]~1_combout )))
 
-	.dataa(\driver1|PIXEL_COLOR_OUT[7]~1_combout ),
-	.datab(\driver1|pixel_count [9]),
-	.datac(\driver1|PIXEL_COLOR_OUT[0]~24_combout ),
-	.datad(\driver1|PIXEL_COLOR_OUT[0]~25_combout ),
+	.dataa(\driver|PIXEL_COLOR_OUT[7]~1_combout ),
+	.datab(\driver|pixel_count [9]),
+	.datac(\driver|PIXEL_COLOR_OUT[0]~24_combout ),
+	.datad(\driver|PIXEL_COLOR_OUT[0]~25_combout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[0]~26_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[0]~26_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[0]~26 .lut_mask = 16'h3331;
-defparam \driver1|PIXEL_COLOR_OUT[0]~26 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[0]~26 .lut_mask = 16'h3331;
+defparam \driver|PIXEL_COLOR_OUT[0]~26 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X28_Y16_N4
-cycloneive_lcell_comb \driver1|PIXEL_COLOR_OUT[0]~27 (
+cycloneive_lcell_comb \driver|PIXEL_COLOR_OUT[0]~27 (
 // Equation(s):
-// \driver1|PIXEL_COLOR_OUT[0]~27_combout  = (\driver1|PIXEL_COLOR_OUT[0]~26_combout ) # ((\driver1|pixel_count [9] & (!\driver1|pixel_count [7] & !\driver1|pixel_count [8])))
+// \driver|PIXEL_COLOR_OUT[0]~27_combout  = (\driver|PIXEL_COLOR_OUT[0]~26_combout ) # ((\driver|pixel_count [9] & (!\driver|pixel_count [7] & !\driver|pixel_count [8])))
 
-	.dataa(\driver1|pixel_count [9]),
-	.datab(\driver1|pixel_count [7]),
-	.datac(\driver1|pixel_count [8]),
-	.datad(\driver1|PIXEL_COLOR_OUT[0]~26_combout ),
+	.dataa(\driver|pixel_count [9]),
+	.datab(\driver|pixel_count [7]),
+	.datac(\driver|pixel_count [8]),
+	.datad(\driver|PIXEL_COLOR_OUT[0]~26_combout ),
 	.cin(gnd),
-	.combout(\driver1|PIXEL_COLOR_OUT[0]~27_combout ),
+	.combout(\driver|PIXEL_COLOR_OUT[0]~27_combout ),
 	.cout());
 // synopsys translate_off
-defparam \driver1|PIXEL_COLOR_OUT[0]~27 .lut_mask = 16'hFF02;
-defparam \driver1|PIXEL_COLOR_OUT[0]~27 .sum_lutc_input = "datac";
+defparam \driver|PIXEL_COLOR_OUT[0]~27 .lut_mask = 16'hFF02;
+defparam \driver|PIXEL_COLOR_OUT[0]~27 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: IOIBUF_X43_Y0_N22
