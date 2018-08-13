@@ -7,12 +7,7 @@
 #define COM14 0x3E
 #define COM15 0x40
 #define COM17 0x42
-
-///////// Function Prototypes //////////////
-byte read_register_value(int register_address);
-String OV7670_write (int start, const byte *pData, int size);
-void read_key_registers();
-String OV7670_write_register(int reg_address, byte data);
+#define MVFP 0x1E
 
 
 ///////// Main Program //////////////
@@ -20,16 +15,18 @@ void setup() {
   Wire.begin();
   Serial.begin(9600);
   OV7670_write_register(COM7, 0x80); // reset registers
-  delay(500);
+  delay(100);
+  set_color_matrix();
+  OV7670_write_register(CLKRC, 0xC0); // Use External Clock as PCLK
+  OV7670_write_register(MVFP, 0x30); // Verticl Flip Image, Mirror Image
   OV7670_write_register(COM3, 0x08); // Enable scaling
-  OV7670_write_register(COM7, 0x0C); // Use QCIF format, RGB Output
+  OV7670_write_register(COM7, 0x0C); // Use QCIF format, RGB Output, 0x0E for color bar
   OV7670_write_register(COM15, 0xF0); // Use RGB 565  
   OV7670_write_register(COM17, 0x0C); // Enable Color Bar Test  
   read_key_registers();
 }
 
 void loop(){
-  read_register_value(COM7);
  }
 
 
@@ -66,7 +63,7 @@ byte read_register_value(int register_address){
   return data;
 }
 
- String OV7670_write(int start, const byte *pData, int size){
+String OV7670_write(int start, const byte *pData, int size){
     int n,error;
     Wire.beginTransmission(OV7670_I2C_ADDRESS);
     n = Wire.write(start);
@@ -84,7 +81,31 @@ byte read_register_value(int register_address){
     return "no errors :)";
  }
 
- String OV7670_write_register(int reg_address, byte data){
+String OV7670_write_register(int reg_address, byte data){
   return OV7670_write(reg_address, &data, 1);
  }
 
+void set_color_matrix(){
+    OV7670_write_register(0x4f, 0x80);
+    OV7670_write_register(0x50, 0x80);
+    OV7670_write_register(0x51, 0x00);
+    OV7670_write_register(0x52, 0x22);
+    OV7670_write_register(0x53, 0x5e);
+    OV7670_write_register(0x54, 0x80);
+    OV7670_write_register(0x56, 0x40);
+    OV7670_write_register(0x58, 0x9e);
+    OV7670_write_register(0x59, 0x88);
+    OV7670_write_register(0x5a, 0x88);
+    OV7670_write_register(0x5b, 0x44);
+    OV7670_write_register(0x5c, 0x67);
+    OV7670_write_register(0x5d, 0x49);
+    OV7670_write_register(0x5e, 0x0e);
+    OV7670_write_register(0x69, 0x00);
+    OV7670_write_register(0x6a, 0x40);
+    OV7670_write_register(0x6b, 0x0a);
+    OV7670_write_register(0x6c, 0x0a);
+    OV7670_write_register(0x6d, 0x55);
+    OV7670_write_register(0x6e, 0x11);
+    OV7670_write_register(0x6f, 0x9f);
+    OV7670_write_register(0xb0, 0x84);
+}
