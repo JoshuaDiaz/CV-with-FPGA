@@ -7,7 +7,7 @@
 #define COM14 0x3E
 #define COM15 0x40
 #define COM17 0x42
-#define MOVFP 0x1E
+#define MVFP 0x1E
 
 
 ///////// Main Program //////////////
