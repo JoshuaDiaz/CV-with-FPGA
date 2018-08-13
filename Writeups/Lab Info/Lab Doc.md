@@ -12,7 +12,7 @@ The FPGA being used in the DE0-Nano(Non-SOC). Read some key portions of the DE0-
 
 * [DE0-Nano Specifications](http://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=165&No=593&PartNo=2 "Specs")
 
-* [DE0-Nano User Manual] (http://www.ti.com/lit/ug/tidu737/tidu737.pdf "The Manual")
+* [DE0-Nano User Manual](http://www.ti.com/lit/ug/tidu737/tidu737.pdf "The Manual")
 
 
 In order to setup the digital camera needed, you will need to familiarize yourselves with with 
