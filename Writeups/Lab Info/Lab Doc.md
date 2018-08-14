@@ -26,7 +26,7 @@ We will use a VGA adapter to connect to a display for debugging (to ensure your 
 
 *Q1:*
 Reviewing the FPGA's specifications, what is the maximum size of buffer that we can create in Kilobits? Given that each entry is , how many entires large can the RAM be?
-***Answer***
+***Answer***  
 *The specification above states that the DE0-Nano has 594 Kbits of embedded memory, allowing for 74,250 8-bit entries*
 
 
@@ -37,22 +37,22 @@ The OV7670 camera requires being setup every time the camera is powered on. This
 
 *Q2:*
 The OV7670 offers a variety of pixel formats to sample data at (see: Output Formats in "Key Specifications" table). Which of the formats available provides the most info on the base colors making up each pixel?
- ***Answer***
+ ***Answer***  
 *RGB 565*
 
 *Q3:*
 Given that the input to our VGA adapter is RGB 332. How may we convert (downsize) the pixel format from *Q2* to be accepted by the VGA module.
- ***Answer***
+ ***Answer***  
 *Remove the least significant 2b of R, 3b of G, and 2b of B*
 
 *Q4*
 Now that we know the downsized space each pixel will take (from Q3), we need to know how many of them we must fit in memory. Which of the predefined resolutions that the OV7670 supports provides the max amount of pixels in an image, given the constrained max size of our buffer(from *Q1*)? What's the size of our buffer?
-***Answer***
+***Answer***  
 *QCIF, 202 Kbits*
 
 *Q5:*
 Take a look at the timing diagrams (Fig 5 and 6) on Page 7 (Ignore HSYNC, we don't use it). Use both diagrams to determine when we should sample our data. (Hint: We only want to sample valid bytes, and each one only once)
-***Answer***
+***Answer***  
 *Data is valid only when HREF is LOW and VSYNC is HIGH. To sample each byte only once, sample on the rising edge of PCLK*
 
 *Q4*
