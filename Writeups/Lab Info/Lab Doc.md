@@ -4,7 +4,7 @@ In this lab, you will split into two teams to develop an FPGA module capable of 
 
 Below is a block diagram of the device that will implemented. The red blocks, along with all of the interconnects will be made by you, the white ones are provided.    
 
-![BLOCK DIAGRAM](Lab3BlockDiagram.png "Block, Lock, and Drop it")
+![BLOCK DIAGRAM](images/Lab3BlockDiagram.png "Block, Lock, and Drop it")
 
 ## Prelab
 
@@ -44,13 +44,13 @@ Given that the input to our VGA adapter is RGB 332. How may we convert (downsize
  ***Answer***
 *Remove the least significant 2b of R, 3b of G, and 2b of B*
 
-*Q4*  
+*Q4:*  
 Now that we know the downsized space each pixel will take (from Q3), we need to know how many of them we must fit in memory. Which of the predefined resolutions that the OV7670 supports provides the max amount of pixels in an image, given the constrained max size of our buffer(from *Q1*)? What's the size of our buffer?  
 ***Answer***
 *QCIF,* 
-176*144px *8b/p  = 202 Kbits*
+*176px * 144px * 8b/p  = 202 Kbits*
 
-*Q5*  
+*Q5:*  
 Using the Register Set table on pages 10-23 of the OV7670 datasheet, find the registers you will need to set to do the following:  
 - reset all registers
 - Enable scaling
@@ -58,7 +58,9 @@ Using the Register Set table on pages 10-23 of the OV7670 datasheet, find the re
 - Set the camera to output the resolution you specified in *Q4* and the pixel format you specified in *Q2*.(Note: The pixel format will take setting an extra register to fully specify)
 - Enable a color bar test (takes setting 2 regs, neither of them are the SCALING regs)
 - Vertical and mirror flip the output image (optional: it's not necessarily needed but could be useful)  
+
 **Get each register's name, address(hex), and value they will be set to (hex).**  
+
 **Answer**
 - COM7,  addr: 0x12, val: 0x80
 - COM3,  addr: 0x0C, val: 0x08
@@ -79,6 +81,7 @@ Take a look at the timing diagrams (Fig 5 and 6) on Page 7 (Ignore HSYNC, we don
 To begin, collect an OV7670 camera and a DE0-Nano FPGA for your team. You will need to split into two teams to complete this lab, so decide which members will go into each. Team Camera will be working on setting up the OV7670 camera with the Arduino. Team FPGA will work on creating a downsampler in Verilog, and writing an image to the VGA display. Once *both* teams are done, work to combine the two and display the camera's image to the display. Once a subteam is done with their task. they may begin implementing their image processor in Verilog.
 
 ### PLL
+Each team will need a clock to run their respective devices. The camera requires a 24MHz MCLK (External clock) and the VGA module requires 
 
 ### Team Camera
 
