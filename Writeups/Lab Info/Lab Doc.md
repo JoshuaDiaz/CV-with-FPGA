@@ -2,7 +2,7 @@
 
 In this lab, you will split into two teams to develop an FPGA module capable of detecting basic shapes from a camera input. This device will be mounted on the robot to identify these shapes on the walls of the maze.
 
-Below is a block diagram of the device that will implemented.   
+Below is a block diagram of the device that will implemented. The red blocks, along with all of the interconnects will be made by you, the white ones are provided.    
 
 ![BLOCK DIAGRAM](Lab3BlockDiagram.png "Block, Lock, and Drop it")
 
@@ -76,15 +76,17 @@ Take a look at the timing diagrams (Fig 5 and 6) on Page 7 (Ignore HSYNC, we don
 
 ## Lab
 
-PLL
+To begin, collect an OV7670 camera and a DE0-Nano FPGA for your team. You will need to split into two teams to complete this lab, so decide which members will go into each. Team Camera will be working on setting up the OV7670 camera with the Arduino. Team FPGA will work on creating a downsampler in Verilog, and writing an image to the VGA display. Once *both* teams are done, work to combine the two and display the camera's image to the display. Once a subteam is done with their task. they may begin implementing their image processor in Verilog.
 
-Team Camera
+### PLL
 
-Team Buffer Reader
+### Team Camera
+
+### Team Buffer Reader
 Notice that the OV7670 outputs 1 pixel of data over two clock cycles, outputting 8 bits of a pixel at a time throught D7 - D1. Missing just one of these cycles will lose some information, so you must determine when to sample, update wri
 Combining
 
-Image Processing
+### Image Processing
 
 
 
