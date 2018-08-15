@@ -1,0 +1,1363 @@
+Fitter report for DE0_NANO
+Wed Aug 15 18:18:52 2018
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. I/O Assignment Warnings
+  6. Ignored Assignments
+  7. Incremental Compilation Preservation Summary
+  8. Incremental Compilation Partition Settings
+  9. Incremental Compilation Placement Preservation
+ 10. Pin-Out File
+ 11. Fitter Resource Usage Summary
+ 12. Fitter Partition Statistics
+ 13. Input Pins
+ 14. Output Pins
+ 15. Dual Purpose and Dedicated Pins
+ 16. I/O Bank Usage
+ 17. All Package Pins
+ 18. Fitter Resource Utilization by Entity
+ 19. Delay Chain Summary
+ 20. Pad To Core Delay Chain Fanout
+ 21. Routing Usage Summary
+ 22. I/O Rules Summary
+ 23. I/O Rules Details
+ 24. I/O Rules Matrix
+ 25. Fitter Device Options
+ 26. Operating Settings and Conditions
+ 27. Fitter Messages
+ 28. Fitter Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++------------------------------------------------------------------------------------------------+
+; Fitter Summary                                                                                 ;
++------------------------------------+-----------------------------------------------------------+
+; Fitter Status                      ; Successful - Wed Aug 15 18:18:52 2018                     ;
+; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition ;
+; Revision Name                      ; DE0_NANO                                                  ;
+; Top-level Entity Name              ; DE0_NANO                                                  ;
+; Family                             ; Cyclone IV E                                              ;
+; Device                             ; EP4CE22F17C6                                              ;
+; Timing Models                      ; Final                                                     ;
+; Total logic elements               ; 0 / 22,320 ( 0 % )                                        ;
+;     Total combinational functions  ; 0 / 22,320 ( 0 % )                                        ;
+;     Dedicated logic registers      ; 0 / 22,320 ( 0 % )                                        ;
+; Total registers                    ; 0                                                         ;
+; Total pins                         ; 71 / 154 ( 46 % )                                         ;
+; Total virtual pins                 ; 0                                                         ;
+; Total memory bits                  ; 0 / 608,256 ( 0 % )                                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                                           ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                             ;
++------------------------------------+-----------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                                                                            ;
++----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
+; Option                                                                     ; Setting                               ; Default Value                         ;
++----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
+; Device                                                                     ; EP4CE22F17C6                          ;                                       ;
+; Minimum Core Junction Temperature                                          ; 0                                     ;                                       ;
+; Maximum Core Junction Temperature                                          ; 85                                    ;                                       ;
+; Fit Attempts to Skip                                                       ; 0                                     ; 0.0                                   ;
+; Device I/O Standard                                                        ; 2.5 V                                 ;                                       ;
+; Use smart compilation                                                      ; Off                                   ; Off                                   ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On                                    ;
+; Enable compact report table                                                ; Off                                   ; Off                                   ;
+; Auto Merge PLLs                                                            ; On                                    ; On                                    ;
+; Router Timing Optimization Level                                           ; Normal                                ; Normal                                ;
+; Perform Clocking Topology Analysis During Routing                          ; Off                                   ; Off                                   ;
+; Placement Effort Multiplier                                                ; 1.0                                   ; 1.0                                   ;
+; Router Effort Multiplier                                                   ; 1.0                                   ; 1.0                                   ;
+; Optimize Hold Timing                                                       ; All Paths                             ; All Paths                             ;
+; Optimize Multi-Corner Timing                                               ; On                                    ; On                                    ;
+; PowerPlay Power Optimization During Fitting                                ; Normal compilation                    ; Normal compilation                    ;
+; SSN Optimization                                                           ; Off                                   ; Off                                   ;
+; Optimize Timing                                                            ; Normal compilation                    ; Normal compilation                    ;
+; Optimize Timing for ECOs                                                   ; Off                                   ; Off                                   ;
+; Regenerate Full Fit Report During ECO Compiles                             ; Off                                   ; Off                                   ;
+; Optimize IOC Register Placement for Timing                                 ; Normal                                ; Normal                                ;
+; Limit to One Fitting Attempt                                               ; Off                                   ; Off                                   ;
+; Final Placement Optimizations                                              ; Automatically                         ; Automatically                         ;
+; Fitter Aggressive Routability Optimizations                                ; Automatically                         ; Automatically                         ;
+; Fitter Initial Placement Seed                                              ; 1                                     ; 1                                     ;
+; PCI I/O                                                                    ; Off                                   ; Off                                   ;
+; Weak Pull-Up Resistor                                                      ; Off                                   ; Off                                   ;
+; Enable Bus-Hold Circuitry                                                  ; Off                                   ; Off                                   ;
+; Auto Packed Registers                                                      ; Auto                                  ; Auto                                  ;
+; Auto Delay Chains                                                          ; On                                    ; On                                    ;
+; Auto Delay Chains for High Fanout Input Pins                               ; Off                                   ; Off                                   ;
+; Allow Single-ended Buffer for Differential-XSTL Input                      ; Off                                   ; Off                                   ;
+; Treat Bidirectional Pin as Output Pin                                      ; Off                                   ; Off                                   ;
+; Perform Physical Synthesis for Combinational Logic for Fitting             ; Off                                   ; Off                                   ;
+; Perform Physical Synthesis for Combinational Logic for Performance         ; Off                                   ; Off                                   ;
+; Perform Register Duplication for Performance                               ; Off                                   ; Off                                   ;
+; Perform Logic to Memory Mapping for Fitting                                ; Off                                   ; Off                                   ;
+; Perform Register Retiming for Performance                                  ; Off                                   ; Off                                   ;
+; Perform Asynchronous Signal Pipelining                                     ; Off                                   ; Off                                   ;
+; Fitter Effort                                                              ; Auto Fit                              ; Auto Fit                              ;
+; Physical Synthesis Effort Level                                            ; Normal                                ; Normal                                ;
+; Logic Cell Insertion - Logic Duplication                                   ; Auto                                  ; Auto                                  ;
+; Auto Register Duplication                                                  ; Auto                                  ; Auto                                  ;
+; Auto Global Clock                                                          ; On                                    ; On                                    ;
+; Auto Global Register Control Signals                                       ; On                                    ; On                                    ;
+; Reserve all unused pins                                                    ; As input tri-stated with weak pull-up ; As input tri-stated with weak pull-up ;
+; Synchronizer Identification                                                ; Off                                   ; Off                                   ;
+; Enable Beneficial Skew Optimization                                        ; On                                    ; On                                    ;
+; Optimize Design for Metastability                                          ; On                                    ; On                                    ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off                                   ; Off                                   ;
+; Enable input tri-state on active configuration pins in user mode           ; Off                                   ; Off                                   ;
++----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------+
+; I/O Assignment Warnings                    ;
++--------------+-----------------------------+
+; Pin Name     ; Reason                      ;
++--------------+-----------------------------+
+; GPIO_0_D[0]  ; Missing drive strength      ;
+; GPIO_0_D[1]  ; Missing drive strength      ;
+; GPIO_0_D[2]  ; Missing drive strength      ;
+; GPIO_0_D[3]  ; Missing drive strength      ;
+; GPIO_0_D[4]  ; Missing drive strength      ;
+; GPIO_0_D[5]  ; Missing drive strength      ;
+; GPIO_0_D[6]  ; Missing drive strength      ;
+; GPIO_0_D[7]  ; Missing drive strength      ;
+; GPIO_0_D[8]  ; Missing drive strength      ;
+; GPIO_0_D[9]  ; Missing drive strength      ;
+; GPIO_0_D[10] ; Missing drive strength      ;
+; GPIO_0_D[11] ; Missing drive strength      ;
+; GPIO_0_D[12] ; Missing drive strength      ;
+; GPIO_0_D[13] ; Missing drive strength      ;
+; GPIO_0_D[14] ; Missing drive strength      ;
+; GPIO_0_D[15] ; Missing drive strength      ;
+; GPIO_0_D[16] ; Missing drive strength      ;
+; GPIO_0_D[17] ; Missing drive strength      ;
+; GPIO_0_D[18] ; Missing drive strength      ;
+; GPIO_0_D[19] ; Missing drive strength      ;
+; GPIO_0_D[20] ; Missing drive strength      ;
+; GPIO_0_D[21] ; Missing drive strength      ;
+; GPIO_0_D[22] ; Missing drive strength      ;
+; GPIO_0_D[23] ; Missing drive strength      ;
+; GPIO_0_D[24] ; Missing drive strength      ;
+; GPIO_0_D[25] ; Missing drive strength      ;
+; GPIO_0_D[26] ; Missing drive strength      ;
+; GPIO_0_D[27] ; Missing drive strength      ;
+; GPIO_0_D[28] ; Missing drive strength      ;
+; GPIO_0_D[29] ; Missing drive strength      ;
+; GPIO_0_D[30] ; Missing drive strength      ;
+; GPIO_0_D[31] ; Missing drive strength      ;
+; GPIO_0_D[32] ; Missing drive strength      ;
+; GPIO_0_D[33] ; Missing drive strength      ;
+; CLOCK_50     ; Missing location assignment ;
+; GPIO_0_D[0]  ; Missing location assignment ;
+; GPIO_0_D[1]  ; Missing location assignment ;
+; GPIO_0_D[2]  ; Missing location assignment ;
+; GPIO_0_D[3]  ; Missing location assignment ;
+; GPIO_0_D[4]  ; Missing location assignment ;
+; GPIO_0_D[5]  ; Missing location assignment ;
+; GPIO_0_D[6]  ; Missing location assignment ;
+; GPIO_0_D[7]  ; Missing location assignment ;
+; GPIO_0_D[8]  ; Missing location assignment ;
+; GPIO_0_D[9]  ; Missing location assignment ;
+; GPIO_0_D[10] ; Missing location assignment ;
+; GPIO_0_D[11] ; Missing location assignment ;
+; GPIO_0_D[12] ; Missing location assignment ;
+; GPIO_0_D[13] ; Missing location assignment ;
+; GPIO_0_D[14] ; Missing location assignment ;
+; GPIO_0_D[15] ; Missing location assignment ;
+; GPIO_0_D[16] ; Missing location assignment ;
+; GPIO_0_D[17] ; Missing location assignment ;
+; GPIO_0_D[18] ; Missing location assignment ;
+; GPIO_0_D[19] ; Missing location assignment ;
+; GPIO_0_D[20] ; Missing location assignment ;
+; GPIO_0_D[21] ; Missing location assignment ;
+; GPIO_0_D[22] ; Missing location assignment ;
+; GPIO_0_D[23] ; Missing location assignment ;
+; GPIO_0_D[24] ; Missing location assignment ;
+; GPIO_0_D[25] ; Missing location assignment ;
+; GPIO_0_D[26] ; Missing location assignment ;
+; GPIO_0_D[27] ; Missing location assignment ;
+; GPIO_0_D[28] ; Missing location assignment ;
+; GPIO_0_D[29] ; Missing location assignment ;
+; GPIO_0_D[30] ; Missing location assignment ;
+; GPIO_0_D[31] ; Missing location assignment ;
+; GPIO_0_D[32] ; Missing location assignment ;
+; GPIO_0_D[33] ; Missing location assignment ;
+; GPIO_1_D[0]  ; Missing location assignment ;
+; GPIO_1_D[1]  ; Missing location assignment ;
+; GPIO_1_D[2]  ; Missing location assignment ;
+; GPIO_1_D[3]  ; Missing location assignment ;
+; GPIO_1_D[4]  ; Missing location assignment ;
+; GPIO_1_D[5]  ; Missing location assignment ;
+; GPIO_1_D[6]  ; Missing location assignment ;
+; GPIO_1_D[7]  ; Missing location assignment ;
+; GPIO_1_D[8]  ; Missing location assignment ;
+; GPIO_1_D[9]  ; Missing location assignment ;
+; GPIO_1_D[10] ; Missing location assignment ;
+; GPIO_1_D[11] ; Missing location assignment ;
+; GPIO_1_D[12] ; Missing location assignment ;
+; GPIO_1_D[13] ; Missing location assignment ;
+; GPIO_1_D[14] ; Missing location assignment ;
+; GPIO_1_D[15] ; Missing location assignment ;
+; GPIO_1_D[16] ; Missing location assignment ;
+; GPIO_1_D[17] ; Missing location assignment ;
+; GPIO_1_D[18] ; Missing location assignment ;
+; GPIO_1_D[19] ; Missing location assignment ;
+; GPIO_1_D[20] ; Missing location assignment ;
+; GPIO_1_D[21] ; Missing location assignment ;
+; GPIO_1_D[22] ; Missing location assignment ;
+; GPIO_1_D[23] ; Missing location assignment ;
+; GPIO_1_D[24] ; Missing location assignment ;
+; GPIO_1_D[25] ; Missing location assignment ;
+; GPIO_1_D[26] ; Missing location assignment ;
+; GPIO_1_D[27] ; Missing location assignment ;
+; GPIO_1_D[28] ; Missing location assignment ;
+; GPIO_1_D[29] ; Missing location assignment ;
+; GPIO_1_D[30] ; Missing location assignment ;
+; GPIO_1_D[31] ; Missing location assignment ;
+; GPIO_1_D[32] ; Missing location assignment ;
+; GPIO_1_D[33] ; Missing location assignment ;
+; KEY[0]       ; Missing location assignment ;
+; KEY[1]       ; Missing location assignment ;
++--------------+-----------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Ignored Assignments                                                                           ;
++--------------+----------------+--------------+---------------+---------------+----------------+
+; Name         ; Ignored Entity ; Ignored From ; Ignored To    ; Ignored Value ; Ignored Source ;
++--------------+----------------+--------------+---------------+---------------+----------------+
+; I/O Standard ; DE0_NANO       ;              ; ADC_CS_N      ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; ADC_SADDR     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; ADC_SCLK      ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; ADC_SDAT      ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[0]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[10] ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[11] ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[12] ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[1]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[2]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[3]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[4]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[5]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[6]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[7]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[8]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_ADDR[9]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_BA[0]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_BA[1]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_CAS_N    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_CKE      ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_CLK      ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_CS_N     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQM[0]   ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQM[1]   ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[0]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[10]   ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[11]   ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[12]   ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[13]   ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[14]   ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[15]   ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[1]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[2]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[3]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[4]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[5]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[6]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[7]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[8]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_DQ[9]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_RAS_N    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; DRAM_WE_N     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; EPCS_ASDO     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; EPCS_DATA0    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; EPCS_DCLK     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; EPCS_NCSO     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_0_IN[0]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_0_IN[1]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_1_IN[0]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_1_IN[1]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[0]     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[10]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[11]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[12]    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[1]     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[2]     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[3]     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[4]     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[5]     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[6]     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[7]     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[8]     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2[9]     ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2_IN[0]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2_IN[1]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; GPIO_2_IN[2]  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; G_SENSOR_CS_N ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; G_SENSOR_INT  ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; I2C_SCLK      ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; I2C_SDAT      ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; LED[0]        ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; LED[1]        ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; LED[2]        ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; LED[3]        ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; LED[4]        ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; LED[5]        ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; LED[6]        ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; LED[7]        ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; SW[0]         ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; SW[1]         ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; SW[2]         ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; DE0_NANO       ;              ; SW[3]         ; 3.3-V LVTTL   ; QSF Assignment ;
++--------------+----------------+--------------+---------------+---------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Incremental Compilation Preservation Summary                                                     ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Placement (by node) ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 143 ) ; 0.00 % ( 0 / 143 )         ; 0.00 % ( 0 / 143 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 143 ) ; 0.00 % ( 0 / 143 )         ; 0.00 % ( 0 / 143 )       ;
+;                     ;                    ;                            ;                          ;
+; Routing (by net)    ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
+;     -- Achieved     ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
++---------------------+--------------------+----------------------------+--------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Incremental Compilation Partition Settings                                                                                                                                             ;
++--------------------------------+----------------+-------------------+-------------------------+------------------------+------------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Preservation Level Used ; Netlist Type Requested ; Preservation Level Requested ; Contents                       ;
++--------------------------------+----------------+-------------------+-------------------------+------------------------+------------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; N/A                     ; Source File            ; N/A                          ;                                ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; N/A                     ; Source File            ; N/A                          ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+-------------------------+------------------------+------------------------------+--------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Incremental Compilation Placement Preservation                                                                                     ;
++--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
+; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
++--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
+; Top                            ; 0.00 % ( 0 / 143 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
++--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in C:/Users/JoshyD/Documents/School/Research/Summer 2018/CV-with-FPGA/Lab3_FPGA_Template/DE0_NANO.pin.
+
+
++-------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                     ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Total logic elements                        ; 0 / 22,320 ( 0 % )  ;
+;     -- Combinational with no register       ; 0                   ;
+;     -- Register only                        ; 0                   ;
+;     -- Combinational with a register        ; 0                   ;
+;                                             ;                     ;
+; Logic element usage by number of LUT inputs ;                     ;
+;     -- 4 input functions                    ; 0                   ;
+;     -- 3 input functions                    ; 0                   ;
+;     -- <=2 input functions                  ; 0                   ;
+;     -- Register only                        ; 0                   ;
+;                                             ;                     ;
+; Logic elements by mode                      ;                     ;
+;     -- normal mode                          ; 0                   ;
+;     -- arithmetic mode                      ; 0                   ;
+;                                             ;                     ;
+; Total registers*                            ; 0 / 23,018 ( 0 % )  ;
+;     -- Dedicated logic registers            ; 0 / 22,320 ( 0 % )  ;
+;     -- I/O registers                        ; 0 / 698 ( 0 % )     ;
+;                                             ;                     ;
+; Total LABs:  partially or completely used   ; 0 / 1,395 ( 0 % )   ;
+; Virtual pins                                ; 0                   ;
+; I/O pins                                    ; 71 / 154 ( 46 % )   ;
+;     -- Clock pins                           ; 2 / 7 ( 29 % )      ;
+;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )       ;
+;                                             ;                     ;
+; Global signals                              ; 0                   ;
+; M9Ks                                        ; 0 / 66 ( 0 % )      ;
+; Total block memory bits                     ; 0 / 608,256 ( 0 % ) ;
+; Total block memory implementation bits      ; 0 / 608,256 ( 0 % ) ;
+; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )     ;
+; PLLs                                        ; 0 / 4 ( 0 % )       ;
+; Global clocks                               ; 0 / 20 ( 0 % )      ;
+; JTAGs                                       ; 0 / 1 ( 0 % )       ;
+; CRC blocks                                  ; 0 / 1 ( 0 % )       ;
+; ASMI blocks                                 ; 0 / 1 ( 0 % )       ;
+; Oscillator blocks                           ; 0 / 1 ( 0 % )       ;
+; Impedance control blocks                    ; 0 / 4 ( 0 % )       ;
+; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%  ;
+; Peak interconnect usage (total/H/V)         ; 0.0% / 0.0% / 0.0%  ;
+; Maximum fan-out                             ; 1                   ;
+; Highest non-global fan-out                  ; 1                   ;
+; Total fan-out                               ; 71                  ;
+; Average fan-out                             ; 0.50                ;
++---------------------------------------------+---------------------+
+*  Register count does not include registers inside RAM blocks or DSP blocks.
+
+
+
++--------------------------------------------------------------------------------------------------+
+; Fitter Partition Statistics                                                                      ;
++---------------------------------------------+-------------------+--------------------------------+
+; Statistic                                   ; Top               ; hard_block:auto_generated_inst ;
++---------------------------------------------+-------------------+--------------------------------+
+; Difficulty Clustering Region                ; Low               ; Low                            ;
+;                                             ;                   ;                                ;
+; Total logic elements                        ; 0 / 22320 ( 0 % ) ; 0 / 22320 ( 0 % )              ;
+;     -- Combinational with no register       ; 0                 ; 0                              ;
+;     -- Register only                        ; 0                 ; 0                              ;
+;     -- Combinational with a register        ; 0                 ; 0                              ;
+;                                             ;                   ;                                ;
+; Logic element usage by number of LUT inputs ;                   ;                                ;
+;     -- 4 input functions                    ; 0                 ; 0                              ;
+;     -- 3 input functions                    ; 0                 ; 0                              ;
+;     -- <=2 input functions                  ; 0                 ; 0                              ;
+;     -- Register only                        ; 0                 ; 0                              ;
+;                                             ;                   ;                                ;
+; Logic elements by mode                      ;                   ;                                ;
+;     -- normal mode                          ; 0                 ; 0                              ;
+;     -- arithmetic mode                      ; 0                 ; 0                              ;
+;                                             ;                   ;                                ;
+; Total registers                             ; 0                 ; 0                              ;
+;     -- Dedicated logic registers            ; 0 / 22320 ( 0 % ) ; 0 / 22320 ( 0 % )              ;
+;     -- I/O registers                        ; 0                 ; 0                              ;
+;                                             ;                   ;                                ;
+; Total LABs:  partially or completely used   ; 0 / 1395 ( 0 % )  ; 0 / 1395 ( 0 % )               ;
+;                                             ;                   ;                                ;
+; Virtual pins                                ; 0                 ; 0                              ;
+; I/O pins                                    ; 71                ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )   ; 0 / 132 ( 0 % )                ;
+; Total memory bits                           ; 0                 ; 0                              ;
+; Total RAM block bits                        ; 0                 ; 0                              ;
+;                                             ;                   ;                                ;
+; Connections                                 ;                   ;                                ;
+;     -- Input Connections                    ; 0                 ; 0                              ;
+;     -- Registered Input Connections         ; 0                 ; 0                              ;
+;     -- Output Connections                   ; 0                 ; 0                              ;
+;     -- Registered Output Connections        ; 0                 ; 0                              ;
+;                                             ;                   ;                                ;
+; Internal Connections                        ;                   ;                                ;
+;     -- Total Connections                    ; 71                ; 0                              ;
+;     -- Registered Connections               ; 0                 ; 0                              ;
+;                                             ;                   ;                                ;
+; External Connections                        ;                   ;                                ;
+;     -- Top                                  ; 0                 ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0                 ; 0                              ;
+;                                             ;                   ;                                ;
+; Partition Interface                         ;                   ;                                ;
+;     -- Input Ports                          ; 37                ; 0                              ;
+;     -- Output Ports                         ; 34                ; 0                              ;
+;     -- Bidir Ports                          ; 0                 ; 0                              ;
+;                                             ;                   ;                                ;
+; Registered Ports                            ;                   ;                                ;
+;     -- Registered Input Ports               ; 0                 ; 0                              ;
+;     -- Registered Output Ports              ; 0                 ; 0                              ;
+;                                             ;                   ;                                ;
+; Port Connectivity                           ;                   ;                                ;
+;     -- Input Ports driven by GND            ; 0                 ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                 ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                 ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                 ; 0                              ;
+;     -- Input Ports with no Source           ; 0                 ; 0                              ;
+;     -- Output Ports with no Source          ; 0                 ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                 ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                 ; 0                              ;
++---------------------------------------------+-------------------+--------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                                                    ;
++--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
+; Name         ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
++--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
+; CLOCK_50     ; R5    ; 3        ; 14           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[0]  ; A13   ; 7        ; 49           ; 34           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[10] ; G2    ; 1        ; 0            ; 23           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[11] ; A5    ; 8        ; 14           ; 34           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[12] ; N3    ; 3        ; 1            ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[13] ; B11   ; 7        ; 40           ; 34           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[14] ; F13   ; 6        ; 53           ; 21           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[15] ; F15   ; 6        ; 53           ; 22           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[16] ; B13   ; 7        ; 49           ; 34           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[17] ; E9    ; 7        ; 29           ; 34           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[18] ; A15   ; 7        ; 38           ; 34           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[19] ; R6    ; 3        ; 14           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[1]  ; B6    ; 8        ; 16           ; 34           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[20] ; R8    ; 3        ; 27           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[21] ; T8    ; 3        ; 27           ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[22] ; E8    ; 8        ; 20           ; 34           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[23] ; M2    ; 2        ; 0            ; 16           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[24] ; M1    ; 2        ; 0            ; 16           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[25] ; J15   ; 5        ; 53           ; 14           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[26] ; M10   ; 4        ; 43           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[27] ; F14   ; 6        ; 53           ; 24           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[28] ; L7    ; 3        ; 16           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[29] ; T11   ; 4        ; 36           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[2]  ; P3    ; 3        ; 1            ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[30] ; D14   ; 7        ; 51           ; 34           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[31] ; M8    ; 3        ; 20           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[32] ; N14   ; 5        ; 53           ; 6            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[33] ; F9    ; 7        ; 34           ; 34           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[3]  ; E7    ; 8        ; 16           ; 34           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[4]  ; T5    ; 3        ; 14           ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[5]  ; D11   ; 7        ; 51           ; 34           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[6]  ; K16   ; 5        ; 53           ; 12           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[7]  ; C6    ; 8        ; 18           ; 34           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[8]  ; T12   ; 4        ; 36           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; GPIO_1_D[9]  ; T2    ; 3        ; 3            ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; KEY[0]       ; R12   ; 4        ; 36           ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; KEY[1]       ; G5    ; 1        ; 0            ; 24           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
++--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
+; Name         ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
++--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
+; GPIO_0_D[0]  ; B1    ; 1        ; 0            ; 28           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[10] ; P8    ; 3        ; 25           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[11] ; D6    ; 8        ; 9            ; 34           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[12] ; B14   ; 7        ; 45           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[13] ; A12   ; 7        ; 43           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[14] ; R7    ; 3        ; 16           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[15] ; T7    ; 3        ; 18           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[16] ; R13   ; 4        ; 40           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[17] ; M6    ; 3        ; 7            ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[18] ; E10   ; 7        ; 45           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[19] ; C14   ; 7        ; 51           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[1]  ; J2    ; 2        ; 0            ; 15           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[20] ; C16   ; 6        ; 53           ; 30           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[21] ; N12   ; 4        ; 47           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[22] ; B10   ; 7        ; 34           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[23] ; N11   ; 4        ; 43           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[24] ; T10   ; 4        ; 34           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[25] ; K5    ; 2        ; 0            ; 7            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[26] ; F2    ; 1        ; 0            ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[27] ; A3    ; 8        ; 7            ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[28] ; R4    ; 3        ; 5            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[29] ; M7    ; 3        ; 11           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[2]  ; T3    ; 3        ; 1            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[30] ; P16   ; 5        ; 53           ; 7            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[31] ; D8    ; 8        ; 23           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[32] ; A2    ; 8        ; 7            ; 34           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[33] ; T6    ; 3        ; 14           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[3]  ; C11   ; 7        ; 38           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[4]  ; D15   ; 6        ; 53           ; 26           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[5]  ; F1    ; 1        ; 0            ; 23           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[6]  ; D1    ; 1        ; 0            ; 25           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[7]  ; B5    ; 8        ; 11           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[8]  ; A7    ; 8        ; 20           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GPIO_0_D[9]  ; D9    ; 7        ; 31           ; 34           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
++--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Dual Purpose and Dedicated Pins                                                                                      ;
++----------+----------------------------------------+-------------------+------------------+---------------------------+
+; Location ; Pin Name                               ; Reserved As       ; User Signal Name ; Pin Type                  ;
++----------+----------------------------------------+-------------------+------------------+---------------------------+
+; F4       ; nSTATUS                                ; -                 ; -                ; Dedicated Programming Pin ;
+; H5       ; nCONFIG                                ; -                 ; -                ; Dedicated Programming Pin ;
+; J3       ; nCE                                    ; -                 ; -                ; Dedicated Programming Pin ;
+; J15      ; DIFFIO_R9p, DEV_CLRn                   ; Use as regular IO ; GPIO_1_D[25]     ; Dual Purpose Pin          ;
+; H14      ; CONF_DONE                              ; -                 ; -                ; Dedicated Programming Pin ;
+; H13      ; MSEL0                                  ; -                 ; -                ; Dedicated Programming Pin ;
+; H12      ; MSEL1                                  ; -                 ; -                ; Dedicated Programming Pin ;
+; G12      ; MSEL2                                  ; -                 ; -                ; Dedicated Programming Pin ;
+; G12      ; MSEL3                                  ; -                 ; -                ; Dedicated Programming Pin ;
+; F15      ; DIFFIO_R4p, CLKUSR                     ; Use as regular IO ; GPIO_1_D[15]     ; Dual Purpose Pin          ;
+; D15      ; PADD23                                 ; Use as regular IO ; GPIO_0_D[4]      ; Dual Purpose Pin          ;
+; C16      ; DIFFIO_R1n, PADD20, DQS2R/CQ3R,CDPCLK5 ; Use as regular IO ; GPIO_0_D[20]     ; Dual Purpose Pin          ;
+; B11      ; DIFFIO_T20p, PADD0                     ; Use as regular IO ; GPIO_1_D[13]     ; Dual Purpose Pin          ;
+; A15      ; DIFFIO_T19n, PADD1                     ; Use as regular IO ; GPIO_1_D[18]     ; Dual Purpose Pin          ;
+; F9       ; DIFFIO_T17p, PADD4, DQS2T/CQ3T,DPCLK8  ; Use as regular IO ; GPIO_1_D[33]     ; Dual Purpose Pin          ;
+; B10      ; DIFFIO_T16p, PADD6                     ; Use as regular IO ; GPIO_0_D[22]     ; Dual Purpose Pin          ;
+; D9       ; DIFFIO_T15p, PADD8                     ; Use as regular IO ; GPIO_0_D[9]      ; Dual Purpose Pin          ;
+; E9       ; DIFFIO_T13p, PADD12, DQS4T/CQ5T,DPCLK9 ; Use as regular IO ; GPIO_1_D[17]     ; Dual Purpose Pin          ;
+; E8       ; DIFFIO_T10n, DATA2                     ; Use as regular IO ; GPIO_1_D[22]     ; Dual Purpose Pin          ;
+; A7       ; DIFFIO_T9n, PADD18                     ; Use as regular IO ; GPIO_0_D[8]      ; Dual Purpose Pin          ;
+; B6       ; DIFFIO_T7p, DATA13                     ; Use as regular IO ; GPIO_1_D[1]      ; Dual Purpose Pin          ;
+; E7       ; DATA5                                  ; Use as regular IO ; GPIO_1_D[3]      ; Dual Purpose Pin          ;
+; A5       ; DIFFIO_T5n, DATA7                      ; Use as regular IO ; GPIO_1_D[11]     ; Dual Purpose Pin          ;
+; B5       ; DIFFIO_T5p, DATA8                      ; Use as regular IO ; GPIO_0_D[7]      ; Dual Purpose Pin          ;
+; D6       ; DIFFIO_T4n, DATA9                      ; Use as regular IO ; GPIO_0_D[11]     ; Dual Purpose Pin          ;
++----------+----------------------------------------+-------------------+------------------+---------------------------+
+
+
++------------------------------------------------------------+
+; I/O Bank Usage                                             ;
++----------+------------------+---------------+--------------+
+; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
++----------+------------------+---------------+--------------+
+; 1        ; 6 / 14 ( 43 % )  ; 3.3V          ; --           ;
+; 2        ; 4 / 16 ( 25 % )  ; 3.3V          ; --           ;
+; 3        ; 18 / 25 ( 72 % ) ; 3.3V          ; --           ;
+; 4        ; 8 / 20 ( 40 % )  ; 3.3V          ; --           ;
+; 5        ; 4 / 18 ( 22 % )  ; 3.3V          ; --           ;
+; 6        ; 5 / 13 ( 38 % )  ; 3.3V          ; --           ;
+; 7        ; 15 / 24 ( 63 % ) ; 3.3V          ; --           ;
+; 8        ; 11 / 24 ( 46 % ) ; 3.3V          ; --           ;
++----------+------------------+---------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                                                                              ;
++----------+------------+----------+---------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage                  ; Dir.   ; I/O Standard ; Voltage ; I/O Type   ; User Assignment ; Bus Hold ; Weak Pull Up ;
++----------+------------+----------+---------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
+; A1       ;            ; 8        ; VCCIO8                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; A2       ; 238        ; 8        ; GPIO_0_D[32]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A3       ; 239        ; 8        ; GPIO_0_D[27]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A4       ; 236        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A5       ; 232        ; 8        ; GPIO_1_D[11]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A6       ; 225        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A7       ; 220        ; 8        ; GPIO_0_D[8]                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A8       ; 211        ; 8        ; GND+                            ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; A9       ; 209        ; 7        ; GND+                            ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; A10      ; 198        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A11      ; 188        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A12      ; 186        ; 7        ; GPIO_0_D[13]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A13      ; 179        ; 7        ; GPIO_1_D[0]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A14      ; 181        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A15      ; 191        ; 7        ; GPIO_1_D[18]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A16      ;            ; 7        ; VCCIO7                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; B1       ; 5          ; 1        ; GPIO_0_D[0]                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; B2       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; B3       ; 242        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B4       ; 237        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B5       ; 233        ; 8        ; GPIO_0_D[7]                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B6       ; 226        ; 8        ; GPIO_1_D[1]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B7       ; 221        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B8       ; 212        ; 8        ; GND+                            ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; B9       ; 210        ; 7        ; GND+                            ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; B10      ; 199        ; 7        ; GPIO_0_D[22]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B11      ; 189        ; 7        ; GPIO_1_D[13]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B12      ; 187        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B13      ; 180        ; 7        ; GPIO_1_D[16]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B14      ; 182        ; 7        ; GPIO_0_D[12]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B15      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; B16      ; 164        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; C1       ; 7          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; C2       ; 6          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; C3       ; 245        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; C4       ;            ; 8        ; VCCIO8                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; C5       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; C6       ; 224        ; 8        ; GPIO_1_D[7]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C7       ;            ; 8        ; VCCIO8                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; C8       ; 215        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; C9       ; 200        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; C10      ;            ; 7        ; VCCIO7                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; C11      ; 190        ; 7        ; GPIO_0_D[3]                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C12      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; C13      ;            ; 7        ; VCCIO7                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; C14      ; 175        ; 7        ; GPIO_0_D[19]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C15      ; 174        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; C16      ; 173        ; 6        ; GPIO_0_D[20]                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; D1       ; 10         ; 1        ; GPIO_0_D[6]                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; D2       ; 9          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; D3       ; 246        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D4       ;            ;          ; VCCD_PLL3                       ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; D5       ; 241        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D6       ; 234        ; 8        ; GPIO_0_D[11]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D7       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; D8       ; 216        ; 8        ; GPIO_0_D[31]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D9       ; 201        ; 7        ; GPIO_0_D[9]                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D10      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; D11      ; 177        ; 7        ; GPIO_1_D[5]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D12      ; 178        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D13      ;            ;          ; VCCD_PLL2                       ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; D14      ; 176        ; 7        ; GPIO_1_D[30]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D15      ; 170        ; 6        ; GPIO_0_D[4]                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; D16      ; 169        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; E1       ; 26         ; 1        ; GND+                            ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; E2       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; E3       ;            ; 1        ; VCCIO1                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; E4       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; E5       ;            ;          ; GNDA3                           ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; E6       ; 231        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; E7       ; 227        ; 8        ; GPIO_1_D[3]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E8       ; 218        ; 8        ; GPIO_1_D[22]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E9       ; 205        ; 7        ; GPIO_1_D[17]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E10      ; 184        ; 7        ; GPIO_0_D[18]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E11      ; 183        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; E12      ;            ;          ; GNDA2                           ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; E13      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; E14      ;            ; 6        ; VCCIO6                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; E15      ; 151        ; 6        ; GND+                            ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; E16      ; 150        ; 6        ; GND+                            ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; F1       ; 14         ; 1        ; GPIO_0_D[5]                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F2       ; 13         ; 1        ; GPIO_0_D[26]                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F3       ; 8          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; F4       ; 11         ; 1        ; ^nSTATUS                        ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; F5       ;            ; --       ; VCCA3                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
+; F6       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; F7       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; F8       ; 219        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; F9       ; 197        ; 7        ; GPIO_1_D[33]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; F10      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; F11      ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; F12      ;            ; --       ; VCCA2                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
+; F13      ; 161        ; 6        ; GPIO_1_D[14]                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F14      ; 167        ; 6        ; GPIO_1_D[27]                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F15      ; 163        ; 6        ; GPIO_1_D[15]                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F16      ; 162        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G1       ; 16         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G2       ; 15         ; 1        ; GPIO_1_D[10]                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G3       ;            ; 1        ; VCCIO1                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; G4       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; G5       ; 12         ; 1        ; KEY[1]                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G6       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; G7       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; G8       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; G9       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; G10      ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; G11      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; G12      ; 155        ; 6        ; ^MSEL2                          ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; G12      ; 156        ; 6        ; ^MSEL3                          ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; G13      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; G14      ;            ; 6        ; VCCIO6                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; G15      ; 160        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G16      ; 159        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; H1       ; 17         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; --       ; On           ;
+; H2       ; 18         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; H3       ; 21         ; 1        ; #TCK                            ; input  ;              ;         ; --         ;                 ; --       ; --           ;
+; H4       ; 20         ; 1        ; #TDI                            ; input  ;              ;         ; --         ;                 ; --       ; --           ;
+; H5       ; 19         ; 1        ; ^nCONFIG                        ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; H6       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; H7       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; H8       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; H9       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; H10      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; H11      ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; H12      ; 154        ; 6        ; ^MSEL1                          ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; H13      ; 153        ; 6        ; ^MSEL0                          ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; H14      ; 152        ; 6        ; ^CONF_DONE                      ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; H15      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; H16      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; J1       ; 30         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J2       ; 29         ; 2        ; GPIO_0_D[1]                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J3       ; 24         ; 1        ; ^nCE                            ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; J4       ; 23         ; 1        ; #TDO                            ; output ;              ;         ; --         ;                 ; --       ; --           ;
+; J5       ; 22         ; 1        ; #TMS                            ; input  ;              ;         ; --         ;                 ; --       ; --           ;
+; J6       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; J7       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; J8       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; J9       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; J10      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; J11      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; J12      ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; J13      ; 146        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J14      ; 144        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J15      ; 143        ; 5        ; GPIO_1_D[25]                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J16      ; 142        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K1       ; 37         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K2       ; 36         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K3       ;            ; 2        ; VCCIO2                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; K4       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; K5       ; 45         ; 2        ; GPIO_0_D[25]                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K6       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; K7       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; K8       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; K9       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; K10      ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; K11      ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; K12      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; K13      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; K14      ;            ; 5        ; VCCIO5                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; K15      ; 141        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K16      ; 140        ; 5        ; GPIO_1_D[6]                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L1       ; 39         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L2       ; 38         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L3       ; 40         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; L4       ; 46         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L5       ;            ; --       ; VCCA1                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
+; L6       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; L7       ; 75         ; 3        ; GPIO_1_D[28]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; L8       ; 79         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; L9       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; L10      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; L11      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; L12      ;            ; --       ; VCCA4                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
+; L13      ; 136        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L14      ; 134        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; L15      ; 138        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L16      ; 137        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; M1       ; 28         ; 2        ; GPIO_1_D[24]                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M2       ; 27         ; 2        ; GPIO_1_D[23]                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M3       ;            ; 2        ; VCCIO2                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; M4       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; M5       ;            ;          ; GNDA1                           ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; M6       ; 64         ; 3        ; GPIO_0_D[17]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; M7       ; 68         ; 3        ; GPIO_0_D[29]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; M8       ; 81         ; 3        ; GPIO_1_D[31]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; M9       ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; M10      ; 111        ; 4        ; GPIO_1_D[26]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; M11      ;            ;          ; VCCINT                          ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; M12      ;            ;          ; GNDA4                           ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; M13      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; M14      ;            ; 5        ; VCCIO5                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; M15      ; 149        ; 5        ; GND+                            ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; M16      ; 148        ; 5        ; GND+                            ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; N1       ; 44         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N2       ; 43         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N3       ; 52         ; 3        ; GPIO_1_D[12]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; N4       ;            ;          ; VCCD_PLL1                       ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; N5       ; 62         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N6       ; 63         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N7       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; N8       ; 82         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N9       ; 93         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N10      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; N11      ; 112        ; 4        ; GPIO_0_D[23]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; N12      ; 117        ; 4        ; GPIO_0_D[21]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; N13      ;            ;          ; VCCD_PLL4                       ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; N14      ; 126        ; 5        ; GPIO_1_D[32]                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N15      ; 133        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N16      ; 132        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; P1       ; 51         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; P2       ; 50         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; P3       ; 53         ; 3        ; GPIO_1_D[2]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; P4       ;            ; 3        ; VCCIO3                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; P5       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; P6       ; 67         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; P7       ;            ; 3        ; VCCIO3                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; P8       ; 85         ; 3        ; GPIO_0_D[10]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; P9       ; 105        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; P10      ;            ; 4        ; VCCIO4                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; P11      ; 106        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; P12      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; P13      ;            ; 4        ; VCCIO4                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; P14      ; 119        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; P15      ; 127        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; P16      ; 128        ; 5        ; GPIO_0_D[30]                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R1       ; 49         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; R2       ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; R3       ; 54         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R4       ; 60         ; 3        ; GPIO_0_D[28]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R5       ; 71         ; 3        ; CLOCK_50                        ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R6       ; 73         ; 3        ; GPIO_1_D[19]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R7       ; 76         ; 3        ; GPIO_0_D[14]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R8       ; 86         ; 3        ; GPIO_1_D[20]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R9       ; 88         ; 4        ; GND+                            ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; R10      ; 96         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R11      ; 98         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R12      ; 100        ; 4        ; KEY[0]                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R13      ; 107        ; 4        ; GPIO_0_D[16]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R14      ; 120        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R15      ;            ;          ; GND                             ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; R16      ; 129        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; T1       ;            ; 3        ; VCCIO3                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; T2       ; 59         ; 3        ; GPIO_1_D[9]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T3       ; 55         ; 3        ; GPIO_0_D[2]                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T4       ; 61         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; T5       ; 72         ; 3        ; GPIO_1_D[4]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T6       ; 74         ; 3        ; GPIO_0_D[33]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T7       ; 77         ; 3        ; GPIO_0_D[15]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T8       ; 87         ; 3        ; GPIO_1_D[21]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T9       ; 89         ; 4        ; GND+                            ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; T10      ; 97         ; 4        ; GPIO_0_D[24]                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T11      ; 99         ; 4        ; GPIO_1_D[29]                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T12      ; 101        ; 4        ; GPIO_1_D[8]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T13      ; 108        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; T14      ; 115        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; T15      ; 116        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; T16      ;            ; 4        ; VCCIO4                          ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
++----------+------------+----------+---------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                           ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
+; |DE0_NANO                  ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 71   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |DE0_NANO           ; work         ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                          ;
++--------------+----------+---------------+---------------+-----------------------+-----+------+
+; Name         ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
++--------------+----------+---------------+---------------+-----------------------+-----+------+
+; CLOCK_50     ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[2]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[3]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[4]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[5]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[6]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[7]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[8]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[9]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[10] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[11] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[12] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[13] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[14] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[15] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[16] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[17] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[18] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[19] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[20] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[21] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[22] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[23] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[24] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[25] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[26] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[27] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[28] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[29] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[30] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[31] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[32] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_0_D[33] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[0]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[1]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[2]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[3]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[4]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[5]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[6]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[7]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[8]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[9]  ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[10] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[11] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[12] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[13] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[14] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[15] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[16] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[17] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[18] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[19] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[20] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[21] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[22] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[23] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[24] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[25] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[26] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[27] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[28] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[29] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[30] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[31] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[32] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; GPIO_1_D[33] ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; KEY[0]       ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; KEY[1]       ; Input    ; --            ; --            ; --                    ; --  ; --   ;
++--------------+----------+---------------+---------------+-----------------------+-----+------+
+
+
++---------------------------------------------------+
+; Pad To Core Delay Chain Fanout                    ;
++---------------------+-------------------+---------+
+; Source Pin / Fanout ; Pad To Core Index ; Setting ;
++---------------------+-------------------+---------+
+; CLOCK_50            ;                   ;         ;
+; GPIO_1_D[0]         ;                   ;         ;
+; GPIO_1_D[1]         ;                   ;         ;
+; GPIO_1_D[2]         ;                   ;         ;
+; GPIO_1_D[3]         ;                   ;         ;
+; GPIO_1_D[4]         ;                   ;         ;
+; GPIO_1_D[5]         ;                   ;         ;
+; GPIO_1_D[6]         ;                   ;         ;
+; GPIO_1_D[7]         ;                   ;         ;
+; GPIO_1_D[8]         ;                   ;         ;
+; GPIO_1_D[9]         ;                   ;         ;
+; GPIO_1_D[10]        ;                   ;         ;
+; GPIO_1_D[11]        ;                   ;         ;
+; GPIO_1_D[12]        ;                   ;         ;
+; GPIO_1_D[13]        ;                   ;         ;
+; GPIO_1_D[14]        ;                   ;         ;
+; GPIO_1_D[15]        ;                   ;         ;
+; GPIO_1_D[16]        ;                   ;         ;
+; GPIO_1_D[17]        ;                   ;         ;
+; GPIO_1_D[18]        ;                   ;         ;
+; GPIO_1_D[19]        ;                   ;         ;
+; GPIO_1_D[20]        ;                   ;         ;
+; GPIO_1_D[21]        ;                   ;         ;
+; GPIO_1_D[22]        ;                   ;         ;
+; GPIO_1_D[23]        ;                   ;         ;
+; GPIO_1_D[24]        ;                   ;         ;
+; GPIO_1_D[25]        ;                   ;         ;
+; GPIO_1_D[26]        ;                   ;         ;
+; GPIO_1_D[27]        ;                   ;         ;
+; GPIO_1_D[28]        ;                   ;         ;
+; GPIO_1_D[29]        ;                   ;         ;
+; GPIO_1_D[30]        ;                   ;         ;
+; GPIO_1_D[31]        ;                   ;         ;
+; GPIO_1_D[32]        ;                   ;         ;
+; GPIO_1_D[33]        ;                   ;         ;
+; KEY[0]              ;                   ;         ;
+; KEY[1]              ;                   ;         ;
++---------------------+-------------------+---------+
+
+
++--------------------------------------------+
+; Routing Usage Summary                      ;
++-----------------------+--------------------+
+; Routing Resource Type ; Usage              ;
++-----------------------+--------------------+
+; Block interconnects   ; 0 / 71,559 ( 0 % ) ;
+; C16 interconnects     ; 0 / 2,597 ( 0 % )  ;
+; C4 interconnects      ; 0 / 46,848 ( 0 % ) ;
+; Direct links          ; 0 / 71,559 ( 0 % ) ;
+; Global clocks         ; 0 / 20 ( 0 % )     ;
+; Local interconnects   ; 0 / 24,624 ( 0 % ) ;
+; R24 interconnects     ; 0 / 2,496 ( 0 % )  ;
+; R4 interconnects      ; 0 / 62,424 ( 0 % ) ;
++-----------------------+--------------------+
+
+
++------------------------------------------+
+; I/O Rules Summary                        ;
++----------------------------------+-------+
+; I/O Rules Statistic              ; Total ;
++----------------------------------+-------+
+; Total I/O Rules                  ; 30    ;
+; Number of I/O Rules Passed       ; 6     ;
+; Number of I/O Rules Failed       ; 0     ;
+; Number of I/O Rules Unchecked    ; 0     ;
+; Number of I/O Rules Inapplicable ; 24    ;
++----------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; I/O Rules Details                                                                                                                                                                                                                                                                    ;
++--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+------+-------------------+
+; Status       ; ID        ; Category                          ; Rule Description                                                                                     ; Severity ; Information                                                              ; Area ; Extra Information ;
++--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+------+-------------------+
+; Inapplicable ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available.                   ; Critical ; No Location assignments found.                                           ; I/O  ;                   ;
+; Inapplicable ; IO_000002 ; Capacity Checks                   ; Number of clocks in an I/O bank should not exceed the number of clocks available.                    ; Critical ; No Global Signal assignments found.                                      ; I/O  ;                   ;
+; Inapplicable ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available.                   ; Critical ; No Location assignments found.                                           ; I/O  ;                   ;
+; Inapplicable ; IO_000004 ; Voltage Compatibility Checks      ; The I/O bank should support the requested VCCIO.                                                     ; Critical ; No IOBANK_VCCIO assignments found.                                       ; I/O  ;                   ;
+; Inapplicable ; IO_000005 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VREF values.                                                  ; Critical ; No VREF I/O Standard assignments found.                                  ; I/O  ;                   ;
+; Pass         ; IO_000006 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VCCIO values.                                                 ; Critical ; 0 such failures found.                                                   ; I/O  ;                   ;
+; Inapplicable ; IO_000007 ; Valid Location Checks             ; Checks for unavailable locations.                                                                    ; Critical ; No Location assignments found.                                           ; I/O  ;                   ;
+; Inapplicable ; IO_000008 ; Valid Location Checks             ; Checks for reserved locations.                                                                       ; Critical ; No reserved LogicLock region found.                                      ; I/O  ;                   ;
+; Pass         ; IO_000009 ; I/O Properties Checks for One I/O ; The location should support the requested I/O standard.                                              ; Critical ; 0 such failures found.                                                   ; I/O  ;                   ;
+; Pass         ; IO_000010 ; I/O Properties Checks for One I/O ; The location should support the requested I/O direction.                                             ; Critical ; 0 such failures found.                                                   ; I/O  ;                   ;
+; Inapplicable ; IO_000011 ; I/O Properties Checks for One I/O ; The location should support the requested Current Strength.                                          ; Critical ; No Current Strength assignments found.                                   ; I/O  ;                   ;
+; Inapplicable ; IO_000012 ; I/O Properties Checks for One I/O ; The location should support the requested On Chip Termination value.                                 ; Critical ; No Termination assignments found.                                        ; I/O  ;                   ;
+; Inapplicable ; IO_000013 ; I/O Properties Checks for One I/O ; The location should support the requested Bus Hold value.                                            ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; I/O  ;                   ;
+; Inapplicable ; IO_000014 ; I/O Properties Checks for One I/O ; The location should support the requested Weak Pull Up value.                                        ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; I/O  ;                   ;
+; Pass         ; IO_000015 ; I/O Properties Checks for One I/O ; The location should support the requested PCI Clamp Diode.                                           ; Critical ; 0 such failures found.                                                   ; I/O  ;                   ;
+; Inapplicable ; IO_000018 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Current Strength.                                      ; Critical ; No Current Strength assignments found.                                   ; I/O  ;                   ;
+; Inapplicable ; IO_000019 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested On Chip Termination value.                             ; Critical ; No Termination assignments found.                                        ; I/O  ;                   ;
+; Pass         ; IO_000020 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested PCI Clamp Diode.                                       ; Critical ; 0 such failures found.                                                   ; I/O  ;                   ;
+; Inapplicable ; IO_000021 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Weak Pull Up value.                                    ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; I/O  ;                   ;
+; Inapplicable ; IO_000022 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Bus Hold value.                                        ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; I/O  ;                   ;
+; Inapplicable ; IO_000023 ; I/O Properties Checks for One I/O ; The I/O standard should support the Open Drain value.                                                ; Critical ; No open drain assignments found.                                         ; I/O  ;                   ;
+; Inapplicable ; IO_000024 ; I/O Properties Checks for One I/O ; The I/O direction should support the On Chip Termination value.                                      ; Critical ; No Termination assignments found.                                        ; I/O  ;                   ;
+; Inapplicable ; IO_000026 ; I/O Properties Checks for One I/O ; On Chip Termination and Current Strength should not be used at the same time.                        ; Critical ; No Current Strength or Termination assignments found.                    ; I/O  ;                   ;
+; Inapplicable ; IO_000027 ; I/O Properties Checks for One I/O ; Weak Pull Up and Bus Hold should not be used at the same time.                                       ; Critical ; No Enable Bus-Hold Circuitry or Weak Pull-Up Resistor assignments found. ; I/O  ;                   ;
+; Inapplicable ; IO_000045 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Slew Rate value.                                       ; Critical ; No Slew Rate assignments found.                                          ; I/O  ;                   ;
+; Inapplicable ; IO_000046 ; I/O Properties Checks for One I/O ; The location should support the requested Slew Rate value.                                           ; Critical ; No Slew Rate assignments found.                                          ; I/O  ;                   ;
+; Inapplicable ; IO_000047 ; I/O Properties Checks for One I/O ; On Chip Termination and Slew Rate should not be used at the same time.                               ; Critical ; No Slew Rate assignments found.                                          ; I/O  ;                   ;
+; Pass         ; IO_000033 ; Electromigration Checks           ; Current density for consecutive I/Os should not exceed 240mA for row I/Os and 240mA for column I/Os. ; Critical ; 0 such failures found.                                                   ; I/O  ;                   ;
+; Inapplicable ; IO_000034 ; SI Related Distance Checks        ; Single-ended outputs should be 5 LAB row(s) away from a differential I/O.                            ; High     ; No Differential I/O Standard assignments found.                          ; I/O  ;                   ;
+; Inapplicable ; IO_000042 ; SI Related SSO Limit Checks       ; No more than 20 outputs are allowed in a VREF group when VREF is being read from.                    ; High     ; No VREF I/O Standard assignments found.                                  ; I/O  ;                   ;
++--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+------+-------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
+; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
+; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 71        ; 0            ; 0            ; 71        ; 71        ; 0            ; 0            ; 0            ; 0            ; 37           ; 0            ; 0            ; 37           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 71        ; 0            ; 0            ;
+; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
+; Total Inapplicable ; 71           ; 71           ; 71           ; 71           ; 71           ; 0         ; 71           ; 71           ; 0         ; 0         ; 71           ; 71           ; 71           ; 71           ; 34           ; 71           ; 71           ; 34           ; 71           ; 71           ; 71           ; 71           ; 71           ; 71           ; 71           ; 71           ; 71           ; 0         ; 71           ; 71           ;
+; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
+; CLOCK_50           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[0]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[1]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[2]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[3]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[4]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[5]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[6]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[7]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[8]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[9]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[10]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[11]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[12]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[13]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[14]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[15]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[16]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[17]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[18]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[19]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[20]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[21]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[22]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[23]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[24]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[25]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[26]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[27]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[28]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[29]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[30]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[31]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[32]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_0_D[33]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[0]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[1]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[2]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[3]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[4]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[5]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[6]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[7]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[8]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[9]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[10]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[11]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[12]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[13]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[14]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[15]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[16]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[17]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[18]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[19]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[20]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[21]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[22]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[23]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[24]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[25]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[26]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[27]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[28]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[29]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[30]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[31]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[32]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; GPIO_1_D[33]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; KEY[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; KEY[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
+
+
++----------------------------------------------------------------------------------+
+; Fitter Device Options                                                            ;
++------------------------------------------------------------------+---------------+
+; Option                                                           ; Setting       ;
++------------------------------------------------------------------+---------------+
+; Enable user-supplied start-up clock (CLKUSR)                     ; Off           ;
+; Enable device-wide reset (DEV_CLRn)                              ; Off           ;
+; Enable device-wide output enable (DEV_OE)                        ; Off           ;
+; Enable INIT_DONE output                                          ; Off           ;
+; Configuration scheme                                             ; Active Serial ;
+; Error detection CRC                                              ; Off           ;
+; Enable open drain on CRC_ERROR pin                               ; Off           ;
+; Enable input tri-state on active configuration pins in user mode ; Off           ;
+; Configuration Voltage Level                                      ; Auto          ;
+; Force Configuration Voltage Level                                ; Off           ;
+; nCEO                                                             ; Unreserved    ;
+; Data[0]                                                          ; Unreserved    ;
+; Data[1]/ASDO                                                     ; Unreserved    ;
+; Data[7..2]                                                       ; Unreserved    ;
+; FLASH_nCE/nCSO                                                   ; Unreserved    ;
+; Other Active Parallel pins                                       ; Unreserved    ;
+; DCLK                                                             ; Unreserved    ;
++------------------------------------------------------------------+---------------+
+
+
++------------------------------------+
+; Operating Settings and Conditions  ;
++---------------------------+--------+
+; Setting                   ; Value  ;
++---------------------------+--------+
+; Nominal Core Voltage      ; 1.20 V ;
+; Low Junction Temperature  ; 0 °C   ;
+; High Junction Temperature ; 85 °C  ;
++---------------------------+--------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (119006): Selected device EP4CE22F17C6 for design "DE0_NANO"
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+    Info (176445): Device EP4CE10F17C6 is compatible
+    Info (176445): Device EP4CE6F17C6 is compatible
+    Info (176445): Device EP4CE15F17C6 is compatible
+Info (169141): DATA[0] dual-purpose pin not reserved
+Info (12825): Data[1]/ASDO dual-purpose pin not reserved
+Info (12825): nCSO dual-purpose pin not reserved
+Info (12825): DCLK dual-purpose pin not reserved
+Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Critical Warning (169085): No exact pin location assignment(s) for 71 pins of 71 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Info (332104): Reading SDC File: 'DE0_NANO.SDC'
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 1 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):   20.000     CLOCK_50
+Info (176233): Starting register packing
+Info (176235): Finished register packing
+    Extra Info (176219): No registers were packed into other blocks
+Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
+    Info (176211): Number of I/O pins in group: 71 (unused VREF, 3.3V VCCIO, 37 input, 34 output, 0 bidirectional)
+        Info (176212): I/O standards used: 3.3-V LVTTL.
+Info (176215): I/O bank details before I/O pin placement
+    Info (176214): Statistics of I/O banks
+        Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  13 pins available
+        Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  16 pins available
+        Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  25 pins available
+        Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  20 pins available
+        Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  18 pins available
+        Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  13 pins available
+        Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  24 pins available
+        Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  24 pins available
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
+Info (170189): Fitter placement preparation operations beginning
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+Info (170191): Fitter placement operations beginning
+Info (170137): Fitter placement was successful
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+Info (170193): Fitter routing operations beginning
+Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y23 to location X9_Y34
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+    Info (170201): Optimizations that may affect the design's routability were skipped
+    Info (170200): Optimizations that may affect the design's timing were skipped
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Warning (169177): 37 pins must meet Altera requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
+    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at R5
+    Info (169178): Pin GPIO_1_D[0] uses I/O standard 3.3-V LVTTL at A13
+    Info (169178): Pin GPIO_1_D[1] uses I/O standard 3.3-V LVTTL at B6
+    Info (169178): Pin GPIO_1_D[2] uses I/O standard 3.3-V LVTTL at P3
+    Info (169178): Pin GPIO_1_D[3] uses I/O standard 3.3-V LVTTL at E7
+    Info (169178): Pin GPIO_1_D[4] uses I/O standard 3.3-V LVTTL at T5
+    Info (169178): Pin GPIO_1_D[5] uses I/O standard 3.3-V LVTTL at D11
+    Info (169178): Pin GPIO_1_D[6] uses I/O standard 3.3-V LVTTL at K16
+    Info (169178): Pin GPIO_1_D[7] uses I/O standard 3.3-V LVTTL at C6
+    Info (169178): Pin GPIO_1_D[8] uses I/O standard 3.3-V LVTTL at T12
+    Info (169178): Pin GPIO_1_D[9] uses I/O standard 3.3-V LVTTL at T2
+    Info (169178): Pin GPIO_1_D[10] uses I/O standard 3.3-V LVTTL at G2
+    Info (169178): Pin GPIO_1_D[11] uses I/O standard 3.3-V LVTTL at A5
+    Info (169178): Pin GPIO_1_D[12] uses I/O standard 3.3-V LVTTL at N3
+    Info (169178): Pin GPIO_1_D[13] uses I/O standard 3.3-V LVTTL at B11
+    Info (169178): Pin GPIO_1_D[14] uses I/O standard 3.3-V LVTTL at F13
+    Info (169178): Pin GPIO_1_D[15] uses I/O standard 3.3-V LVTTL at F15
+    Info (169178): Pin GPIO_1_D[16] uses I/O standard 3.3-V LVTTL at B13
+    Info (169178): Pin GPIO_1_D[17] uses I/O standard 3.3-V LVTTL at E9
+    Info (169178): Pin GPIO_1_D[18] uses I/O standard 3.3-V LVTTL at A15
+    Info (169178): Pin GPIO_1_D[19] uses I/O standard 3.3-V LVTTL at R6
+    Info (169178): Pin GPIO_1_D[20] uses I/O standard 3.3-V LVTTL at R8
+    Info (169178): Pin GPIO_1_D[21] uses I/O standard 3.3-V LVTTL at T8
+    Info (169178): Pin GPIO_1_D[22] uses I/O standard 3.3-V LVTTL at E8
+    Info (169178): Pin GPIO_1_D[23] uses I/O standard 3.3-V LVTTL at M2
+    Info (169178): Pin GPIO_1_D[24] uses I/O standard 3.3-V LVTTL at M1
+    Info (169178): Pin GPIO_1_D[25] uses I/O standard 3.3-V LVTTL at J15
+    Info (169178): Pin GPIO_1_D[26] uses I/O standard 3.3-V LVTTL at M10
+    Info (169178): Pin GPIO_1_D[27] uses I/O standard 3.3-V LVTTL at F14
+    Info (169178): Pin GPIO_1_D[28] uses I/O standard 3.3-V LVTTL at L7
+    Info (169178): Pin GPIO_1_D[29] uses I/O standard 3.3-V LVTTL at T11
+    Info (169178): Pin GPIO_1_D[30] uses I/O standard 3.3-V LVTTL at D14
+    Info (169178): Pin GPIO_1_D[31] uses I/O standard 3.3-V LVTTL at M8
+    Info (169178): Pin GPIO_1_D[32] uses I/O standard 3.3-V LVTTL at N14
+    Info (169178): Pin GPIO_1_D[33] uses I/O standard 3.3-V LVTTL at F9
+    Info (169178): Pin KEY[0] uses I/O standard 3.3-V LVTTL at R12
+    Info (169178): Pin KEY[1] uses I/O standard 3.3-V LVTTL at G5
+Info (144001): Generated suppressed messages file C:/Users/JoshyD/Documents/School/Research/Summer 2018/CV-with-FPGA/Lab3_FPGA_Template/DE0_NANO.fit.smsg
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 5384 megabytes
+    Info: Processing ended: Wed Aug 15 18:18:52 2018
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
+
+
++----------------------------+
+; Fitter Suppressed Messages ;
++----------------------------+
+The suppressed messages can be found in C:/Users/JoshyD/Documents/School/Research/Summer 2018/CV-with-FPGA/Lab3_FPGA_Template/DE0_NANO.fit.smsg.
+
+

@@ -1,0 +1,74 @@
+# Reading C:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE0_NANO_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template {C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/VGA_DRIVER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:33:39 on Jul 20,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template" C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/VGA_DRIVER.v 
+# -- Compiling module VGA_DRIVER
+# 
+# Top level modules:
+# 	VGA_DRIVER
+# End time: 19:33:39 on Jul 20,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template {C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:33:39 on Jul 20,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template" C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/DE0_NANO.v 
+# -- Compiling module DE0_NANO
+# 
+# Top level modules:
+# 	DE0_NANO
+# End time: 19:33:40 on Jul 20,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template {C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/Dual_Port_RAM_M9K.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:33:40 on Jul 20,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template" C:/Users/labuser/Desktop/jd794/CV-with-FPGA/OV7670_template/Dual_Port_RAM_M9K.v 
+# -- Compiling module Dual_Port_RAM_M9K
+# 
+# Top level modules:
+# 	Dual_Port_RAM_M9K
+# End time: 19:33:40 on Jul 20,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim rtl_work.DE0_NANO
+# vsim rtl_work.DE0_NANO 
+# Start time: 19:35:24 on Jul 20,2018
+# Loading rtl_work.DE0_NANO
+# Loading rtl_work.Dual_Port_RAM_M9K
+# Loading rtl_work.VGA_DRIVER
+add wave -position insertpoint  \
+sim:/DE0_NANO/PCLK
+force -drive sim:/DE0_NANO/PCLK StX 0
+add wave -position insertpoint  \
+sim:/DE0_NANO/CLOCK_25
+add wave -position insertpoint  \
+sim:/DE0_NANO/CLOCK_50
+vsim rtl_work.DE0_NANO
+# End time: 19:38:47 on Jul 20,2018, Elapsed time: 0:03:23
+# Errors: 0, Warnings: 0
+# vsim rtl_work.DE0_NANO 
+# Start time: 19:38:47 on Jul 20,2018
+# Loading rtl_work.DE0_NANO
+# Loading rtl_work.Dual_Port_RAM_M9K
+# Loading rtl_work.VGA_DRIVER
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/DE0_NANO/CLOCK_50
+add wave -position insertpoint  \
+sim:/DE0_NANO/CLOCK_50
+force -freeze sim:/DE0_NANO/CLOCK_50 0 0, 1 {50 ps} -r 100
+force -freeze sim:/DE0_NANO/CLOCK_50 0 0, 1 {2 ps} -r 5 -can 5000
+# End time: 19:46:59 on Jul 20,2018, Elapsed time: 0:08:12
+# Errors: 1, Warnings: 0

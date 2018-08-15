@@ -1,0 +1,1084 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition"
+
+// DATE "08/15/2018 18:19:04"
+
+// 
+// Device: Altera EP4CE22F17C6 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module DE0_NANO (
+	CLOCK_50,
+	GPIO_0_D,
+	GPIO_1_D,
+	KEY);
+input 	CLOCK_50;
+output 	[33:0] GPIO_0_D;
+input 	[33:0] GPIO_1_D;
+input 	[1:0] KEY;
+
+// Design Ports Information
+// CLOCK_50	=>  Location: PIN_R5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_0_D[0]	=>  Location: PIN_B1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[1]	=>  Location: PIN_J2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[2]	=>  Location: PIN_T3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[3]	=>  Location: PIN_C11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[4]	=>  Location: PIN_D15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[5]	=>  Location: PIN_F1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[6]	=>  Location: PIN_D1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[7]	=>  Location: PIN_B5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[8]	=>  Location: PIN_A7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[9]	=>  Location: PIN_D9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[10]	=>  Location: PIN_P8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[11]	=>  Location: PIN_D6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[12]	=>  Location: PIN_B14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[13]	=>  Location: PIN_A12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[14]	=>  Location: PIN_R7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[15]	=>  Location: PIN_T7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[16]	=>  Location: PIN_R13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[17]	=>  Location: PIN_M6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[18]	=>  Location: PIN_E10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[19]	=>  Location: PIN_C14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[20]	=>  Location: PIN_C16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[21]	=>  Location: PIN_N12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[22]	=>  Location: PIN_B10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[23]	=>  Location: PIN_N11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[24]	=>  Location: PIN_T10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[25]	=>  Location: PIN_K5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[26]	=>  Location: PIN_F2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[27]	=>  Location: PIN_A3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[28]	=>  Location: PIN_R4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[29]	=>  Location: PIN_M7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[30]	=>  Location: PIN_P16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[31]	=>  Location: PIN_D8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[32]	=>  Location: PIN_A2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_0_D[33]	=>  Location: PIN_T6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// GPIO_1_D[0]	=>  Location: PIN_A13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[1]	=>  Location: PIN_B6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[2]	=>  Location: PIN_P3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[3]	=>  Location: PIN_E7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[4]	=>  Location: PIN_T5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[5]	=>  Location: PIN_D11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[6]	=>  Location: PIN_K16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[7]	=>  Location: PIN_C6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[8]	=>  Location: PIN_T12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[9]	=>  Location: PIN_T2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[10]	=>  Location: PIN_G2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[11]	=>  Location: PIN_A5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[12]	=>  Location: PIN_N3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[13]	=>  Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[14]	=>  Location: PIN_F13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[15]	=>  Location: PIN_F15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[16]	=>  Location: PIN_B13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[17]	=>  Location: PIN_E9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[18]	=>  Location: PIN_A15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[19]	=>  Location: PIN_R6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[20]	=>  Location: PIN_R8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[21]	=>  Location: PIN_T8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[22]	=>  Location: PIN_E8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[23]	=>  Location: PIN_M2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[24]	=>  Location: PIN_M1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[25]	=>  Location: PIN_J15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[26]	=>  Location: PIN_M10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[27]	=>  Location: PIN_F14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[28]	=>  Location: PIN_L7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[29]	=>  Location: PIN_T11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[30]	=>  Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[31]	=>  Location: PIN_M8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[32]	=>  Location: PIN_N14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// GPIO_1_D[33]	=>  Location: PIN_F9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// KEY[0]	=>  Location: PIN_R12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// KEY[1]	=>  Location: PIN_G5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("DE0_NANO_min_1200mv_0c_v_fast.sdo");
+// synopsys translate_on
+
+wire \CLOCK_50~input_o ;
+wire \GPIO_1_D[0]~input_o ;
+wire \GPIO_1_D[1]~input_o ;
+wire \GPIO_1_D[2]~input_o ;
+wire \GPIO_1_D[3]~input_o ;
+wire \GPIO_1_D[4]~input_o ;
+wire \GPIO_1_D[5]~input_o ;
+wire \GPIO_1_D[6]~input_o ;
+wire \GPIO_1_D[7]~input_o ;
+wire \GPIO_1_D[8]~input_o ;
+wire \GPIO_1_D[9]~input_o ;
+wire \GPIO_1_D[10]~input_o ;
+wire \GPIO_1_D[11]~input_o ;
+wire \GPIO_1_D[12]~input_o ;
+wire \GPIO_1_D[13]~input_o ;
+wire \GPIO_1_D[14]~input_o ;
+wire \GPIO_1_D[15]~input_o ;
+wire \GPIO_1_D[16]~input_o ;
+wire \GPIO_1_D[17]~input_o ;
+wire \GPIO_1_D[18]~input_o ;
+wire \GPIO_1_D[19]~input_o ;
+wire \GPIO_1_D[20]~input_o ;
+wire \GPIO_1_D[21]~input_o ;
+wire \GPIO_1_D[22]~input_o ;
+wire \GPIO_1_D[23]~input_o ;
+wire \GPIO_1_D[24]~input_o ;
+wire \GPIO_1_D[25]~input_o ;
+wire \GPIO_1_D[26]~input_o ;
+wire \GPIO_1_D[27]~input_o ;
+wire \GPIO_1_D[28]~input_o ;
+wire \GPIO_1_D[29]~input_o ;
+wire \GPIO_1_D[30]~input_o ;
+wire \GPIO_1_D[31]~input_o ;
+wire \GPIO_1_D[32]~input_o ;
+wire \GPIO_1_D[33]~input_o ;
+wire \KEY[0]~input_o ;
+wire \KEY[1]~input_o ;
+wire \GPIO_0_D[0]~output_o ;
+wire \GPIO_0_D[1]~output_o ;
+wire \GPIO_0_D[2]~output_o ;
+wire \GPIO_0_D[3]~output_o ;
+wire \GPIO_0_D[4]~output_o ;
+wire \GPIO_0_D[5]~output_o ;
+wire \GPIO_0_D[6]~output_o ;
+wire \GPIO_0_D[7]~output_o ;
+wire \GPIO_0_D[8]~output_o ;
+wire \GPIO_0_D[9]~output_o ;
+wire \GPIO_0_D[10]~output_o ;
+wire \GPIO_0_D[11]~output_o ;
+wire \GPIO_0_D[12]~output_o ;
+wire \GPIO_0_D[13]~output_o ;
+wire \GPIO_0_D[14]~output_o ;
+wire \GPIO_0_D[15]~output_o ;
+wire \GPIO_0_D[16]~output_o ;
+wire \GPIO_0_D[17]~output_o ;
+wire \GPIO_0_D[18]~output_o ;
+wire \GPIO_0_D[19]~output_o ;
+wire \GPIO_0_D[20]~output_o ;
+wire \GPIO_0_D[21]~output_o ;
+wire \GPIO_0_D[22]~output_o ;
+wire \GPIO_0_D[23]~output_o ;
+wire \GPIO_0_D[24]~output_o ;
+wire \GPIO_0_D[25]~output_o ;
+wire \GPIO_0_D[26]~output_o ;
+wire \GPIO_0_D[27]~output_o ;
+wire \GPIO_0_D[28]~output_o ;
+wire \GPIO_0_D[29]~output_o ;
+wire \GPIO_0_D[30]~output_o ;
+wire \GPIO_0_D[31]~output_o ;
+wire \GPIO_0_D[32]~output_o ;
+wire \GPIO_0_D[33]~output_o ;
+
+
+// Location: IOOBUF_X0_Y28_N9
+cycloneive_io_obuf \GPIO_0_D[0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[0]~output .bus_hold = "false";
+defparam \GPIO_0_D[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y15_N2
+cycloneive_io_obuf \GPIO_0_D[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[1]~output .bus_hold = "false";
+defparam \GPIO_0_D[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X1_Y0_N2
+cycloneive_io_obuf \GPIO_0_D[2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[2]~output .bus_hold = "false";
+defparam \GPIO_0_D[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X38_Y34_N2
+cycloneive_io_obuf \GPIO_0_D[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[3]~output .bus_hold = "false";
+defparam \GPIO_0_D[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y26_N23
+cycloneive_io_obuf \GPIO_0_D[4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[4]~output .bus_hold = "false";
+defparam \GPIO_0_D[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y23_N2
+cycloneive_io_obuf \GPIO_0_D[5]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[5]~output .bus_hold = "false";
+defparam \GPIO_0_D[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y25_N9
+cycloneive_io_obuf \GPIO_0_D[6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[6]~output .bus_hold = "false";
+defparam \GPIO_0_D[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X11_Y34_N2
+cycloneive_io_obuf \GPIO_0_D[7]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[7]~output .bus_hold = "false";
+defparam \GPIO_0_D[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X20_Y34_N23
+cycloneive_io_obuf \GPIO_0_D[8]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[8]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[8]~output .bus_hold = "false";
+defparam \GPIO_0_D[8]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X31_Y34_N9
+cycloneive_io_obuf \GPIO_0_D[9]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[9]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[9]~output .bus_hold = "false";
+defparam \GPIO_0_D[9]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X25_Y0_N16
+cycloneive_io_obuf \GPIO_0_D[10]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[10]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[10]~output .bus_hold = "false";
+defparam \GPIO_0_D[10]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X9_Y34_N9
+cycloneive_io_obuf \GPIO_0_D[11]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[11]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[11]~output .bus_hold = "false";
+defparam \GPIO_0_D[11]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X45_Y34_N2
+cycloneive_io_obuf \GPIO_0_D[12]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[12]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[12]~output .bus_hold = "false";
+defparam \GPIO_0_D[12]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X43_Y34_N16
+cycloneive_io_obuf \GPIO_0_D[13]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[13]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[13]~output .bus_hold = "false";
+defparam \GPIO_0_D[13]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X16_Y0_N16
+cycloneive_io_obuf \GPIO_0_D[14]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[14]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[14]~output .bus_hold = "false";
+defparam \GPIO_0_D[14]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X18_Y0_N23
+cycloneive_io_obuf \GPIO_0_D[15]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[15]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[15]~output .bus_hold = "false";
+defparam \GPIO_0_D[15]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X40_Y0_N23
+cycloneive_io_obuf \GPIO_0_D[16]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[16]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[16]~output .bus_hold = "false";
+defparam \GPIO_0_D[16]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y0_N9
+cycloneive_io_obuf \GPIO_0_D[17]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[17]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[17]~output .bus_hold = "false";
+defparam \GPIO_0_D[17]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X45_Y34_N16
+cycloneive_io_obuf \GPIO_0_D[18]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[18]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[18]~output .bus_hold = "false";
+defparam \GPIO_0_D[18]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X51_Y34_N2
+cycloneive_io_obuf \GPIO_0_D[19]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[19]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[19]~output .bus_hold = "false";
+defparam \GPIO_0_D[19]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y30_N9
+cycloneive_io_obuf \GPIO_0_D[20]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[20]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[20]~output .bus_hold = "false";
+defparam \GPIO_0_D[20]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X47_Y0_N23
+cycloneive_io_obuf \GPIO_0_D[21]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[21]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[21]~output .bus_hold = "false";
+defparam \GPIO_0_D[21]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y34_N16
+cycloneive_io_obuf \GPIO_0_D[22]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[22]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[22]~output .bus_hold = "false";
+defparam \GPIO_0_D[22]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X43_Y0_N16
+cycloneive_io_obuf \GPIO_0_D[23]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[23]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[23]~output .bus_hold = "false";
+defparam \GPIO_0_D[23]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y0_N16
+cycloneive_io_obuf \GPIO_0_D[24]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[24]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[24]~output .bus_hold = "false";
+defparam \GPIO_0_D[24]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y7_N9
+cycloneive_io_obuf \GPIO_0_D[25]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[25]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[25]~output .bus_hold = "false";
+defparam \GPIO_0_D[25]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y24_N23
+cycloneive_io_obuf \GPIO_0_D[26]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[26]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[26]~output .bus_hold = "false";
+defparam \GPIO_0_D[26]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y34_N16
+cycloneive_io_obuf \GPIO_0_D[27]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[27]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[27]~output .bus_hold = "false";
+defparam \GPIO_0_D[27]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X5_Y0_N23
+cycloneive_io_obuf \GPIO_0_D[28]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[28]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[28]~output .bus_hold = "false";
+defparam \GPIO_0_D[28]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X11_Y0_N16
+cycloneive_io_obuf \GPIO_0_D[29]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[29]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[29]~output .bus_hold = "false";
+defparam \GPIO_0_D[29]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y7_N9
+cycloneive_io_obuf \GPIO_0_D[30]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[30]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[30]~output .bus_hold = "false";
+defparam \GPIO_0_D[30]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y34_N23
+cycloneive_io_obuf \GPIO_0_D[31]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[31]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[31]~output .bus_hold = "false";
+defparam \GPIO_0_D[31]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y34_N9
+cycloneive_io_obuf \GPIO_0_D[32]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[32]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[32]~output .bus_hold = "false";
+defparam \GPIO_0_D[32]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y0_N2
+cycloneive_io_obuf \GPIO_0_D[33]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\GPIO_0_D[33]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \GPIO_0_D[33]~output .bus_hold = "false";
+defparam \GPIO_0_D[33]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X14_Y0_N22
+cycloneive_io_ibuf \CLOCK_50~input (
+	.i(CLOCK_50),
+	.ibar(gnd),
+	.o(\CLOCK_50~input_o ));
+// synopsys translate_off
+defparam \CLOCK_50~input .bus_hold = "false";
+defparam \CLOCK_50~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X49_Y34_N1
+cycloneive_io_ibuf \GPIO_1_D[0]~input (
+	.i(GPIO_1_D[0]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[0]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[0]~input .bus_hold = "false";
+defparam \GPIO_1_D[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y34_N8
+cycloneive_io_ibuf \GPIO_1_D[1]~input (
+	.i(GPIO_1_D[1]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[1]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[1]~input .bus_hold = "false";
+defparam \GPIO_1_D[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y0_N15
+cycloneive_io_ibuf \GPIO_1_D[2]~input (
+	.i(GPIO_1_D[2]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[2]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[2]~input .bus_hold = "false";
+defparam \GPIO_1_D[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y34_N15
+cycloneive_io_ibuf \GPIO_1_D[3]~input (
+	.i(GPIO_1_D[3]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[3]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[3]~input .bus_hold = "false";
+defparam \GPIO_1_D[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X14_Y0_N15
+cycloneive_io_ibuf \GPIO_1_D[4]~input (
+	.i(GPIO_1_D[4]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[4]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[4]~input .bus_hold = "false";
+defparam \GPIO_1_D[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X51_Y34_N15
+cycloneive_io_ibuf \GPIO_1_D[5]~input (
+	.i(GPIO_1_D[5]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[5]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[5]~input .bus_hold = "false";
+defparam \GPIO_1_D[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X53_Y12_N1
+cycloneive_io_ibuf \GPIO_1_D[6]~input (
+	.i(GPIO_1_D[6]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[6]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[6]~input .bus_hold = "false";
+defparam \GPIO_1_D[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X18_Y34_N22
+cycloneive_io_ibuf \GPIO_1_D[7]~input (
+	.i(GPIO_1_D[7]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[7]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[7]~input .bus_hold = "false";
+defparam \GPIO_1_D[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X36_Y0_N8
+cycloneive_io_ibuf \GPIO_1_D[8]~input (
+	.i(GPIO_1_D[8]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[8]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[8]~input .bus_hold = "false";
+defparam \GPIO_1_D[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X3_Y0_N1
+cycloneive_io_ibuf \GPIO_1_D[9]~input (
+	.i(GPIO_1_D[9]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[9]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[9]~input .bus_hold = "false";
+defparam \GPIO_1_D[9]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y23_N15
+cycloneive_io_ibuf \GPIO_1_D[10]~input (
+	.i(GPIO_1_D[10]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[10]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[10]~input .bus_hold = "false";
+defparam \GPIO_1_D[10]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X14_Y34_N22
+cycloneive_io_ibuf \GPIO_1_D[11]~input (
+	.i(GPIO_1_D[11]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[11]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[11]~input .bus_hold = "false";
+defparam \GPIO_1_D[11]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y0_N22
+cycloneive_io_ibuf \GPIO_1_D[12]~input (
+	.i(GPIO_1_D[12]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[12]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[12]~input .bus_hold = "false";
+defparam \GPIO_1_D[12]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X40_Y34_N8
+cycloneive_io_ibuf \GPIO_1_D[13]~input (
+	.i(GPIO_1_D[13]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[13]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[13]~input .bus_hold = "false";
+defparam \GPIO_1_D[13]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X53_Y21_N22
+cycloneive_io_ibuf \GPIO_1_D[14]~input (
+	.i(GPIO_1_D[14]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[14]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[14]~input .bus_hold = "false";
+defparam \GPIO_1_D[14]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X53_Y22_N8
+cycloneive_io_ibuf \GPIO_1_D[15]~input (
+	.i(GPIO_1_D[15]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[15]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[15]~input .bus_hold = "false";
+defparam \GPIO_1_D[15]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X49_Y34_N8
+cycloneive_io_ibuf \GPIO_1_D[16]~input (
+	.i(GPIO_1_D[16]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[16]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[16]~input .bus_hold = "false";
+defparam \GPIO_1_D[16]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X29_Y34_N15
+cycloneive_io_ibuf \GPIO_1_D[17]~input (
+	.i(GPIO_1_D[17]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[17]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[17]~input .bus_hold = "false";
+defparam \GPIO_1_D[17]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X38_Y34_N15
+cycloneive_io_ibuf \GPIO_1_D[18]~input (
+	.i(GPIO_1_D[18]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[18]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[18]~input .bus_hold = "false";
+defparam \GPIO_1_D[18]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X14_Y0_N8
+cycloneive_io_ibuf \GPIO_1_D[19]~input (
+	.i(GPIO_1_D[19]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[19]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[19]~input .bus_hold = "false";
+defparam \GPIO_1_D[19]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X27_Y0_N22
+cycloneive_io_ibuf \GPIO_1_D[20]~input (
+	.i(GPIO_1_D[20]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[20]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[20]~input .bus_hold = "false";
+defparam \GPIO_1_D[20]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X27_Y0_N15
+cycloneive_io_ibuf \GPIO_1_D[21]~input (
+	.i(GPIO_1_D[21]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[21]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[21]~input .bus_hold = "false";
+defparam \GPIO_1_D[21]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X20_Y34_N8
+cycloneive_io_ibuf \GPIO_1_D[22]~input (
+	.i(GPIO_1_D[22]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[22]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[22]~input .bus_hold = "false";
+defparam \GPIO_1_D[22]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y16_N15
+cycloneive_io_ibuf \GPIO_1_D[23]~input (
+	.i(GPIO_1_D[23]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[23]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[23]~input .bus_hold = "false";
+defparam \GPIO_1_D[23]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y16_N22
+cycloneive_io_ibuf \GPIO_1_D[24]~input (
+	.i(GPIO_1_D[24]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[24]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[24]~input .bus_hold = "false";
+defparam \GPIO_1_D[24]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X53_Y14_N1
+cycloneive_io_ibuf \GPIO_1_D[25]~input (
+	.i(GPIO_1_D[25]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[25]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[25]~input .bus_hold = "false";
+defparam \GPIO_1_D[25]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X43_Y0_N22
+cycloneive_io_ibuf \GPIO_1_D[26]~input (
+	.i(GPIO_1_D[26]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[26]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[26]~input .bus_hold = "false";
+defparam \GPIO_1_D[26]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X53_Y24_N22
+cycloneive_io_ibuf \GPIO_1_D[27]~input (
+	.i(GPIO_1_D[27]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[27]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[27]~input .bus_hold = "false";
+defparam \GPIO_1_D[27]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y0_N22
+cycloneive_io_ibuf \GPIO_1_D[28]~input (
+	.i(GPIO_1_D[28]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[28]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[28]~input .bus_hold = "false";
+defparam \GPIO_1_D[28]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X36_Y0_N22
+cycloneive_io_ibuf \GPIO_1_D[29]~input (
+	.i(GPIO_1_D[29]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[29]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[29]~input .bus_hold = "false";
+defparam \GPIO_1_D[29]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X51_Y34_N8
+cycloneive_io_ibuf \GPIO_1_D[30]~input (
+	.i(GPIO_1_D[30]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[30]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[30]~input .bus_hold = "false";
+defparam \GPIO_1_D[30]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X20_Y0_N8
+cycloneive_io_ibuf \GPIO_1_D[31]~input (
+	.i(GPIO_1_D[31]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[31]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[31]~input .bus_hold = "false";
+defparam \GPIO_1_D[31]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X53_Y6_N22
+cycloneive_io_ibuf \GPIO_1_D[32]~input (
+	.i(GPIO_1_D[32]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[32]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[32]~input .bus_hold = "false";
+defparam \GPIO_1_D[32]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y34_N1
+cycloneive_io_ibuf \GPIO_1_D[33]~input (
+	.i(GPIO_1_D[33]),
+	.ibar(gnd),
+	.o(\GPIO_1_D[33]~input_o ));
+// synopsys translate_off
+defparam \GPIO_1_D[33]~input .bus_hold = "false";
+defparam \GPIO_1_D[33]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X36_Y0_N15
+cycloneive_io_ibuf \KEY[0]~input (
+	.i(KEY[0]),
+	.ibar(gnd),
+	.o(\KEY[0]~input_o ));
+// synopsys translate_off
+defparam \KEY[0]~input .bus_hold = "false";
+defparam \KEY[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y24_N15
+cycloneive_io_ibuf \KEY[1]~input (
+	.i(KEY[1]),
+	.ibar(gnd),
+	.o(\KEY[1]~input_o ));
+// synopsys translate_off
+defparam \KEY[1]~input .bus_hold = "false";
+defparam \KEY[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign GPIO_0_D[0] = \GPIO_0_D[0]~output_o ;
+
+assign GPIO_0_D[1] = \GPIO_0_D[1]~output_o ;
+
+assign GPIO_0_D[2] = \GPIO_0_D[2]~output_o ;
+
+assign GPIO_0_D[3] = \GPIO_0_D[3]~output_o ;
+
+assign GPIO_0_D[4] = \GPIO_0_D[4]~output_o ;
+
+assign GPIO_0_D[5] = \GPIO_0_D[5]~output_o ;
+
+assign GPIO_0_D[6] = \GPIO_0_D[6]~output_o ;
+
+assign GPIO_0_D[7] = \GPIO_0_D[7]~output_o ;
+
+assign GPIO_0_D[8] = \GPIO_0_D[8]~output_o ;
+
+assign GPIO_0_D[9] = \GPIO_0_D[9]~output_o ;
+
+assign GPIO_0_D[10] = \GPIO_0_D[10]~output_o ;
+
+assign GPIO_0_D[11] = \GPIO_0_D[11]~output_o ;
+
+assign GPIO_0_D[12] = \GPIO_0_D[12]~output_o ;
+
+assign GPIO_0_D[13] = \GPIO_0_D[13]~output_o ;
+
+assign GPIO_0_D[14] = \GPIO_0_D[14]~output_o ;
+
+assign GPIO_0_D[15] = \GPIO_0_D[15]~output_o ;
+
+assign GPIO_0_D[16] = \GPIO_0_D[16]~output_o ;
+
+assign GPIO_0_D[17] = \GPIO_0_D[17]~output_o ;
+
+assign GPIO_0_D[18] = \GPIO_0_D[18]~output_o ;
+
+assign GPIO_0_D[19] = \GPIO_0_D[19]~output_o ;
+
+assign GPIO_0_D[20] = \GPIO_0_D[20]~output_o ;
+
+assign GPIO_0_D[21] = \GPIO_0_D[21]~output_o ;
+
+assign GPIO_0_D[22] = \GPIO_0_D[22]~output_o ;
+
+assign GPIO_0_D[23] = \GPIO_0_D[23]~output_o ;
+
+assign GPIO_0_D[24] = \GPIO_0_D[24]~output_o ;
+
+assign GPIO_0_D[25] = \GPIO_0_D[25]~output_o ;
+
+assign GPIO_0_D[26] = \GPIO_0_D[26]~output_o ;
+
+assign GPIO_0_D[27] = \GPIO_0_D[27]~output_o ;
+
+assign GPIO_0_D[28] = \GPIO_0_D[28]~output_o ;
+
+assign GPIO_0_D[29] = \GPIO_0_D[29]~output_o ;
+
+assign GPIO_0_D[30] = \GPIO_0_D[30]~output_o ;
+
+assign GPIO_0_D[31] = \GPIO_0_D[31]~output_o ;
+
+assign GPIO_0_D[32] = \GPIO_0_D[32]~output_o ;
+
+assign GPIO_0_D[33] = \GPIO_0_D[33]~output_o ;
+
+endmodule

@@ -1,0 +1,17 @@
+`define SCREEN_WIDTH 176
+`define NUMBER_BARS 20
+`define BAR_HEIGHT 6
+
+module IMAGE_PROCESSOR (
+	PIXEL_IN,
+	CLOCK
+);
+
+input	[7:0]	PIXEL_IN;
+input CLOCK;
+
+reg [10:0] RGB_pixel_count [2:0][19:0];
+
+always @ (CLOCK) begin
+
+end

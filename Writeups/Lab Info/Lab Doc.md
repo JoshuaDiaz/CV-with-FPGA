@@ -18,7 +18,7 @@ The expansion headers on **page 18** of the manual will be particularly useful f
 
 To setup the OV7670 digital camera, you will need to get acquainted with its datasheet here:
 
-* [OV7670 Datasheet](https://www.voti.nl/docs/OV7670.pdf, "Camera stuff")
+* [OV7670 Datasheet](https://www.voti.nl/docs/OV7670.pdf "Camera stuff")
 
 In order to perform image processing (for our object detection), it is useful to store our image data in a *memory buffer*. Given that the buffer can hold all the pixel data for exactly one image at a time, reading from it is equivalent to scanning through the pixels of the image in one frame of image output from the camera. No buffer exists onboard the OV7670, so one must be created on the DE0-Nano using its onboard **embedded memory**. This embedded memory consists of M9K memory blocks that we may configure to create a RAM. One caveat of this is that each entry in the RAM must have a size of 8 or 9 bits.
 
@@ -67,7 +67,7 @@ Using the Register Set table on pages 10-23 of the OV7670 datasheet, find the re
 - CLKRC, addr: 0x11, val: 0x80
 - COM7,  addr: 0x12, val: 0x0C  
   COM15, addr: 0x40, val: 0xF0
-- COM7,  addr: 0x12, val: 0x02
+- COM7,  addr: 0x12, val: 0x02  
   COM17, addr: 0x42, val: 0x0C
 - MVFP,  addr: 0x1E, val: 0x30
 
@@ -81,7 +81,11 @@ Take a look at the timing diagrams (Fig 5 and 6) on Page 7 (Ignore HSYNC, we don
 To begin, collect an OV7670 camera and a DE0-Nano FPGA for your team. You will need to split into two teams to complete this lab, so decide which members will go into each. Team Camera will be working on setting up the OV7670 camera with the Arduino. Team FPGA will work on creating a downsampler in Verilog, and writing an image to the VGA display. Once *both* teams are done, work to combine the two and display the camera's image to the display. Once a subteam is done with their task. they may begin implementing their image processor in Verilog.
 
 ### PLL
-Each team will need a clock to run their respective devices. The camera requires a 24MHz MCLK (External clock) and the VGA module requires 
+Each team will need a clock to run their respective devices. The camera requires a 24MHz MCLK (External clock) and the VGA module requires a 25MHz clock to drive the screen. RAM also uses read and write clocks. 
+
+The FPGA can generate a 50 MHz Clock called CLOCK_50, though we require slower clocks than this. Although we may divide these in logic, this approach is succeptible to clock skew and it is much more pragmatic to use a *phase-locked loop*. This will ensure that the clocks are treated in the FPGA as actual clock lines, preventing skew. To use one of these, we'll use a piece *Altera* IP that comes with Quartus II.
+
+We first need to download the template for the Quartus II project.  
 
 ### Team Camera
 

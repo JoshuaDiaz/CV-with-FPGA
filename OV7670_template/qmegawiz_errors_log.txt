@@ -1,0 +1,10 @@
+
+
+C:/Users/JoshyD/Documents/School/Research/Summer 2018/CV-with-FPGA/OV7670_template/myfirstpll_bb.v
+
+Aug 15 04PM:40:57>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/JoshyD/Documents/School/Research/Summer 2018/CV-with-FPGA/OV7670_template/myfirstpll_bb.cnxerr.
+
+Can't create the custom megafunction variation file(s)
