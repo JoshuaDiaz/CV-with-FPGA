@@ -101,10 +101,10 @@ Unzip this folder and put it somewhere you'll remember.
  In the window that pops up, click *Library>Basic Functions>Clocks; PLLs and Resets>PLL*  
  Double click *ALTPLL*  
  In the pop-up, name the IP variation file whatever you'd like. Make sure you use a Verilog IP. 
-![PLL makeo](images/PLL1.png "Really, go nuts")
+![PLL makeo](images/PLL1.PNG "Really, go nuts")
 
 In the General Modes tab, set the device speed to Any, and the frequency of inclk0 to 50MHz, as below.
-![PLL makeo](images/PLL2.png "You'll miss these early parts of this lab")
+![PLL makeo](images/PLL2.PNG "You'll miss these early parts of this lab")
 
 In the Inputs/Lock tab deselect everything
 
@@ -114,7 +114,7 @@ In the Clock switchover tab deselct everything
 
 You can skip over to **Output Clocks** now. We'll be setting up clk c0, clk c1, and clk c2. 
 
-![PLL makeo](images/PLL3.png "I thought this was supposed to be the easy part")
+![PLL makeo](images/PLL3.PNG "I thought this was supposed to be the easy part")
 
 For c0, select "Use this clock". Also select "Enter output clock frequency" and in set 24.0 MHz as the Requested Setting. Make sure you set the clock duty cycle to 50%.
 
@@ -124,7 +124,7 @@ For c2, select "Use this clock". Also select "Enter output clock frequency" and 
 
 Jump to the summary tab and select <nameyouchose>_inst.v and <nameyouchose>_bb.v. Your design should look like the block on the left of the picture below.
 
-![PLL makeo](images/PLL4.png "almost there")
+![PLL makeo](images/PLL4.PNG "almost there")
 
 Click **Finish**
 *File>Open* the folder your project is in, and you should be able to open your <nameyouchose>_inst.v file. Pasting this into your top level module will allow you access to these clock signals. Remember to input 50MHz.
