@@ -1,5 +1,6 @@
 # LAB 3 - FPGA and Shape Detection
 
+###
 In this lab, you will split into two teams to develop an FPGA module capable of detecting basic shapes from a camera input. This device will be mounted on the robot to identify these shapes on the walls of the maze.
 
 Below is a block diagram of the device that will implemented. The red blocks, along with all of the interconnects will be made by you, the white ones are provided.    
@@ -29,9 +30,9 @@ The OV7670 camera requires being setup every time the camera is powered on. This
  - VSYNC indicates the start (falling edge) and end (rising edge) of a frame of an image
  - PCLK decides the speed at which the data output is being transmitted. Its rising edge indicates a new byte is ready to read.
 
-#### Questions
+### Questions
 
- *Q1:*  
+ #### *Q1:*  
  Reviewing the FPGA's specifications, what is the maximum size of buffer that we can create in Kilobits? Given that each entry is, how many entires large can the RAM be?  
  ***Answer***   
  *The specification above states that the DE0-Nano has 594 Kbits of embedded memory, allowing for 74,250 8-bit entries*
@@ -120,19 +121,19 @@ To begin, collect an OV7670 camera and a DE0-Nano FPGA for your team. You will n
 
  ![PLL makeo](images/PLL3.PNG "I thought this was supposed to be the easy part")
 
- 10. For c0, select "Use this clock". Also select "Enter output clock frequency" and in set *24.0 MHz* as the Requested Setting. Make sure you set the clock duty cycle to *50%*.
+ 10. For c0, select *Use this clock*. Also select *Enter output clock frequency* and set it to *24.0 MHz* as the Requested Setting. Make sure you set the clock duty cycle to *50%*.
 
- For c1, select "Use this clock". Also select "Enter output clock frequency" and in set *25.0 MHz* as the Requested Setting. Make sure you set the clock duty cycle to *50%*.
+ For c1, select *Use this clock*. Also select *Enter output clock frequency* and set it to *25.0 MHz* as the Requested Setting. Make sure you set the clock duty cycle to *50%*.
 
- For c2, select "Use this clock". Also select "Enter output clock frequency" and in set *50.0 MHz* as the Requested Setting. We are making this clock, despite having CLOCK 50 as the reference clock, so that our others will always be phase-locked to this. As such, you should be sure to use this clock instead of CLOCK_50. Make sure you set the clock duty cycle to *50%*.
+ For c2, select *Use this clock*. Also select Also select *Enter output clock frequency* and set it to *50.0 MHz* as the Requested Setting. We are making this clock, despite having CLOCK 50 as the reference clock, for the others to always be phase-locked to . As such, you should be sure to use this clock instead of CLOCK_50. Make sure you set the clock duty cycle to *50%*.
 
- 11. Jump to the summary tab and select <nameyouchose>_inst.v and <nameyouchose>_bb.v. Your design should look like the block on the left of the picture below.
+ 11. Jump to the summary tab and select *nameyouchose*_inst.v and *nameyouchose*_bb.v. Your design should look like the block on the left of the picture below.
 
  ![PLL makeo](images/PLL4.PNG "almost there")
 
  Click **Finish**
 
- 13. Go *File>Open* the folder your project is in, and you should be able to open your <nameyouchose>_inst.v file. Pasting this into your top level module will allow you access to these clock signals. Remember to input 50MHz.
+ 13. Go to *File>Open>folder_your_project_is_in*, and you should be able to open your *nameyouchose*_inst.v file. Pasting this into your top level module will allow you access to these clock signals. Remember to input 50MHz.
 
  You'll want to assign the 24MHz output to a GPIO pin, for the Camera team to use.
 
