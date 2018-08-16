@@ -123,9 +123,9 @@ To begin, collect an OV7670 camera and a DE0-Nano FPGA for your team. You will n
 
  10. For c0, select *Use this clock*. Also select *Enter output clock frequency* and set it to *24.0 MHz* as the Requested Setting. Make sure you set the clock duty cycle to *50%*.
 
- For c1, select *Use this clock*. Also select *Enter output clock frequency* and set it to *25.0 MHz* as the Requested Setting. Make sure you set the clock duty cycle to *50%*.
+  For c1, select *Use this clock*. Also select *Enter output clock frequency* and set it to *25.0 MHz* as the Requested Setting. Make sure you set the clock duty cycle to *50%*.
 
- For c2, select *Use this clock*. Also select Also select *Enter output clock frequency* and set it to *50.0 MHz* as the Requested Setting. We are making this clock, despite having CLOCK 50 as the reference clock, for the others to always be phase-locked to . As such, you should be sure to use this clock instead of CLOCK_50. Make sure you set the clock duty cycle to *50%*.
+  For c2, select *Use this clock*. Also select Also select *Enter output clock frequency* and set it to *50.0 MHz* as the Requested Setting. We are making this clock, despite having CLOCK 50 as the reference clock, for the others to always be phase-locked to . As such, you should be sure to use this clock instead of CLOCK_50. Make sure you set the clock duty cycle to *50%*.
 
  11. Jump to the summary tab and select *nameyouchose*_inst.v and *nameyouchose*_bb.v. Your design should look like the block on the left of the picture below.
 
@@ -157,7 +157,7 @@ To disable these:
 
 2. Right click the file and do *Properties>Securities>Edit*
   * Click *Users*
-  * CLick *Full Control*
+  * Click *Full Control*
   * Click *OK* and *Close*
 3. Open *twi.c* 
 4. Comment out the following lines
