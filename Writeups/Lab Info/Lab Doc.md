@@ -110,11 +110,11 @@ To begin, collect an OV7670 camera and a DE0-Nano FPGA for your team. You will n
  5. In the General Modes tab, set the device speed to *Any* and the frequency of inclk0 to *50MHz*, as below.
  ![PLL makeo](images/PLL2.PNG "You'll miss these early parts of this lab")
 
- 6. In the Inputs/Lock tab deselect everything
+ 6. In the **Inputs/Lock** tab deselect everything
 
- 7. In the Bandwidth/SS tab only click the **Auto** bubble
+ 7. In the **Bandwidth/SS** tab only click the *Auto* bubble
 
- 8. In the Clock switchover tab deselct everything
+ 8. In the **Clock Switchover** tab deselct everything
 
  9. You can skip over to **Output Clocks** now. We'll be setting up *clk c0*, *clk c1*, and *clk c2*. 
 
