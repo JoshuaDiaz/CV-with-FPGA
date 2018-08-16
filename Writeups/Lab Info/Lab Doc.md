@@ -83,9 +83,53 @@ To begin, collect an OV7670 camera and a DE0-Nano FPGA for your team. You will n
 ### PLL
 Each team will need a clock to run their respective devices. The camera requires a 24MHz MCLK (External clock) and the VGA module requires a 25MHz clock to drive the screen. RAM also uses read and write clocks. 
 
-The FPGA can generate a 50 MHz Clock called CLOCK_50, though we require slower clocks than this. Although we may divide these in logic, this approach is succeptible to clock skew and it is much more pragmatic to use a *phase-locked loop*. This will ensure that the clocks are treated in the FPGA as actual clock lines, preventing skew. To use one of these, we'll use a piece *Altera* IP that comes with Quartus II.
+The FPGA can generate a 50 MHz Clock called CLOCK_50, though we require slower clocks than this. Although we may divide these in logic, this approach is succeptible to clock skew and it is much more pragmatic to use a *phase-locked loop*. This will ensure that the clocks are treated in the FPGA as actual clock lines, and that they remain locked in phase, preventing skew. To use one of these, we'll use a piece *Altera* IP that comes with Quartus II.
 
-We first need to download the template for the Quartus II project.  
+We first need to download the template for the Quartus II project. You can download that here:
+
+[Lab 3 FPGA Template](https://drive.google.com/drive/folders/1w2BKwgk4l5xhWbQCVZv6t9XEfV7cFpiw?usp=sharing)
+
+Unzip this folder and put it somewhere you'll remember.
+
+#### Open Project
+ Open Quartus II on the lab computer   
+ Go to *File>Open Project* and open the folder you unzipped, in there select the "DE0_NANO.qpf" project.  
+ The top file is called DE0_NANO.v; this is where the FPGA team will work.  
+
+#### To create our PLL
+ Navigate to *Tools>IP Catalog* to bring up the IP Catalog  
+ In the window that pops up, click *Library>Basic Functions>Clocks; PLLs and Resets>PLL*  
+ Double click *ALTPLL*  
+ In the pop-up, name the IP variation file whatever you'd like. Make sure you use a Verilog IP. 
+![PLL makeo](images/PLL1.png "Really, go nuts")
+
+In the General Modes tab, set the device speed to Any, and the frequency of inclk0 to 50MHz, as below.
+![PLL makeo](images/PLL2.png "You'll miss these early parts of this lab")
+
+In the Inputs/Lock tab deselect everything
+
+In the Bandwidth/SS tab only click the **Auto** bubble
+
+In the Clock switchover tab deselct everything
+
+You can skip over to **Output Clocks** now. We'll be setting up clk c0, clk c1, and clk c2. 
+
+![PLL makeo](images/PLL3.png "I thought this was supposed to be the easy part")
+
+For c0, select "Use this clock". Also select "Enter output clock frequency" and in set 24.0 MHz as the Requested Setting. Make sure you set the clock duty cycle to 50%.
+
+For c1, select "Use this clock". Also select "Enter output clock frequency" and in set 25.0 MHz as the Requested Setting. Make sure you set the clock duty cycle to 50%.
+
+For c2, select "Use this clock". Also select "Enter output clock frequency" and in set 50.0 MHz as the Requested Setting. We are making this clock, despite having CLOCK 50 as the reference clock, so that our others will always be phase-locked to this. As such, you should be sure to use this clock instead of CLOCK_50. Make sure you set the clock duty cycle to 50%.
+
+Jump to the summary tab and select <nameyouchose>_inst.v and <nameyouchose>_bb.v. Your design should look like the block on the left of the picture below.
+
+![PLL makeo](images/PLL4.png "almost there")
+
+Click **Finish**
+*File>Open* the folder your project is in, and you should be able to open your <nameyouchose>_inst.v file. Pasting this into your top level module will allow you access to these clock signals. Remember to input 50MHz.
+
+You'll want to assign the 24MHz output to a GPIO pin, for the Camera team to use.
 
 ### Team Camera
 
