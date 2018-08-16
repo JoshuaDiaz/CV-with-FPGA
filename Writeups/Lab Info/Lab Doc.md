@@ -121,11 +121,12 @@ To begin, collect an OV7670 camera and a DE0-Nano FPGA for your team. You will n
 
  ![PLL makeo](images/PLL3.PNG "I thought this was supposed to be the easy part")
 
- 10. For c0, select *Use this clock*. Also select *Enter output clock frequency* and set it to *24.0 MHz* as the Requested Setting. Make sure you set the clock duty cycle to *50%*.
+ 10. 
+ For c0, select *Use this clock*. Also select *Enter output clock frequency* and set it to *24.0 MHz* as the Requested Setting. Make sure you set the clock duty cycle to *50%*.
 
-  For c1, select *Use this clock*. Also select *Enter output clock frequency* and set it to *25.0 MHz* as the Requested Setting. Make sure you set the clock duty cycle to *50%*.
+ For c1, select *Use this clock*. Also select *Enter output clock frequency* and set it to *25.0 MHz* as the Requested Setting. Make sure you set the clock duty cycle to *50%*.
 
-  For c2, select *Use this clock*. Also select Also select *Enter output clock frequency* and set it to *50.0 MHz* as the Requested Setting. We are making this clock, despite having CLOCK 50 as the reference clock, for the others to always be phase-locked to . As such, you should be sure to use this clock instead of CLOCK_50. Make sure you set the clock duty cycle to *50%*.
+ For c2, select *Use this clock*. Also select Also select *Enter output clock frequency* and set it to *50.0 MHz* as the Requested Setting. We are making this clock, despite having CLOCK 50 as the reference clock, for the others to always be phase-locked to . As such, you should be sure to use this clock instead of CLOCK_50. Make sure you set the clock duty cycle to *50%*.
 
  11. Jump to the summary tab and select *nameyouchose*_inst.v and *nameyouchose*_bb.v. Your design should look like the block on the left of the picture below.
 
@@ -166,12 +167,28 @@ To disable these:
 digitalWrite(SDA,1);
 digitalWrite(SCL,1);
 ```
+5. Save the doc and close.
 
+Now you'll need to wire the Arduino to the Camera, we're only wiring power and I2C interface really. All data pins will have to go into the FPGA when you integrate.
+
+Here's what you'll want:
+
+![Camera Wiring Diagram](images/Lab3CameraWiringDiagram.PNG "If you can figure out how to do this without an extra board, it probably doesn't look very good")
+
+Next you'll need to make use of the functions in the template code to write the values of the registers from the prelab to the values expected.
+Note that you'll need to write the slave address (in hex) found in the datasheet into the code (Define statement at the top). These addresses use the **least significant bit** to distinguish between read and write(0->Write, 1->Read). Arduino's Wire library uses different commands for read and write however, and appends that bit to the end of the address you use. You should be able to come up with the proper address (only one) to give the Arduino.
+
+When writing the registers, you may want to be sure that you're actually doing something by reading the registers you write after they're written. We've included a method you can write called *read_key_registers()* that will be useful for reading the values of registers and displaying them to the Serial monitor. You can make use of the *read_register_value()* function to do this. 
+
+Be aware, all values will be read in hex. All addresses and write values should also be denoted in hex. Be sure you specify that format in your code (eg. 0xAB).
 
 
 ### Team FPGA
 
 Congrats, you've been chosen to be a part of Team FPGA.
+
+So grab the DE0-Nano and get to work. 
+
 Notice that the OV7670 outputs 1 pixel of data over two clock cycles, outputting 8 bits of a pixel at a time throught D7 - D1. Missing just one of these cycles will lose some information, so you must determine when to sample, update wri
 Combining
 
