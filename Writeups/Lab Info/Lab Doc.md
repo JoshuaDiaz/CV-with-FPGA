@@ -37,23 +37,23 @@ The OV7670 camera requires being setup every time the camera is powered on. This
  ***Answer***   
  *The specification above states that the DE0-Nano has 594 Kbits of embedded memory, allowing for 74,250 8-bit entries*
 
- *Q2:*  
+ #### *Q2:*  
  The OV7670 offers a variety of pixel formats to sample data at (see: Output Formats in "Key Specifications" table). Which of the formats available provides the most info on the base colors making up each pixel?  
  ***Answer***
  *RGB 565*
 
- *Q3:*  
+ #### *Q3:*  
  Given that the input to our VGA adapter is RGB 332. How may we convert (downsize) the pixel format from *Q2* to be accepted by the VGA module.  
  ***Answer***
  *Remove the least significant 2b of R, 3b of G, and 2b of B*
 
- *Q4:*  
+ #### *Q4:*  
  Now that we know the downsized space each pixel will take (from Q3), we need to know how many of them we must fit in memory. Which of the predefined resolutions that the OV7670 supports provides the max amount of pixels in an image, given the constrained max size of our buffer(from *Q1*)? What's the size of our buffer?  
  ***Answer***
  *QCIF,* 
  *176px * 144px * 8b/p  = 202 Kbits*
 
- *Q5:*  
+ #### *Q5:*  
  Using the Register Set table on pages 10-23 of the OV7670 datasheet, find the registers you will need to set to do the following:  
  - reset all registers
  - Enable scaling
@@ -74,7 +74,7 @@ The OV7670 camera requires being setup every time the camera is powered on. This
   COM17, addr: 0x42, val: 0x0C
  - MVFP,  addr: 0x1E, val: 0x30
 
- *Q6:*  
+ #### *Q6:*  
  Take a look at the timing diagrams (Fig 5 and 6) on Page 7 (Ignore HSYNC, we don't use it). Use both diagrams to determine when we should sample our data. (Hint: We only want to sample valid bytes, and each one only once)  
  ***Answer***
  *Data is valid only when HREF is LOW and VSYNC is HIGH. To sample each byte only once, sample on the rising edge of PCLK*
@@ -91,7 +91,7 @@ To begin, collect an OV7670 camera and a DE0-Nano FPGA for your team. You will n
 #### Download Template
  We first need to download the template for the Quartus II project. You can download that here:
 
- [Lab 3 FPGA Template](https://drive.google.com/drive/folders/1w2BKwgk4l5xhWbQCVZv6t9XEfV7cFpiw?usp=sharing)
+ [Lab 3 FPGA Template](https://drive.google.com/open?id=1HTdRnfoV5JKO79emLY9o_kRIBhPtXBx0)
 
  Unzip this folder and put it somewhere you'll remember.
 
@@ -139,7 +139,39 @@ To begin, collect an OV7670 camera and a DE0-Nano FPGA for your team. You will n
 
 ### Team Camera
 
-### Team Buffer Reader
+Congrats, you've been chosen to be a part of Team Camera. You will be responsible for wiring the camera properly and setting up its registers. 
+
+So grab the OV7670 and get to work.
+
+Study and download the template Arduino code provided here:
+
+ [Lab 3 Arduino Template](https://drive.google.com/open?id=1HTdRnfoV5JKO79emLY9o_kRIBhPtXBx0)
+
+In order for the provided functions to work, we need to set up the Arduino's I2C interface. This will require wiring the Arduino's SDA and SCL pins to the camera's, and setting the camera up as a slave peripheral.
+
+#### **EXTREMELY IMPORT PART TO NEVER, EVER, FORGET**
+Everytime you start a new lab session, **BEFORE** uploading **ANY** code to your Arduino (at least including what's in the template), we must disable the internal pull-up resistors that are a part of the Arduino's I2C interface. This is because they pull the signals that set-up our camera to 5V, while our camera requires 3.3V. Sending 5V through will harm the camera. 
+
+To disable these:
+1. Go to *twi.c* at *C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\Wire\src\utility*
+
+2. Right click the file and do *Properties>Securities>Edit*
+  * Click *Users*
+  * CLick *Full Control*
+  * Click *OK* and *Close*
+3. Open *twi.c* 
+4. Comment out the following lines
+```C
+//activate internal pullups for twi
+digitalWrite(SDA,1);
+digitalWrite(SCL,1);
+```
+
+
+
+### Team FPGA
+
+Congrats, you've been chosen to be a part of Team FPGA.
 Notice that the OV7670 outputs 1 pixel of data over two clock cycles, outputting 8 bits of a pixel at a time throught D7 - D1. Missing just one of these cycles will lose some information, so you must determine when to sample, update wri
 Combining
 
