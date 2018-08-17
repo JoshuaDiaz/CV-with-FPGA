@@ -166,9 +166,9 @@
   ```
   5. Save the doc and close.
 
-  Now you'll need to wire the Arduino to the Camera, we're only wiring power and I2C interface really. All data pins will have to go into the FPGA when you integrate.
+  Now you'll need to wire the Arduino to the OV770 camera. We're more or less only wiring power and the I2C interface. All data pins will have to go into the FPGA when you integrate.
 
-  Here's what you'll want:
+  Here's what you'll want to do:
 
   ![Camera Wiring Diagram](images/Lab3CameraWiringDiagram.png "If you can figure out how to do this without an extra board, it probably doesn't look very good")
 
