@@ -170,7 +170,7 @@
 
   Here's what you'll want:
 
-  ![Camera Wiring Diagram](images/Lab3CameraWiringDiagram.PNG "If you can figure out how to do this without an extra board, it probably doesn't look very good")
+  ![Camera Wiring Diagram](images/Lab3CameraWiringDiagram.png "If you can figure out how to do this without an extra board, it probably doesn't look very good")
 
  #### Writing Registers 
   Next you'll need to make use of the functions in the template code to write the values of the registers from the prelab to the values expected.
