@@ -1,6 +1,6 @@
 #include <Wire.h>
 
-#define OV7670_I2C_ADDRESS /*TODO: WHAT IS THIS*/
+#define OV7670_I2C_ADDRESS /*TODO: write this in hex (eg. 0xAB) */
 
 
 ///////// Main Program //////////////
