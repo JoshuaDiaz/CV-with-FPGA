@@ -107,7 +107,7 @@
   ![PLL makeo](images/PLL1.PNG "Really, go nuts")
 
   5. In the General Modes tab, set the device speed to *Any* and the frequency of inclk0 to *50MHz*, as below.
-  ![PLL makeo](images/PLL2.PNG "You'll miss these early parts of this lab")
+  ![PLL makeo](images/PLL2.PNG "You'll miss these easy early parts of this lab")
 
   6. In the **Inputs/Lock** tab deselect everything
 
